@@ -5,8 +5,227 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home page</title>
+    <style>
+        body{
+            background-color: #fbf9f9;
+        }
+        #container{
+            width: 100%;
+            margin: auto;
+        }
+        #cate , #trend_sec{
+            margin: auto;
+            width: 90%;
+            font-family: 'calluna';
+        }
+        #our_category, #trend_head{
+            font-weight: 700;
+            font-size: 250%;
+            color: rgb(46, 45, 45);
+        }
+        #our_cat , #trend_content{
+            margin: auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #our_cat>div{
+            width: 24%;
+            height: 450px;
+        }
+        .backgrd_img1{
+            border: 1px solid transparent;
+            height: 350px;
+            background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/Face.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .backgrd_img2{
+            border: 1px solid transparent;
+            height: 350px;
+            background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/Body.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .backgrd_img3{
+            border: 1px solid transparent;
+            height: 350px;
+            background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/Hair.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .backgrd_img4{
+            border: 1px solid transparent;
+            height: 350px;
+            background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/Makeup.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img_text{
+            width: 97%;
+            height: 200px;
+            text-align: center;
+            margin-top: 130px;
+        }
+        span{
+            background-color: rgba(10, 10, 10, 0.4);
+            color: #fff;
+            font-size: 200%;
+            font-weight: 700;
+            font-family: 'calibre';
+            padding: 10px 25px;
+            margin-top: 20%;
+        }
+        .cat-button{
+            border: 0;
+            color: #fff;
+            background-color: #000;
+            font-weight: bolder;
+            font-size: larger;
+            padding: 15px 30px;
+            text-align: center;
+            margin-top: 0;
+            margin-left: 48%;
+        }
+        .cat-button:hover{
+            background-color: #d2ab67;
+        }
+        .cat_p, .trend_p{
+            margin-top: 35px;
+            font-size: large;
+            font-weight: 700;
+            text-align: center;
+            color: rgb(46, 45, 45);
+        }
+        #img{
+            width: 100%;
+            height: 500px;
+            background-color: white;
+            box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+            padding-top: 5%;
+        }
+        #img_iconic{
+            width: 92%;
+            margin-left: 4%;
+        }
+        #trend_content>div{
+            width: 24%;
+            height: 450px;
+        }
+        #trend_bckgrd1{
+            height: 350px;
+            background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/Hair_Thinning.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #trend_bckgrd2{
+            height: 350px;
+            background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/Mother_Care.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #trend_bckgrd3{
+            height: 350px;
+            background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/Dryness.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #trend_bckgrd4{
+            height: 350px;
+            background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/Acne-Prone-Skin.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .trend-button{
+            background-color: rgba(8, 8, 8, 0.4);
+            font-size: 200%;
+            font-family: serif;
+            color: #fff;
+            font-weight: lighter;
+            border: 0;
+            margin-top: 42%;
+            padding: 10px 20px;
+        }
+        .trend-button:hover{
+            background-color: #d2ab67;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="container">
+        <div id="cate">
+            <h1 id="our_category">Our Categories</h1>
+            <div id="our_cat">
+                <div>
+                    <div class="backgrd_img1">
+                        <div class="img_text">
+                            <span>Facial Care</span>
+                        </div>
+                        <button class="cat-button">SHOP NOW -></button>
+                    </div>
+                    <p class="cat_p">Curated with exceptional Ayurvedic ingredients to transform your skin.</p>
+                </div>
+                <div>
+                    <div class="backgrd_img2">
+                        <div class="img_text">
+                            <span>Body Care</span>
+                        </div>
+                        <button class="cat-button">SHOP NOW -></button>
+                    </div>
+                    <p class="cat_p">Indulgent and immersive products hat leave your skin satin smooth.</p>
+                </div>
+                <div>
+                    <div class="backgrd_img3">
+                        <div class="img_text">
+                            <span>Hair Care</span>
+                        </div>
+                        <button class="cat-button">SHOP NOW -></button>
+                    </div>
+                    <p class="cat_p">A transformative assortment of fortifying and toxin-free care for lush tresses.</p>
+                </div>
+                <div>
+                    <div class="backgrd_img4">
+                        <div class="img_text">
+                            <span>Makeup</span>
+                        </div>
+                        <button class="cat-button">SHOP NOW -></button>
+                    </div>
+                    <p class="cat_p">Skin benefitting makeup infused with Ayurvedic herbs and potent botanicals</p>
+                </div>
+            </div>
+        </div>
+        <div id="img" >
+            <img src="https://images.forestessentialsindia.com/pub/media/cms_images/soundarya-banner_2880-840.jpg" id="img_iconic"> 
+        </div>
+        <div id="trend_sec">
+            <h1 id="trend_head">Trending Now</h1>
+            <div id="trend_content">
+                <div>
+                    <div id="trend_bckgrd1">
+                        <button class="trend-button" style="margin-left: 25%;">Hair Loss</button>
+                    </div>
+                    <p class="trend_p">Targer hair loss and thinning with Ayurvedic elixirs to achieve lush and lustrous tresses.</p>
+                </div>
+                <div>
+                    <div id="trend_bckgrd2">
+                        <button class="trend-button" style="margin-left: 9%;">Mother & Baby Care</button>
+                    </div>
+                    <p class="trend_p">Wisdom of ancient rituals packed into specilized care for you and your baby. Made Safe Certified</p>
+                </div>
+                <div>
+                    <div id="trend_bckgrd3">
+                        <button class="trend-button" style="margin-left: 30%;">Dryness</button>
+                    </div>
+                    <p class="trend_p">Glaze your skin with intense nourishment for a satin-smooth and velvety soft touch.</p>
+                </div>
+                <div>
+                    <div id="trend_bckgrd4">
+                        <button class="trend-button" style="margin-left: 15%;">Acne-Prone Skin</button>
+                    </div>
+                    <p class="trend_p">Transformation treatments with dermo-purifying blends to clarify and soothe the skin</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
