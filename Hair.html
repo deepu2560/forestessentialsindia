@@ -45,6 +45,271 @@
             /* Support for IE. */
             font-feature-settings: 'liga';
         }
+
+
+        /********************HEADER*****************************/
+
+        .main--Navbar{
+            font-size:10px;
+        }
+        .main--Navbar *{
+            box-sizing: border-box;
+        }
+
+        /************** Notification *********************/
+        .ads{
+            background:#333;
+            color:#fff;
+            height:5vh;
+            font-size:1em;
+            text-align: center;
+            letter-spacing:1.8px;
+            line-height:14px;
+            padding: 10px 10px 8px 10px;
+            overflow:hidden;
+        }
+
+        .notify{
+            display: none;
+            animation: left-side .1s ;
+        }
+
+
+        @keyframes left-side{
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+
+
+
+        /*******************Navbar ***************/
+        .navbar{
+            background: #fbf9f9;
+            
+        }
+
+        /* nav-1 */
+        .navbar--1{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            width:95%;
+            margin:auto ;
+            padding:1.5em;
+            text-transform: uppercase;
+            font-size:1em;
+            letter-spacing:3px;
+            line-height: 15.7143px;
+            border-bottom:1px solid #ebebeb;
+            font-weight: 400;
+            color:#888;
+        }
+        .INR{
+            letter-spacing:3px;
+            border: none;
+            font-size:1em;
+            background: #fbf9f9;
+        }
+        .submenu--left , .submenu--right{
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .margin-right{
+            margin-right:1em;
+        }
+
+        .submenu-mg{
+            margin-right:4em;
+
+        }
+
+        .mg-medium{
+            margin-right:2em;
+        }
+
+        .submenu--logo{
+            width:16em;
+            height:10.7em;
+        }
+
+        /* nav-2 */
+        .navbar--2{
+            background:#fbf9f9;
+        }
+
+        .navbar_nav{
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            list-style:none;
+            text-transform:uppercase;
+            font-size: larger;
+            letter-spacing:3px;
+            padding:1em;
+            color:rgb(0, 0, 0);
+            margin:0;
+            line-height: normal;
+            font-stretch: expanded;
+            font-weight:100;
+
+
+            
+        }
+
+        .nav-item{
+            margin-right:3em;
+        }
+
+        .nav-link , .nav-link:link , .nav-link:active{
+            text-decoration: none;
+            color:#888;
+        }
+
+
+        .comment-tag{
+            display:flex;
+            align-items:center;
+        }
+        .comment-tag img{
+            margin-top:-7px;
+            margin-right:.5em;
+            width:32px;
+            height:32px;
+        }
+
+        .festivel-tag{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+
+        }
+        .festivel-tag img{
+            width:40px;
+            height:40px;
+            margin-top:-4em;
+            
+
+        }
+
+        /******************ON SCROLL EDIT NAV *********************/
+        .nav_scroll{
+            box-shadow: 0 2px 3px rgb(57 63 72 / 20%);
+            position: sticky;
+            top: 0;
+            z-index: 9;
+            background: #fbf9f9;
+        }
+        .nav_scroll .submenu--logo{
+            width:8.5em;
+            height:5em;
+        }
+        .nav_scroll .navbar--1{
+            padding:1em;
+        }
+
+
+        /*****************cart ********************/
+
+        .cart{
+
+            position:relative;
+        }
+
+        .cart > span{
+            position: absolute;
+            display:inline-block;
+            z-index: 1; 
+            width:25px;
+            height:25px;
+            border: 1px solid black;
+            left:10px;
+            top: 10px;
+            border-radius: 50px;
+            text-align:center;
+            padding-top:5px;
+            padding-left:2px;
+            color:#fff;
+            background:black;
+
+        } 
+
+        /******************************SEARCH*******************************************/
+
+
+        .search{
+            height:20vh;
+            color:#757575;
+            width:95%;
+            margin:auto;
+            text-align: center;
+            position:relative;
+            z-index:1;
+            margin-top:1%;
+            
+        }
+        #hide{
+            display:none;
+        }
+
+        .search--div{
+
+            padding-right:1em;
+            background:#fff;
+            border: 2px solid #eee;
+            margin: auto;
+            display:inline-block;
+            width:50%;
+            margin-top:4em;
+            
+        }
+
+
+        .search_input{
+            width:55em;
+            height: 50px;
+            padding: 0 15px;
+            margin: 0;
+            font-family: inherit;
+            font-size: 1em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            border: none;
+        }
+
+        .search_input:focus{
+            outline:none;
+        }
+
+        .cross--icon{
+            position:absolute;
+            width:2em;
+            height:2em;
+            right:1em;
+            top:50px;
+            cursor: pointer;
+            
+
+
+        }
+
+        #search{
+            outline:none;
+        }
+
+
+
+
         #top_backgrd_hear_care{
             border: 1px solid transparent;
             width: 100%;
@@ -135,6 +400,98 @@
     </style>
 </head>
 <body>
+    <!--THE HEADER PART -->
+	<div class="header">
+		<div class="main--Navbar">
+			<!-- NOTIFY DIV -->
+			<div class="ads">
+				<div class="notify">COMPLIMENTARY SAMPLES ON EVERY PURCHASE!</div>
+				<div class="notify">WE DELIVER ACROSS INDIA &amp; INTERNATIONALLY.</div>
+				<div class="notify">RECEIVE COMPLIMENTARY <a href="/shop.html" style="color: white;"><u>GIFT BOXES</u></a> UP TO ₹6500/-</div>
+			</div>
+
+			<!--NAVBAR MAIN -->
+			<div class="navbar">
+				<!-- IMAGE NAVBAR 1-->
+				<div class="navbar--1">
+					<div class="submenu--left">
+						<div class="submenu-mg">
+							<a href="#search" id="search" style="color: black;"><span class="material-icons">
+                                search
+                                </span></a>
+						</div>
+						<div class="margin-right mg-medium">STORES</div>
+						<div>
+							<select class="INR">
+								<option>INR</option>
+							</select>
+						</div>
+					</div>
+					<div class="submenu--center">
+						<a href="index.html" style="cursor: pointer;"><img class="submenu--logo" src="https://images.forestessentialsindia.com/pub/media/logo/stores/2/FE-Logo_1.png"></a>
+					</div>
+					<div class="submenu--right">
+						<div class="mg-medium">account</div>
+						<div class="mg-medium">wishlist</div>
+						<div>
+							<div class="cart">
+								<img src="https://www.forestessentialsindia.com/checkout/cart/">
+								<span>0</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+				<!-- IMAGE NAVBAR 2 LINKS-->
+				<div class="navbar--2">
+					<ul class="navbar_nav">
+						<li class="nav-item comment-tag">
+							<a href="" class="nav-link">bespoker services</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">facial care</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >body care</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >hair care</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >makeup</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >wellness</a>
+						</li>
+						<li class="nav-item festivel-tag">
+							<a href="" class="nav-link" >gifting</a>
+						</li>	
+						<li class="nav-item">
+							<a href="" class="nav-link" >rituals</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >collections</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >discover</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<!--ONCLIK SEARCH BAR SHOW --->
+				<div class="search" id="hide">
+					<div class="search--div">
+						<input type="text" placeholder="search the web store" class="search_input">
+					</div>
+					<img class="cross--icon" src="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/images/cross-icon.svg" id="show">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	 
     <div style="font-family: 'calibre';">
         <div style="background-color: #f9f9f9; padding-bottom: 20px; margin-bottom: 10px;">
             <div id="top_backgrd_hear_care">
@@ -384,4 +741,60 @@
                 body.append(div);
             });
         }
+</script>
+<script>
+    //SHOW ON CLICK SEARCH
+	document.querySelector("#search").addEventListener("click" , showSearchBar)
+
+    function showSearchBar(){
+        var showhidesearch = document.querySelector("#hide")
+        showhidesearch.style.display = "block"
+
+        var hidenav = document.querySelector(".navbar--2")
+        hidenav.style.display = "none"
+    }
+
+
+    document.querySelector("#show").addEventListener("click" , function(){
+        var showhidesearch = document.querySelector("#hide")
+        showhidesearch.style.display = "none"
+
+        var hidenav = document.querySelector(".navbar--2")
+        hidenav.style.display = "block"
+    })
+
+
+
+    //FOR THE NOTIFICATION SLIDER
+    var notifyIndx = 0
+    notifyslider(notifyIndx)
+
+
+    function notifyslider(){
+    var n = document.querySelectorAll(".notify")
+    for(var i = 0 ; i < n.length ; i++){
+        n[i].style.display = "none"
+    }
+    notifyIndx++;
+    if(notifyIndx > n.length){
+        notifyIndx = 1
+    }
+    n[notifyIndx - 1].style.display = "block"
+    setTimeout(notifyslider , 3000)
+    }
+
+
+    //HEADER CSS CHANGE WHILE ON SCROLL
+    var header = document.querySelector(".navbar")
+    window.onscroll = function (e) {
+    if(window.scrollY > 80){
+        console.log(header.classList)
+        header.classList.add("nav_scroll")
+        
+    }else{
+        header.classList.remove("nav_scroll")
+
+    }
+    };
+
 </script>
