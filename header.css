@@ -1,0 +1,332 @@
+/*@font-face {
+  font-family:calibre;
+  src: url(CalibreRegular.otf);
+}*/
+
+@font-face {
+	font-family:calibre;
+	src: url(CalibreLight.otf);
+  }
+  
+  
+  body{
+	  
+	  margin: 0;
+	  font-family:calibre ,sans-serif;
+	  color:#888;
+	  
+  
+  }
+  
+  /********************HEADER*****************************/
+  
+  .main--Navbar{
+	  font-size:10px;
+  }
+  .main--Navbar *{
+	  box-sizing: border-box;
+  }
+  
+  /************** Notification *********************/
+  .ads{
+	  background:#333;
+	  color:#fff;
+	  height:5vh;
+	  font-size:1em;
+	  text-align: center;
+	  letter-spacing:1.8px;
+	  line-height:14px;
+	  padding: 10px 10px 8px 10px;
+	  overflow:hidden;
+  }
+  
+  .notify{
+	  display: none;
+	  animation: left-side .1s ;
+  }
+  
+  
+  @keyframes left-side{
+	  from {
+		  margin-left: 100%;
+		  width: 300%;
+	  }
+  
+	  to {
+		  margin-left: 0%;
+		  width: 100%;
+	  }
+  }
+  
+  
+  
+  
+  /*******************Navbar ***************/
+  .navbar{
+	  background: #fbf9f9;
+	  
+  }
+  
+  /* nav-1 */
+  .navbar--1{
+	  display: flex;
+	  justify-content:space-between;
+	  align-items: center;
+	  width:95%;
+	  margin:auto ;
+	  padding:1.5em;
+	  text-transform: uppercase;
+	  font-size:1em;
+	  letter-spacing:3px;
+	  line-height: 15.7143px;
+	  border-bottom:1px solid #ebebeb;
+	  font-weight: 400;
+	  color:#888;
+  }
+  .INR{
+	  letter-spacing:3px;
+	  border: none;
+	  font-size:1em;
+	  background: #fbf9f9;
+  }
+  .submenu--left , .submenu--right{
+	  display: flex;
+	  justify-content:space-between;
+	  align-items:center;
+  }
+  
+  .margin-right{
+	  margin-right:1em;
+  }
+  
+  .submenu-mg{
+	  margin-right:4em;
+  
+  }
+  
+  .mg-medium{
+	  margin-right:2em;
+  }
+  
+  .submenu--logo{
+	  width:16em;
+	  height:10.7em;
+  }
+  
+  /* nav-2 */
+  .navbar--2{
+	  background:#fbf9f9;
+  }
+  
+  .navbar_nav{
+	  display: flex;
+	  justify-content:center;
+	  align-items:center;
+	  list-style:none;
+	  text-transform:uppercase;
+	  font-size:1em;
+	  letter-spacing:3px;
+	  padding:1em;
+	  color:rgb(0, 0, 0);
+	  margin:0;
+	  line-height: normal;
+	  font-stretch: expanded;
+	  font-weight:100;
+  
+  
+	  
+  }
+  
+  .nav-item{
+	  margin-right:3em;
+  }
+  
+  .nav-link , .nav-link:link , .nav-link:active{
+	  text-decoration: none;
+	  color:#888;
+  }
+  
+  
+  .comment-tag{
+	  display:flex;
+	  align-items:center;
+  }
+  .comment-tag img{
+	  margin-top:-7px;
+	  margin-right:.5em;
+	  width:32px;
+	  height:32px;
+  }
+  
+  .festivel-tag{
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+  
+  }
+  .festivel-tag img{
+	  width:40px;
+	  height:40px;
+	  margin-top:-4em;
+	  
+  
+  }
+  
+  /******************ON SCROLL EDIT NAV *********************/
+  .nav_scroll{
+	  box-shadow: 0 2px 3px rgb(57 63 72 / 20%);
+	  position: sticky;
+	  top: 0;
+	  z-index: 9;
+	  background: #fbf9f9;
+  }
+  .nav_scroll .submenu--logo{
+	  width:8.5em;
+	  height:5em;
+  }
+  .nav_scroll .navbar--1{
+	  padding:1em;
+  }
+  
+  
+  /*****************cart ********************/
+  
+  .cart{
+  
+	  position:relative;
+  }
+  
+  .cart > span{
+	  position: absolute;
+	  display:inline-block;
+	  z-index: 1; 
+	  width:25px;
+	  height:25px;
+	  border: 1px solid black;
+	  left:10px;
+	  top: 10px;
+	  border-radius: 50px;
+	  text-align:center;
+	  padding-top:5px;
+	  padding-left:2px;
+	  color:#fff;
+	  background:black;
+  
+  } 
+  
+  /******************************SEARCH*******************************************/
+  
+  
+  .search{
+	  height:20vh;
+	  color:#757575;
+	  width:95%;
+	  margin:auto;
+	  text-align: center;
+	  position:relative;
+	  z-index:1;
+	  margin-top:1%;
+	  
+  }
+  #hide{
+	  display:none;
+  }
+  
+  .search--div{
+  
+	  padding-right:1em;
+	  background:#fff;
+	  border: 2px solid #eee;
+	  margin: auto;
+	  display:inline-block;
+	  width:50%;
+	  margin-top:4em;
+	  
+  }
+  
+  
+  .search_input{
+	  width:55em;
+	  height: 50px;
+		 padding: 0 15px;
+	  margin: 0;
+	  font-family: inherit;
+	  font-size: 1em;
+	  letter-spacing: 3px;
+	  text-transform: uppercase;
+	  border: none;
+  }
+  
+  .search_input:focus{
+	  outline:none;
+  }
+  
+  .cross--icon{
+	  position:absolute;
+	  width:2em;
+	  height:2em;
+	  right:1em;
+	  top:50px;
+	  cursor: pointer;
+	  
+  
+  
+  }
+  
+  #search{
+	  outline:none;
+  }
+  
+  
+  /**********************IMG SILDER *************************************/
+  
+  .slider_container{
+	  height:20vh;
+	  background: #fbf9f9;
+	  position: relative;
+	  margin:auto;
+	  transition: all 0s ease 0s;
+  }
+  
+  
+  .prev , .next{
+	  position:absolute;
+	  top:120%;
+	  color:#fff;
+	  padding:2em;
+	  margin:2em;
+	  opacity:0;
+	  cursor:pointer;
+	  background:rgba(0 ,0 ,0 ,.2);
+	  border-radius:3px;
+  }
+  
+  .next{
+	  right:0;
+  }
+  
+  
+  .img_slider{
+	  display:none;
+	  animation:fade-slide 5s;
+	  
+  }
+  
+  @keyframes fade-slide{
+	  from{
+		  opacity: .9;
+	  }
+	  to{
+		  
+		  opacity:1;
+	  }
+  
+  }
+  
+  .slider_container:hover .prev  , .slider_container:hover .next{
+	  opacity:1;
+  }
+  
+  
+  
