@@ -309,7 +309,11 @@
 
 
 
+        /* HAIR CARE MAIN CONTENT */
 
+        /* TOP BACKGROUND IMAGE AND FILTER / SORT OPTION */
+
+        /* BACKGROUND IMAGE ( HAIR CARE TEXT ) */
         #top_backgrd_hear_care{
             border: 1px solid transparent;
             width: 100%;
@@ -322,12 +326,15 @@
             text-align: center;
             padding-top: 100px;
         }
+
+        /* FILTER AND SORT FEATURE */
         #filter_price{
             width: 80%;
             margin: auto;
             display: flex;
             justify-content: center;
         }
+        /* FILTER AS PER CATEGORY / SORT AS  PER PRICE  */
         #filter, #sorted{
             font-weight: lighter;
             padding: 15px 100px;
@@ -339,6 +346,8 @@
             font-size: larger;
             font-weight: bolder;
         }
+
+        /* SHORTCUT FOR HOME PAGE  */
         #h3_home_link{
             color: rgb(110, 110, 110);
             text-decoration: none;
@@ -346,6 +355,8 @@
         #h3_home_link:hover{
             text-decoration: underline;
         }
+
+        /* HAIR PRODUCT IN GIRD */
         #hair_container{
             width: 80%;
             margin: auto;
@@ -357,11 +368,15 @@
         #hair_container>div{
             background-color: #f9f9f9;
         }
+
+        /* PRODUCT IMAGE  */
         #prodimg{
             width: 100%;
             height: 275px;
             cursor: pointer;
         }
+
+        /* PRICE AND WISHLIST GROUP */
         .priceWishSmallDiv{
             height: 40px;
             display: flex;
@@ -387,6 +402,8 @@
         #hair_container>div:nth-child(17)>.addCartButton{
             margin-top: 5%;
         }
+
+        /* ADD CART BUTTON  */
         .addCartButton{
             border: 2px solid black;
             background-color: transparent;
@@ -399,7 +416,7 @@
         }
     </style>
 </head>
-<body>
+<body style="margin: 0;">
     <!--THE HEADER PART -->
 	<div class="header">
 		<div class="main--Navbar">
@@ -492,12 +509,21 @@
 
 	</div>
 	 
+    <!-- HAIR CARE MAIN CONTENT -->
     <div style="font-family: 'calibre';">
+
+        <!-- TOP BACKGROUND IMAGE AND FILTER / SORT OPTION  -->
         <div style="background-color: #f9f9f9; padding-bottom: 20px; margin-bottom: 10px;">
+
+            <!-- BACKGROUND IMAGE ( HAIR CARE TEXT ) -->
             <div id="top_backgrd_hear_care">
                 <span style="background-color: rgba(0, 0, 0, 0.4); padding: 5px 10px; font-size: 350%; font-weight: lighter; color: #fff;">HAIR CARE</span>
             </div>
+
+            <!-- FILTER AND SORT FEATURE  -->
             <div id="filter_price">
+
+                <!-- FILTER AS PER CATEGORY  -->
                 <select name="" id="filter" onchange="filtercat()">
                     <option value="">FILTERS</option>
                     <option value="REPAIR">HAIR REPAIR</option>
@@ -507,6 +533,8 @@
                     <option value="CLEANSER">HAIR CLEANSER</option>
                     <option value="OIL">HAIR OIL</option>
                 </select>
+
+                <!-- SORT BY PRICE  -->
                 <select name="" id="sorted" onchange="sortprice()">
                     <option value="">SORT BY</option>
                     <option value="low">LOW - HIGH</option>
@@ -514,19 +542,27 @@
                 </select>
             </div>
         </div>
+
+        <!-- SHORCUT TO MOVE TO HOME  -->
         <div style="margin: auto; width: 80%; margin-top: 40px; margin-bottom: 20px;">
             <p style="font-family: sans-serif; font-size: small; color: rgb(110, 110, 110);"><a href="index.html" id="h3_home_link">HOME</a> > HAIR CARE</p>
         </div>
+
+        <!-- HAIR PRODUCT IN GIRD -->
         <div id="hair_container">
         </div>
+
+        <!-- ENDING LINES OF HAIR PRODUCTS GRID  -->
         <div style="width: 80%; margin: auto; padding-top: 30px;">
             <p style="font-size: large; text-align: left; color: gray;">In ancient India, special emphasis was given to <strong style="color: rgb(78, 78, 78);">ayurvedic hair care</strong> since beautiful hair has been prized throughout history. Ancient Indian texts have always
                 <br>
-                depicted women with luxurious tresses. For these <strong style="color: rgb(78, 78, 78);">hair treatments</strong>, apprentices would collect the ingredients prescribed by an Ayurvedic physician, including leaves
+                depicted women with luxurious tresses. For these <strong style="color: rgb(78, 78, 78);">hair treatments</strong>, apprentices would collect the ingredients prescribed by an Ayurvedic physician, including leaves of
                 <br>
-                of the Brahmi plant, Jatamansi (or spikenard), Amla, Bhringraj, and Japapatti - that were and still are considered essential for the health of hair.All these herbs and roots
+                the Brahmi plant, Jatamansi (or spikenard), Amla, Bhringraj, and Japapatti - that were and still are considered essential for the health of hair.All these herbs and roots were
                 <br>
-                were then soaked in Coconut oil for a day or two until the oil became green. The herb enriched oil was then blended over slow fire for a residual paste, which was then strained to be applied onto hair every night. Such herbal pastes were warmed and stored in copper vessels - which imparted their own nutritional properties to the oil.</p>
+                then soaked in Coconut oil for a day or two until the oil became green. The herb enriched oil was then blended over slow fire for a residual paste, which was then strained
+                <br>
+                to be applied onto hair every night. Such herbal pastes were warmed and stored in copper vessels - which imparted their own nutritional properties to the oil.</p>
         </div>
     </div>
     
@@ -534,6 +570,8 @@
 </html>
 
 <script>
+
+    // DATA OF PRODUCTS 
     var data = [
             {
             imgUrl: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/7/17018_intensive_hair_repair_masque_japapatti_brahmi_100g_copy.png",
@@ -678,6 +716,7 @@
         ];
         showData(data);
 
+    // SORT BY PRICE FUNCTION 
         function sortprice(){
             var selected = document.querySelector("#sorted").value
             if(selected == "low"){
@@ -693,6 +732,7 @@
             showdata(data);
         };
 
+    // FILTER BY CATEGORY FUNCTION 
         function filtercat(){
             var selected=document.querySelector("#filter").value;
             var filterdata = data.filter(function(elem){
@@ -701,6 +741,7 @@
             showdata(filterdata);
         }
 
+    // DISPLAY PRODUCT TO MAIN SCREEN 
         function showData(data){
             var body=document.querySelector("#hair_container");
             body.innerHTML="";
