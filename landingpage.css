@@ -27,7 +27,7 @@ p{
     width: 210px;
     letter-spacing: 3px;
 }
-button{
+#newslettercontainer button{
     background-color: #d2ab67;
     border: 1px solid #d2ab67;
     color: white;
