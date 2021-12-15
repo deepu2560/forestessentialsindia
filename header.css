@@ -20,10 +20,10 @@ body{
 
 /********************HEADER*****************************/
 
-.header{
+.main--Navbar{
 	font-size:10px;
 }
-.header *{
+.main--Navbar *{
 	box-sizing: border-box;
 }
 
