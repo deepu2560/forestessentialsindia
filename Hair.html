@@ -362,11 +362,11 @@
             margin: auto;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(5, 500px);
             grid-gap: 10px;
         }
         #hair_container>div{
             background-color: #f9f9f9;
+            height: 500px;
         }
 
         /* PRODUCT IMAGE  */
@@ -576,7 +576,7 @@
             {
             imgUrl: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/7/17018_intensive_hair_repair_masque_japapatti_brahmi_100g_copy.png",
             prodhead: "INTENSIVE HAIR REPAIR MASQUE JAPAPATTI & BRAHMI",
-            prodcat: "HAIR REPAIR",
+            prodcat: "REPAIR",
             prodweight: "100 g",
             prodprice: 875,
             },
@@ -724,21 +724,22 @@
                     return Number(a.prodprice)-Number(b.prodprice);
                 });
             }
-            else if(selected == "high"){
+            if(selected == "high"){
                 data.sort(function(a, b){
                     return Number(b.prodprice)-Number(a.prodprice);
                 });
             }
-            showdata(data);
+            showData(data);
         };
 
     // FILTER BY CATEGORY FUNCTION 
         function filtercat(){
             var selected=document.querySelector("#filter").value;
+            document.querySelector("#hair_container").style
             var filterdata = data.filter(function(elem){
                 return elem.prodcat == selected;
             });
-            showdata(filterdata);
+            showData(filterdata);
         }
 
     // DISPLAY PRODUCT TO MAIN SCREEN 
