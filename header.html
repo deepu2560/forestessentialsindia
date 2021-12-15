@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="header.css">
+
+
+	 <title></title>
+	</head>
+<body>
+	<!--THE HEADER PART -->
+	<div class="header">
+		<div class="main--Navbar">
+			<!-- NOTIFY DIV -->
+			<div class="ads">
+				<div class="notify">COMPLIMENTARY SAMPLES ON EVERY PURCHASE!</div>
+				<div class="notify">WE DELIVER ACROSS INDIA &amp; INTERNATIONALLY.</div>
+				<div class="notify">RECEIVE COMPLIMENTARY <a href="/shop.html"><u>GIFT BOXES</u></a> UP TO ₹6500/-</div>
+			</div>
+
+			<!--NAVBAR MAIN -->
+			<div class="navbar">
+				<!-- IMAGE NAVBAR 1-->
+				<div class="navbar--1">
+					<div class="submenu--left">
+						<div class="submenu-mg">
+							<a href="#search" id="search"><img src=".\img\search-icon.png"></a>
+						</div>
+						<div class="margin-right mg-medium">STORES</div>
+						<div>
+							<select class="INR">
+								<option>INR</option>
+							</select>
+						</div>
+					</div>
+					<div class="submenu--center">
+						<img class="submenu--logo" src=".\img\FE-Logo_1.webp">
+					</div>
+					<div class="submenu--right">
+						<div class="mg-medium">account</div>
+						<div class="mg-medium">wishlist</div>
+						<div>
+							<div class="cart">
+								<img src="./img/cart-icon.png" >
+								<span>0</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+				<!-- IMAGE NAVBAR 2 LINKS-->
+				<div class="navbar--2">
+					<ul class="navbar_nav">
+						<li class="nav-item comment-tag">
+							<img src="./img/new.jpg" >
+							<a href="" class="nav-link">bespoker services</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">facial care</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >body care</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >hair care</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >makeup</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >wellness</a>
+						</li>
+						<li class="nav-item festivel-tag">
+							<img src="./img/festival.jpg" >
+							<a href="" class="nav-link" >gifting</a>
+						</li>	
+						<li class="nav-item">
+							<a href="" class="nav-link" >rituals</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >collections</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >discover</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<!--ONCLIK SEARCH BAR SHOW --->
+				<div class="search" id="hide">
+					<div class="search--div">
+						<input type="text" placeholder="search the web store" class="search_input">
+						<img src=".\img\search-icon.png">
+					</div>
+					<img class="cross--icon" src="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/images/cross-icon.svg" id="show">
+				</div>
+			</div>
+		</div>	
+
+		<!-- IMAGE SLIDER -->
+		<div class="slider_container">
+			<div class="img_slider">
+				<img  src="./img/slide1.jpg" width="100%" height="100%" id="img1"> 
+			</div>
+			<div class="img_slider">
+				<img src="./img/slide2.jpg" width="100%" height="100%" id="img2">
+			</div>
+			<div class="img_slider">
+				<img src="./img/slide3.jpg" width="100%" height="100%" id="img3">
+			</div>
+			<div class="img_slider">
+				<img src="./img/slide4.jpg" width="100%" height="100%" id="img4">
+			</div>
+
+			<a class="prev" onclick="plus(-1)">&#10094;</a>
+	  		<a class="next" onclick="plus(1)">&#10095;</a>	
+		</div>
+	</div>
+	 
+</body>
+</html>
+<script src="header.js"></script>
+
+<script>
+	
+
+
+	//ONCLICK IMAGE SLIDER
+	var index = 1 
+	show(index)
+
+	//previous button and next
+	function plus(n){
+		show(index += n)
+	}
+
+	
+
+	function show(n) {
+		var allImg = document.querySelectorAll(".img_slider")
+
+		var dots = document.querySelectorAll(".dot")
+		if(n > allImg.length) {
+			index = 1
+		}
+		if(n < 1){
+			index = allImg.length
+		}
+
+		for(var i = 0 ; i < allImg.length ; i++){
+			allImg[i].style.display = "none"
+		}
+
+		allImg[index-1].style.display = "block";
+	}
+
+
+	//AUTOMATIC IMAGE SLIDER 
+	var idx = 0
+	autoShow()
+
+	function autoShow(){
+		var imgs = document.querySelectorAll(".img_slider")
+		for(var i = 0 ; i < imgs.length ; i++){
+			imgs[i].style.display = "none"
+		}
+		idx++;
+		if(idx > imgs.length){
+			idx = 1
+		}
+		imgs[idx - 1].style.display = "block"
+		setTimeout(autoShow , 3000)
+	}
+
+
+
+
+
+</script>
