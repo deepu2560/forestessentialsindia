@@ -1,3 +1,93 @@
+/* From here Category css start */
+.wishlist{
+    width: 12px;
+    height: 15px;
+    padding: 10px 0px 0px 10px;
+}
+.wishlist:hover{
+    cursor: pointer;
+}
+.icon-wishlist{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    padding-bottom: 0px;
+}
+body{
+    margin: 0px;
+}
+.catimage{
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#facial-image-height{
+    height: 281px;
+    background-image: url(https://images.forestessentialsindia.com/pub/media/catalog/category/1_Facial_Care_MG_7073_final_2880x640-min-min_1.jpg);
+}
+#collections-image-height{
+    height: 400px;
+    background-image: url(https://images.forestessentialsindia.com/pub/media/catalog/category/6_Collections_2880-x-840-Domestic.jpg);
+}
+.catname{
+    background-color: rgba(0,0,0,0.5);
+    width: 280px;
+    letter-spacing: 7px;
+    font-family: sans-serif;
+}
+.cattag{
+    padding: 30px 10px ;
+}
+.cattag span{
+    margin-left: 4px;
+    font-size: 13px;
+    font-family: calibri;
+    letter-spacing: 2.8px;
+
+}
+.cattag a{
+    text-decoration: none;
+}
+#facialproducts {
+    display: grid;
+    width: 1260px;
+    margin: auto;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+#facialproducts>div{
+    background-color: #fbf9f9;
+    font-size: 14px;
+    font-family: calibri;
+    letter-spacing: 2.8px;
+    width: 315px;
+}
+#facialproducts>div p{
+    padding: 0px 20px ;
+}
+#facialproducts .price{
+    padding: 20px;
+}
+button{
+    padding: 15px 30px;
+    width: 100%;
+    margin-bottom: 20px; 
+    color: black;
+    border: 1px solid black;
+    font-size: 14px;
+    font-family: calibri;
+    letter-spacing: 2.8px;
+}
+#facialproducts div>p{
+    height: 60px;
+}
+
+/* css for newlatter starts from here */
 #newslettercontainer{
     background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/newsletter-bg.jpg);
     text-align: center;
@@ -38,7 +128,7 @@ p{
     height: 48.5px;
     letter-spacing: 3px;
 }
-button:hover{
+#newslettercontainer button:hover{
     background-color: black;
     border-color: white;
 }
@@ -133,100 +223,4 @@ button:hover{
     padding-top: 25px;
     font-size: 13px;
     border-top: 1px solid #e8e8e8;
-}
-
-
-/* From here Category css start */
-
-.wishlist{
-    width: 12px;
-    height: 15px;
-    padding: 10px 0px 0px 10px;
-}
-.wishlist:hover{
-    cursor: pointer;
-}
-.icon-wishlist{
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    padding-bottom: 0px;
-}
-body{
-    margin: 0px;
-}
-.catimage{
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-#facial-image-height{
-    height: 281px;
-    background-image: url(https://images.forestessentialsindia.com/pub/media/catalog/category/1_Facial_Care_MG_7073_final_2880x640-min-min_1.jpg);
-}
-#collections-image-height{
-    height: 400px;
-    background-image: url(https://images.forestessentialsindia.com/pub/media/catalog/category/6_Collections_2880-x-840-Domestic.jpg);
-}
-.catname{
-    background-color: black;
-    opacity: .5;
-    width: 280px;
-    letter-spacing: 7px;
-    font-family: sans-serif;
-}
-.catsort{
-    padding: 40px 0px;
-    background-color: #fbf9f9;
-}
-.cattag{
-    padding: 30px 10px ;
-}
-.cattag span{
-    margin-left: 4px;
-    font-size: 13px;
-    font-family: calibri;
-    letter-spacing: 2.8px;
-
-}
-.cattag a{
-    text-decoration: none;
-}
-#facialproducts {
-    display: grid;
-    width: 1260px;
-    margin: auto;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
-}
-#facialproducts>div{
-    background-color: #fbf9f9;
-    font-size: 14px;
-    font-family: calibri;
-    letter-spacing: 2.8px;
-    width: 315px;
-}
-#facialproducts>div p{
-    padding: 0px 20px ;
-}
-#facialproducts .price{
-    padding: 20px;
-}
-button{
-    padding: 15px 30px;
-    width: 100%;
-    margin-bottom: 20px; 
-    color: black;
-    border: 1px solid black;
-    font-size: 14px;
-    font-family: calibri;
-    letter-spacing: 2.8px;
-}
-#facialproducts div>p{
-    height: 60px;
 }

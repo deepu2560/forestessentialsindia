@@ -3,6 +3,35 @@
 <head>
     <link rel="stylesheet" href="category.css">
     <title>Our Body Care Products</title>
+    <style>
+        .filter_button{
+            width: 250px;
+            border: 1px solid rgb(73, 69, 69);
+            background-color:white ;
+            font-family: Calibri;
+            font-size: 13px;
+            margin: auto;
+        }
+        .catfilter:hover{
+            cursor: pointer;
+        }
+        .catsort{
+            padding: 30px 0px;
+            background-color: #fbf9f9;
+            display: flex;
+            justify-content: center;
+        }
+        .filter_block{
+            margin: auto;
+            display:none;
+            grid-template-columns: repeat(4,1fr);
+            justify-content: space-between;
+            font-size: 14px;
+            font-family: calibri;
+            letter-spacing: 2px;
+            background-color: #fbf9f9;
+        }
+    </style>
 </head>
 <body>
     <div class="catview">
@@ -12,12 +41,57 @@
             </div>
         </div>
         <div class="catsort">
-            <select name="" id="">Filter</select>
-            <select name="" id=""></select>
+            <div>
+                <button id="filter_block_open" class="filter_button" onclick="show()">Filter</button>
+                <button id="sort_by_open" class="filter_button">SORT BY</button>
+            </div>
+        </div>
+        <div class="filter_block">
+            <div>
+                <ul style="list-style: none;">
+                    <li><h4>CONCERN</h4></li>
+                    <li><input type="checkbox">DRYNESS </li>
+                    <li><input type="checkbox">DULLNESS </li>
+                    <li><input type="checkbox">OILINESS </li>
+                    <li><input type="checkbox">TAN REMOVAL </li>
+                    <li><input type="checkbox">PERSPIRATION </li>
+                    <li><input type="checkbox">STRETCHMARKS </li>
+                    <li><input type="checkbox">LOSS OF ELASTICITY </li>
+                    <li><input type="checkbox">PIGMENTATION OR BLEMISHES </li>
+                </ul>
+            </div>
+            <div>
+                <ol style="list-style: none;">
+                    <li><h4>HAIR TYPE</h4></li>
+                    <li><input type="checkbox">CURLY </li>
+                    <li><input type="checkbox">WAVY </li>
+                    <li><input type="checkbox">STRAIGHT </li>
+                    <li><input type="checkbox">OILY SCALP </li>
+                    <li><input type="checkbox">DRY SCALP </li>
+                </ol>
+            </div>
+            <div>
+                <ol style="list-style: none;">
+                    <li><h4>SKIN TYPE</h4></li>
+                    <li><input type="checkbox">DRY</li>
+                    <li><input type="checkbox">NORMAL </li>
+                    <li><input type="checkbox">COMBINATION/OILY</li>
+                </ol>
+            </div>
+            <div>
+                <ol style="list-style: none;">
+                    <li><h4>PRICE</h4></li>
+                    <li><input type="checkbox">₹0.00 - ₹999.99</li>
+                    <li><input type="checkbox">₹1,000.00 - ₹1,999.99</li>
+                    <li><input type="checkbox">₹2,000.00 - ₹2,999.99</li>
+                    <li><input type="checkbox">₹3,000.00 - ₹3,999.99</li>
+                    <li><input type="checkbox">₹4,000.00 AND ABOVE</li>
+                </ol>
+            </div>
         </div>
         <div class="cattag">
                 <span><a href="">HOME </a><span>
-                <span>> FACIAL CARE<span>
+                <span>> BODY CARE<span>
         </div>
     </div>
     <div id="facialproducts">
@@ -170,6 +244,19 @@
             maindiv.append(div1,div2,div3,div4,button)
             document.querySelector('#facialproducts').append(maindiv)
         })
+    }
+    var flag = 1
+    function show(event){
+        if(flag == 1)
+        {
+            document.querySelector('.filter_block').style.display = "grid"
+            flag = 0
+        }
+        else
+        {
+            document.querySelector('.filter_block').style.display = "none"
+            flag = 1
+        }
     }
     // var arr = [{
     //         img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/5/15327_travel-size-intense-perfumed-body-mist-chandani-raatein_front.png",
