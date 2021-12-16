@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Create An Account</title>
+    <style>
+        @font-face{
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+            src: local('Material Icons'),
+                local('MaterialIcons-Regular'),
+                url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+                url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+                url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+        }
+        .material-icons{
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;  /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+            margin-top: 10px;
+            cursor: pointer;
+
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+        }
+
+
+        /********************HEADER*****************************/
+
+        .main--Navbar{
+            font-size:10px;
+        }
+        .main--Navbar *{
+            box-sizing: border-box;
+        }
+
+        /************** Notification *********************/
+        .ads{
+            background:#333;
+            color:#fff;
+            height:5vh;
+            font-size:1em;
+            text-align: center;
+            letter-spacing:1.8px;
+            line-height:14px;
+            padding: 10px 10px 8px 10px;
+            overflow:hidden;
+        }
+
+        .notify{
+            display: none;
+            animation: left-side .1s ;
+        }
+
+
+        @keyframes left-side{
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+
+
+
+        /*******************Navbar ***************/
+        .navbar{
+            background: #fbf9f9;
+            
+        }
+
+        /* nav-1 */
+        .navbar--1{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            width:95%;
+            margin:auto ;
+            padding:1.5em;
+            text-transform: uppercase;
+            font-size:1em;
+            letter-spacing:3px;
+            line-height: 15.7143px;
+            border-bottom:1px solid #ebebeb;
+            font-weight: 400;
+            color:#888;
+        }
+        .INR{
+            letter-spacing:3px;
+            border: none;
+            font-size:1em;
+            background: #fbf9f9;
+        }
+        .submenu--left , .submenu--right{
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .margin-right{
+            margin-right:1em;
+        }
+
+        .submenu-mg{
+            margin-right:4em;
+
+        }
+
+        .mg-medium{
+            margin-right:2em;
+        }
+
+        .submenu--logo{
+            width:16em;
+            height:10.7em;
+        }
+
+        /* nav-2 */
+        .navbar--2{
+            background:#fbf9f9;
+        }
+
+        .navbar_nav{
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            list-style:none;
+            text-transform:uppercase;
+            font-size: larger;
+            letter-spacing:3px;
+            padding:1em;
+            color:rgb(0, 0, 0);
+            margin:0;
+            line-height: normal;
+            font-stretch: expanded;
+            font-weight:100;
+
+
+            
+        }
+
+        .nav-item{
+            margin-right:3em;
+        }
+
+        .nav-link , .nav-link:link , .nav-link:active{
+            text-decoration: none;
+            color:#888;
+        }
+
+
+        .comment-tag{
+            display:flex;
+            align-items:center;
+        }
+        .comment-tag img{
+            margin-top:-7px;
+            margin-right:.5em;
+            width:32px;
+            height:32px;
+        }
+
+        .festivel-tag{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+
+        }
+        .festivel-tag img{
+            width:40px;
+            height:40px;
+            margin-top:-4em;
+            
+
+        }
+
+        /******************ON SCROLL EDIT NAV *********************/
+        .nav_scroll{
+            box-shadow: 0 2px 3px rgb(57 63 72 / 20%);
+            position: sticky;
+            top: 0;
+            z-index: 9;
+            background: #fbf9f9;
+        }
+        .nav_scroll .submenu--logo{
+            width:8.5em;
+            height:5em;
+        }
+        .nav_scroll .navbar--1{
+            padding:1em;
+        }
+
+
+        /*****************cart ********************/
+
+        .cart{
+
+            position:relative;
+        }
+
+        .cart > span{
+            position: absolute;
+            display:inline-block;
+            z-index: 1; 
+            width:25px;
+            height:25px;
+            border: 1px solid black;
+            left:10px;
+            top: 10px;
+            border-radius: 50px;
+            text-align:center;
+            padding-top:5px;
+            padding-left:2px;
+            color:#fff;
+            background:black;
+
+        } 
+
+        /******************************SEARCH*******************************************/
+
+
+        .search{
+            height:20vh;
+            color:#757575;
+            width:95%;
+            margin:auto;
+            text-align: center;
+            position:relative;
+            z-index:1;
+            margin-top:1%;
+            
+        }
+        #hide{
+            display:none;
+        }
+
+        .search--div{
+
+            padding-right:1em;
+            background:#fff;
+            border: 2px solid #eee;
+            margin: auto;
+            display:inline-block;
+            width:50%;
+            margin-top:4em;
+            
+        }
+
+
+        .search_input{
+            width:55em;
+            height: 50px;
+            padding: 0 15px;
+            margin: 0;
+            font-family: inherit;
+            font-size: 1em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            border: none;
+        }
+
+        .search_input:focus{
+            outline:none;
+        }
+
+        .cross--icon{
+            position:absolute;
+            width:2em;
+            height:2em;
+            right:1em;
+            top:50px;
+            cursor: pointer;
+            
+
+
+        }
+
+        #search{
+            outline:none;
+        }
+
+
+
+        /* MAIN SIGN UP CONTENT  */
+
+        /* SIGN UP CONTENT START  */
+            #main_signup_div{
+                width: 50%;
+                margin: auto;
+                border: 1px solid transparent;
+                padding: 20px;
+                font-family: sans-serif;
+                word-spacing: 1px;
+            }
+            #main_signup_div>h2{
+                    font-size: xx-large;
+                    font-weight: lighter;
+                }
+            #main_signup_div>div{
+                width: 80%;
+                border: 1px solid transparent;
+                margin: auto;
+                height: 650px;
+        }
+
+        /* SIGN UP FORM IN TABLE FORM  */
+            .signup_form_label{
+                text-align: left;
+                width: 500px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: rgb(87, 86, 86);
+                font-weight: lighter;
+            }
+            #signup_pleaseselect{
+                width: 300px;
+                height: 40px;
+                color: rgb(87, 86, 86);
+            }
+            #firstname{
+                width: 300px;
+                height: 40px;
+            }
+            #lastname{
+                width: 300px;
+                height: 40px;
+            }
+            #customeremail{
+                width: 300px;
+                height: 40px;
+            }
+            #customerphnnum{
+                width: 300px;
+                height: 40px;
+            }
+
+        /* PASSWORD SECTION  */
+            #password{
+                width: 300px;
+                height: 40px;
+            }
+            #confirmpassword{
+                width: 300px;
+                height: 40px;
+            }
+
+        /* SIGN UP BUTTON */
+            #signup_button{
+                font-size: larger;
+                font-weight: lighter;
+                background-color: transparent;
+                border: 1px solid black;
+                width: 100%;
+                padding: 10px;
+                color: rgb(87, 86, 86);
+            }
+    </style>
+</head>
+<body style="margin: 0;">
+    <!--THE HEADER PART -->
+	<div class="header">
+		<div class="main--Navbar">
+			<!-- NOTIFY DIV -->
+			<div class="ads">
+				<div class="notify">COMPLIMENTARY SAMPLES ON EVERY PURCHASE!</div>
+				<div class="notify">WE DELIVER ACROSS INDIA &amp; INTERNATIONALLY.</div>
+				<div class="notify">RECEIVE COMPLIMENTARY <a href="/shop.html" style="color: white;"><u>GIFT BOXES</u></a> UP TO ₹6500/-</div>
+			</div>
+
+			<!--NAVBAR MAIN -->
+			<div class="navbar">
+				<!-- IMAGE NAVBAR 1-->
+				<div class="navbar--1">
+					<div class="submenu--left">
+						<div class="submenu-mg">
+							<a href="#search" id="search" style="color: black;"><span class="material-icons">
+                                search
+                                </span></a>
+						</div>
+						<div class="margin-right mg-medium">STORES</div>
+						<div>
+							<select class="INR">
+								<option>INR</option>
+							</select>
+						</div>
+					</div>
+					<div class="submenu--center">
+						<a href="index.html" style="cursor: pointer;"><img class="submenu--logo" src="https://images.forestessentialsindia.com/pub/media/logo/stores/2/FE-Logo_1.png"></a>
+					</div>
+					<div class="submenu--right">
+						<div class="mg-medium">account</div>
+						<div class="mg-medium">wishlist</div>
+						<div>
+							<div class="cart">
+								<img src="https://www.forestessentialsindia.com/checkout/cart/">
+								<span>0</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+				<!-- IMAGE NAVBAR 2 LINKS-->
+				<div class="navbar--2">
+					<ul class="navbar_nav">
+						<li class="nav-item comment-tag">
+							<a href="" class="nav-link">bespoker services</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">facial care</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >body care</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >hair care</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >makeup</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >wellness</a>
+						</li>
+						<li class="nav-item festivel-tag">
+							<a href="" class="nav-link" >gifting</a>
+						</li>	
+						<li class="nav-item">
+							<a href="" class="nav-link" >rituals</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >collections</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >discover</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<!--ONCLIK SEARCH BAR SHOW --->
+				<div class="search" id="hide">
+					<div class="search--div">
+						<input type="text" placeholder="search the web store" class="search_input">
+					</div>
+					<img class="cross--icon" src="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/images/cross-icon.svg" id="show">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	 
+    <!-- MAIN SIGN UP CONTENT  -->
+    <div id="main_signup_div">
+        <!-- SIGN UP CONTENT START  -->
+        <h2>Create An Account</h2>
+        <div>
+            <h5 style="color: rgb(87, 86, 86);">PERSONAL INFORMATION</h5>
+            <hr>
+            <!-- SIGN UP FORM IN TABLE FORM  -->
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="signup_form_label">TITLE*</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="signup_pleaseselect">
+                                <option value="">PLEASE SELECT</option>
+                                <option value="mr">Mr.</option>
+                                <option value="ms">Ms.</option>
+                                <option value="mrs">Mrs.</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="signup_form_label">FIRST NAME*</td>
+                        <td class="signup_form_label">LAST NAME*</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="firstname"></td>
+                        <td><input type="text" id="lastname"></td>
+                    </tr>
+                    <tr>
+                        <td class="signup_form_label">EMAIL ADDRESS*</td>
+                        <td class="signup_form_label">PHONE NUMBER *</td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" id="customeremail"></td>
+                        <td><input type="number" id="customerphnnum"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- PASSWORD SECTION  -->
+            <h5>SECURITY</h5>
+            <hr>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="signup_form_label">CREATE PASSWORD*</td>
+                        <td class="signup_form_label">CONFIRM PASSWORD*</td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" id="password"></td>
+                        <td><input type="text" id="confirmpassword"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- BELOW SIGN UP FORM  -->
+            <input type="checkbox"><label class="signup_form_label">SIGN UP TO OUR NEWSLETTER</label>
+            <br>
+            <h6 style="color: rgb(207, 6, 6);">*Required Fields</h6>
+            <br>
+
+            <!-- SIGN UP BUTTON  -->
+            <button id="signup_button">CREATE AN ACCOUNT</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("#signup_button").addEventListener("click", adddata);
+    var userdata=JSON.parse(localStorage.getItem("UserData"))||[];
+    function adddata(event) {
+        event.preventDefault();
+        var title=document.querySelector("#signup_pleaseselect").value;
+        var firstname=document.querySelector("#firstname").value;
+        var lastname=document.querySelector("#lastname").value;
+        var email=document.querySelector("#customeremail").value;
+        var phone=document.querySelector("#customerphnnum").value;
+        var pass=document.querySelector("#password").value;
+        var confirmpass = document.querySelector("#confirmpassword").value
+        
+        if(title=="" || firstname=="" || lastname=="" || email=="" || phone==""  || pass=="" || confirmpass==""){
+            alert("ERROR! fill all empty slot");
+        }
+        else if(pass !== confirmpass){
+            alert("ERROR! Check password carefully");
+        }
+        else{
+            var obj={
+                usertitle: title,
+                userfname: firstname,
+                userlname: lastname,
+                useremail: email,
+                userphone: phone,
+                userpassword: pass
+            }
+            userdata.push(obj);
+            localStorage.setItem("UserData", JSON.stringify(userdata));
+            alert("You have successfully SIGNED UP, Now LOG IN");
+        }
+    }
+</script>
+
+
+
+<script>
+    //SHOW ON CLICK SEARCH
+	document.querySelector("#search").addEventListener("click" , showSearchBar)
+
+    function showSearchBar(){
+        var showhidesearch = document.querySelector("#hide")
+        showhidesearch.style.display = "block"
+
+        var hidenav = document.querySelector(".navbar--2")
+        hidenav.style.display = "none"
+    }
+
+
+    document.querySelector("#show").addEventListener("click" , function(){
+        var showhidesearch = document.querySelector("#hide")
+        showhidesearch.style.display = "none"
+
+        var hidenav = document.querySelector(".navbar--2")
+        hidenav.style.display = "block"
+    })
+
+
+
+    //FOR THE NOTIFICATION SLIDER
+    var notifyIndx = 0
+    notifyslider(notifyIndx)
+
+
+    function notifyslider(){
+    var n = document.querySelectorAll(".notify")
+    for(var i = 0 ; i < n.length ; i++){
+        n[i].style.display = "none"
+    }
+    notifyIndx++;
+    if(notifyIndx > n.length){
+        notifyIndx = 1
+    }
+    n[notifyIndx - 1].style.display = "block"
+    setTimeout(notifyslider , 3000)
+    }
+
+
+    //HEADER CSS CHANGE WHILE ON SCROLL
+    var header = document.querySelector(".navbar")
+    window.onscroll = function (e) {
+    if(window.scrollY > 80){
+        console.log(header.classList)
+        header.classList.add("nav_scroll")
+        
+    }else{
+        header.classList.remove("nav_scroll")
+
+    }
+    };
+
+</script>
