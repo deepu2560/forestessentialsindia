@@ -42,8 +42,7 @@ function notifyslider(){
 //HEADER CSS CHANGE WHILE ON SCROLL
 var header = document.querySelector(".navbar")
 window.onscroll = function (e) {
-    if(window.scrollY > 80){
-    	console.log(header.classList)
+    if(window.scrollY > 20){
     	header.classList.add("nav_scroll")
     	
     }else{

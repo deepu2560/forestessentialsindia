@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/ritualspage.css">
     <title>rituals </title>
 </head>
 <body>
@@ -24,7 +26,7 @@
             <div class="navbar--1">
                 <div class="submenu--left">
                     <div class="submenu-mg">
-                        <a href="#search" id="search"><img src=".\img\search-icon.png"></a>
+                        <a href="#search" id="search"><img src="..\img\search-icon.png"></a>
                     </div>
                     <div class="margin-right mg-medium">STORES</div>
                     <div>
@@ -34,14 +36,14 @@
                     </div>
                 </div>
                 <div class="submenu--center">
-                    <img class="submenu--logo" src=".\img\FE-Logo_1.webp">
+                    <a href="../header.html"><img class="submenu--logo" src="..\img\FE-Logo_1.webp"></a>
                 </div>
                 <div class="submenu--right">
                     <div class="mg-medium">account</div>
                     <div class="mg-medium">wishlist</div>
                     <div>
                         <div class="cart">
-                            <img src="./img/cart-icon.png" >
+                            <img src="../img/cart-icon.png" >
                             <span>0</span>
                         </div>
                     </div>
@@ -53,7 +55,7 @@
             <div class="navbar--2">
                 <ul class="navbar_nav">
                     <li class="nav-item comment-tag">
-                        <img src="./img/new.jpg" >
+                        <img src="../img/new.jpg" >
                         <a href="" class="nav-link">bespoker services</a>
                     </li>
                     <li class="nav-item">
@@ -72,7 +74,7 @@
                         <a href="" class="nav-link" >wellness</a>
                     </li>
                     <li class="nav-item festivel-tag">
-                        <img src="./img/festival.jpg" >
+                        <img src="../img/festival.jpg" >
                         <a href="" class="nav-link" >gifting</a>
                     </li>   
                     <li class="nav-item">
@@ -92,12 +94,15 @@
             <div class="search" id="hide">
                 <div class="search--div">
                     <input type="text" placeholder="search the web store" class="search_input">
-                    <img src=".\img\search-icon.png">
+                    <img src="..\img\search-icon.png">
                 </div>
                 <img class="cross--icon" src="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/images/cross-icon.svg" id="show">
             </div>
         </div>
     </div>
+
+
+    <!-- RITUAL PRODUCT PAGE -->
     <div class="ritual--page">
     	<div class="ritual--name">
 	    	<div class="ritual--name__header">
@@ -118,46 +123,57 @@
             
         </div>
     </div>
+
+
 </body>
 </html>
 
-<script src="header.js"></script>
-<script src="ritualsProductData.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/ritualsProductData.js"></script>
+
+<!--SHOW PRODUCT DETAILS JS FILE -->
+<script src="../js/showProductDetails.js"></script>
 <script>
         displayData(data)
         function displayData(arr){
 
             
-            arr.map(function(e){
+            arr.map(function(ele){
                 
                 
                 var div = document.createElement("div")
 
                 //HEART ICON
-                var icon = document.createElement("img")
-                icon.setAttribute("src" , "data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0NTUgNDU1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NTUgNDU1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggZD0iTTMyNi42MzIsMTAuMzQ2Yy0zOC43MzMsMC03NC45OTEsMTcuNTM3LTk5LjEzMiw0Ni45MmMtMjQuMTQxLTI5LjM4NC02MC4zOTgtNDYuOTItOTkuMTMyLTQ2LjkyICBDNTcuNTg2LDEwLjM0NiwwLDY3LjkzMSwwLDEzOC43MTRjMCw1NS40MjYsMzMuMDUsMTE5LjUzNSw5OC4yMywxOTAuNTQ2YzUwLjE2MSw1NC42NDcsMTA0LjcyOCw5Ni45NTksMTIwLjI1NywxMDguNjI2bDkuMDEsNi43NjkgIGw5LjAxLTYuNzY4YzE1LjUyOS0xMS42NjcsNzAuMDk4LTUzLjk3OCwxMjAuMjYtMTA4LjYyNUM0MjEuOTQ5LDI1OC4yNTEsNDU1LDE5NC4xNDEsNDU1LDEzOC43MTQgIEM0NTUsNjcuOTMxLDM5Ny40MTQsMTAuMzQ2LDMyNi42MzIsMTAuMzQ2eiBNMzM0LjY2NiwzMDguOTc0Yy00MS4yNTksNDQuOTQ4LTg1LjY0OCw4MS4yODMtMTA3LjE2OSw5OC4wMjkgIGMtMjEuNTItMTYuNzQ2LTY1LjkwNy01My4wODItMTA3LjE2Ni05OC4wM0M2MS4yMzYsMjQ0LjU5MiwzMCwxODUuNzE3LDMwLDEzOC43MTRjMC01NC4yNCw0NC4xMjgtOTguMzY4LDk4LjM2OC05OC4zNjggIGMzNS42OTQsMCw2OC42NTIsMTkuNDU0LDg2LjAxMyw1MC43NzFsMTMuMTE5LDIzLjY2NmwxMy4xMTktMjMuNjY2YzE3LjM2LTMxLjMxNiw1MC4zMTgtNTAuNzcxLDg2LjAxMy01MC43NzEgIGM1NC4yNCwwLDk4LjM2OCw0NC4xMjcsOTguMzY4LDk4LjM2OEM0MjUsMTg1LjcxOSwzOTMuNzYzLDI0NC41OTQsMzM0LjY2NiwzMDguOTc0eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K")
+                var icon = document.createElement("div")
+                icon.innerHTML = "<i class='fa fa-heart-o'></i>"
 
-                icon.style.width = "12px"
-                icon.style.height = "12px"
+               
 
                 //IMG DIV
                 var div1 = document.createElement("div")
 
                 var img = document.createElement("img")
-                img.setAttribute("src" ,e.productURL)
+                img.setAttribute("src" ,ele.imgUrl)
+                img.style.cursor = "pointer"
+
+
+                //PRODUCT DETAILS SHOWING FUNCTION
+                div1.addEventListener("click" , function(){
+                        showProductDetails(ele , data)
+                })
 
                 div1.append(img)
 
                 var div2 = document.createElement("div")
                 div2.setAttribute("class" , "ProductInfo")
                 var p = document.createElement("p")
-                p.textContent = e.productName
+                p.textContent = ele.prodhead
 
                 var span1 = document.createElement("span")
-                span1.textContent = e.productWeight
+                span1.textContent = ele.prodweight
 
                 var span2 = document.createElement("span")
-                span2.textContent = e.productPrize
+                span2.textContent = ele.prodprice
                 div2.append(p , span1 , span2)
 
 
