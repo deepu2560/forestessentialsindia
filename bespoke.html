@@ -346,14 +346,39 @@
         }
 
         /* APPOINTMENT FORM  */
-        #appointment_myForm{
-            text-align: center;
+        .appointment_myForm{
+            text-align: left;
+            padding-left: 5%;
+            font-size: larger;
+            font-weight: lighter;
         }
 
         /* APPOINTMENT FORM LABEL */
         .appointment_text_label{
             font-size: large;
+            color: rgb(46, 46, 46);
         }
+
+        /* PAY AND SCHEDULE BUTTON */
+        #pay_and_schedule_button{
+            font-size: larger;
+            width: 80%;
+            padding: 10px;
+            margin: 5%;
+            margin-left: 6%;
+            font-weight: lighter;
+            background-color: transparent;
+            border: 1px solid black;
+        }
+        #pay_and_schedule_button:hover{
+            background-color: black;
+            color: white;
+        }
+        #pay_and_schedule_button:active{
+            background-color: black;
+            color: white;
+        }
+
 
         /* BELOW FORM CONTENT */
         #besopke_step_involved{
@@ -362,6 +387,8 @@
             padding-top: 20px;
             margin-top: 5%;
         }
+
+
         /* 3 BOX OF STEPS  */
         #below_form_step{
             width: 90%;
@@ -560,55 +587,91 @@
         </div>
 
         <!-- APOINTMENT FORM -->
-        <div style="width: 40%; margin: auto; margin-top: 5%; background-color: rgba(255, 255, 255, 0.5);">
+        <div style="padding-top: 10px; padding-bottom: 10px; width: 40%; margin: auto; margin-top: 5%; background-color: rgba(255, 255, 255, 0.5);">
             <h1 style="text-align: center; font-weight: lighter;">Please fill out your Details</h1>
             <hr style="margin-left: 5%; margin-right: 5%;" >
 
             <!-- FORM FOR APPOINTMENT -->
-            <form id="appointment_myForm">
-                <label class="appointment_text_label">Title*</label>
-                <br>
-                <input type="radio" value="mr"><label class="appointment_text_label">Mr.</label>
-                <input type="radio" value="mrs"><label class="appointment_text_label">Mrs.</label>
-                <br>
-                <label class="appointment_text_label">Name*</label>
-                <br>
-                <input type="text" placeholder="your full name">
-                <br>
-                <label class="appointment_text_label">Email-id*</label>
-                <br>
-                <input type="email" placeholder="you email">
-                <br>
-                <label class="appointment_text_label">Phone Number*</label>
-                <br>
-                <input type="number" placeholder="your phone number">
-                <br>
-                <label class="appointment_text_label">Age Group*</label>
-                <br>
-                <input type="radio"><label class="appointment_text_label">12-21</label>
-                <input type="radio"><label class="appointment_text_label">21-35</label>
-                <input type="radio"><label class="appointment_text_label">35-50</label>
-                <input type="radio"><label class="appointment_text_label">50+</label>
-                <br>
-                <label class="appointment_text_label">Your Primary Concern*</label>
-                <br>
-                <input type="radio"><label class="appointment_text_label">Skin Care</label>
-                <input type="radio"><label class="appointment_text_label">Hair Care</label>
-                <br>
-                <label class="appointment_text_label">Please Elaborate:</label>
-                <br>
-                <textarea placeholder="Acne-Prone skin, Sensitive & dry skin, Frizzy Hair, Hair-fall, etc." id="" cols="30" rows="10"></textarea>
-                <br>
-                <label class="appointment_text_label">Date of Appointment*</label>
-                <br>
-                <input type="date">
-                <br>
-                <label class="appointment_text_label">Time (Indian Standard Time)*</label>
-                <br>
-                <input type="time">
-                <br>
-                <button>PAY & SCHEDULE</button>
-            </form>
+                <table class="appointment_myForm">
+                    <tbody>
+                        <tr>
+                            <th class="appointment_text_label">Title*</th>
+                        </tr>
+                        <tr>
+                            <th style="width: 500px; height: 30px;"><input type="radio" value="mr"><label class="appointment_text_label">Mr.</label></th>
+                            <th style="width: 500px; height: 30px;"><input type="radio" value="mr"><label class="appointment_text_label">Mrs.</label></th>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="appointment_myForm">
+                    <tbody>
+                        <tr>
+                            <th class="appointment_text_label">Name*</th>
+                        </tr>
+                        <tr>
+                            <th><input type="text" style="width: 500px; height: 30px; border: 1px solid black; background-color: rgba(255, 255, 255, 0.5);"></th>
+                        </tr>
+                        <tr>
+                            <th class="appointment_text_label">Email-id*</th>
+                        </tr>
+                        <tr>
+                            <th><input type="email" style="width: 500px; height: 30px; border: 1px solid black; background-color: rgba(255, 255, 255, 0.5);"></th>
+                        </tr>
+                        <tr>
+                            <th class="appointment_text_label">Phone Number*</th>
+                        </tr>
+                        <tr>
+                            <th><input type="number" style="width: 500px; height: 30px; border: 1px solid black; background-color: rgba(255, 255, 255, 0.5);"></th>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="appointment_myForm">
+                    <tbody>
+                        <tr>
+                            <th class="appointment_text_label">Age Group*</th>
+                        </tr>
+                        <tr>
+                            <th style="width: 500px; height: 30px;"><input type="radio" value="mr"><label class="appointment_text_label">12-21</label></th>
+                            <th style="width: 500px; height: 30px;"><input type="radio" value="mr"><label class="appointment_text_label">21-35</label></th>
+                            <th style="width: 500px; height: 30px;"><input type="radio" value="mr"><label class="appointment_text_label">35-50</label></th>
+                            <th style="width: 500px; height: 30px;"><input type="radio" value="mr"><label class="appointment_text_label">50+</label></th>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="appointment_myForm">
+                    <tr>
+                        <th class="appointment_text_label">Your Primary Concern*</th>
+                    </tr>
+                    <tr>
+                        <th style="width: 500px; height: 30px;"><input type="radio"><label class="appointment_text_label">Skin Care</label></th>
+                        <th style="width: 500px; height: 30px;"><input type="radio"><label class="appointment_text_label">Hair Care</label></th>
+                    </tr>
+                </table>
+                <table class="appointment_myForm">
+                    <tbody>
+                        <tr>
+                            <th class="appointment_text_label">Please Elaborate:</th>
+                        </tr>
+                        <tr>
+                            <th><textarea placeholder="Acne-Prone skin, Sensitive & dry skin, Frizzy Hair, Hair-fall, etc." id="" cols="65" rows="5" style="border: 1px solid black; background-color: rgba(255, 255, 255, 0.5); color: black; "></textarea></th>
+                        </tr>
+                        <tr>
+                            <th class="appointment_text_label">Date of Appointment*</th>
+                        </tr>
+                        <tr>
+                            <th><input type="date" style="border: 1px solid black; background-color: transparent; width: 500px; height: 30px;"></th>
+                        </tr>
+                        <tr>
+                            <th class="appointment_text_label">Time (Indian Standard Time)*</th>
+                        </tr>
+                        <tr>
+                            <th><input type="time" placeholder="" style="border: 1px solid black; background-color: transparent; width: 500px; height: 30px; "></th>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin: 6%; color: rgb(117, 2, 2); margin-bottom: 0;">*Required Fields</p>
+                <button id="pay_and_schedule_button">PAY & SCHEDULE</button>
+                <p style="width: 85%; margin: auto; font-size: large; margin-bottom: 5%;">This telephonic interaction comes with a small fee of INR 500/- which will be redeemable as a coupon when you choose to purchase a product from our website.</p>
         </div>
 
         <!-- BELOW FORM CONTENT  -->
