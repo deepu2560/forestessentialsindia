@@ -1,17 +1,22 @@
-#newslettercontainer{
+/*_*******************************************************-------------newlatter-----------*************************************************** */
+body{
+    margin: 0px;
+}
+#newsletter_image_container{
     background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/newsletter-bg.jpg);
     text-align: center;
     height: 250px;
     background-size: cover;
     padding: 98px 0px;
+    margin-top: 60px;
 }
-#newslatter{
+#newslatter_text_container{
     width: 700px;
     height: 300px;
     color: white;
     margin: auto;
 } 
-p{
+#newslatter_text_container p{
     border: 1px solid transparent;
     line-height: 35px;
     font-size: 19px;
@@ -27,7 +32,7 @@ p{
     width: 210px;
     letter-spacing: 3px;
 }
-#newslettercontainer button{
+#newsletter_image_container button{
     background-color: #d2ab67;
     border: 1px solid #d2ab67;
     color: white;
@@ -37,19 +42,19 @@ p{
     height: 48.5px;
     letter-spacing: 3px;
 }
-button:hover{
+#newsletter_image_container button:hover{
     background-color: black;
     border-color: white;
 }
-#newslatter a{
+#newslatter_text_container a{
     color: white;
     text-decoration: none;
 }
-/* #checkbox{
-    border: 1px solid black;
-   background-color: black;
-} */
-#footer,#xyz{
+/* _____________________________________________________newslatter-css-end_________________________________________________________________ */
+
+
+/* ******************************************--------services-characteristics-css-start---------******************************************* */
+#footer,#service_charac{
     display: flex;
     width: 80%;
     margin: auto;
@@ -58,27 +63,34 @@ button:hover{
     color: rgb(85, 80, 80);
     margin-top: 100px;
 }
-#footer>div,#xyz div{
+#footer>div,#service_charac div{
     height: 300px;
     width: 23%;
 }
-#xyz img{
+#service_charac div{
+    height: 230px;
+    letter-spacing: 1px;
+}
+#service_charac img{
     height:100px ;
     width:100px;
 }
-#xyz h2{
+#service_charac h2{
     margin-top: 40px;
     font-weight: normal;
     letter-spacing: 2px;
 }
-#xyz p{
-    font-size: 15px;
+#service_charac p{
+    font-size: 14px;
     line-height: 27px;
     width: 100%;
 }
-#footer{
-    margin: 30px auto;
-}
+/* _____________________________________________________services-characteristics-css-end_________________________________________________________________ */
+
+
+/*****************************************************--------- footer css-start--------*****************************************************/
+    /* margin: 30px auto; */
+/* } */
 #footer ul{
     list-style: none;
 }
@@ -113,7 +125,11 @@ button:hover{
     width: 25px;
     height: 25px;
 }
-#right{
+/*__________________________________________________________footer-css-end______________________________________________________________________*/
+
+
+/* **************************************************----------copyright-css-start------------***************************************************/
+#copy_right{
     display: flex;
     width: 80%;
     height: 150px;
@@ -121,11 +137,12 @@ button:hover{
     margin: auto;
     margin-top: 250px;
 }
-#right>div{
+#copy_right>div{
     padding: 0px 10px;
     width: 48%;
+    border: 1px solid transparent;
 }
-#right span{
+#copy_right span{
     letter-spacing: 2.8px;
     display: block;
     padding-bottom: 40px;
@@ -133,3 +150,4 @@ button:hover{
     font-size: 13px;
     border-top: 1px solid #e8e8e8;
 }
+/* _______________________________________________________________copyright-css-end_________________________________________________________ */

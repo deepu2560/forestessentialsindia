@@ -2,39 +2,12 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
     <title>Our Body Care Products</title>
-    <style>
-        .filter_button{
-            width: 250px;
-            border: 1px solid rgb(73, 69, 69);
-            background-color:white ;
-            font-family: Calibri;
-            font-size: 13px;
-            margin: auto;
-        }
-        .catfilter:hover{
-            cursor: pointer;
-        }
-        .catsort{
-            padding: 30px 0px;
-            background-color: #fbf9f9;
-            display: flex;
-            justify-content: center;
-        }
-        .filter_block{
-            margin: auto;
-            display:none;
-            grid-template-columns: repeat(4,1fr);
-            justify-content: space-between;
-            font-size: 14px;
-            font-family: calibri;
-            letter-spacing: 2px;
-            background-color: #fbf9f9;
-        }
-    </style>
 </head>
 <body>
-    	<!--THE HEADER PART -->
 	<div class="header">
 		<div class="main--Navbar">
 			<!-- NOTIFY DIV -->
@@ -60,7 +33,7 @@
 						</div>
 					</div>
 					<div class="submenu--center">
-						<img class="submenu--logo" src=".\img\FE-Logo_1.webp">
+						<img class="submenu--logo" src="https://images.forestessentialsindia.com/pub/media/logo/stores/2/FE-Logo_1.png">
 					</div>
 					<div class="submenu--right">
 						<div class="mg-medium">account</div>
@@ -79,7 +52,7 @@
 				<div class="navbar--2">
 					<ul class="navbar_nav">
 						<li class="nav-item comment-tag">
-							<img src="./img/new.jpg" >
+							<img src="https://images.forestessentialsindia.com/pub/media/tech18/megamenu/images/megamenu/icon/f/e/resize/fe-new2.png" >
 							<a href="" class="nav-link">bespoker services</a>
 						</li>
 						<li class="nav-item">
@@ -98,7 +71,7 @@
 							<a href="" class="nav-link" >wellness</a>
 						</li>
 						<li class="nav-item festivel-tag">
-							<img src="./img/festival.jpg" >
+							<img src="https://images.forestessentialsindia.com/pub/media/tech18/megamenu/images/megamenu/icon/g/i/resize/gifting-festive-mobile_2.png" >
 							<a href="" class="nav-link" >gifting</a>
 						</li>	
 						<li class="nav-item">
@@ -123,15 +96,15 @@
 					<img class="cross--icon" src="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/images/cross-icon.svg" id="show">
 				</div>
 			</div>
-		</div>
-        
-    <div class="catview">
-        <div class="catimage" id="facial-image-height">
-            <div class="catname">
+		</div> 
+    </div>      
+    <div class="category_view">
+        <div class="category_image" id="body-care_image_height">
+            <div class="category_name">
                 <h1>Body CARE</h1>
             </div>
         </div>
-        <div class="catsort">
+        <div class="category_sort">
             <div>
                 <button id="filter_block_open" class="filter_button" onclick="show()">Filter</button>
                 <button id="sort_by_open" class="filter_button">SORT BY</button>
@@ -139,7 +112,7 @@
         </div>
         <div class="filter_block">
             <div>
-                <ul style="list-style: none;">
+                <ul>
                     <li><h4>CONCERN</h4></li>
                     <li><input type="checkbox">DRYNESS </li>
                     <li><input type="checkbox">DULLNESS </li>
@@ -152,43 +125,43 @@
                 </ul>
             </div>
             <div>
-                <ol style="list-style: none;">
+                <ul>
                     <li><h4>HAIR TYPE</h4></li>
                     <li><input type="checkbox">CURLY </li>
                     <li><input type="checkbox">WAVY </li>
                     <li><input type="checkbox">STRAIGHT </li>
                     <li><input type="checkbox">OILY SCALP </li>
                     <li><input type="checkbox">DRY SCALP </li>
-                </ol>
+                </ul>
             </div>
             <div>
-                <ol style="list-style: none;">
+                <ul>
                     <li><h4>SKIN TYPE</h4></li>
                     <li><input type="checkbox">DRY</li>
                     <li><input type="checkbox">NORMAL </li>
                     <li><input type="checkbox">COMBINATION/OILY</li>
-                </ol>
+                </ul>
             </div>
             <div>
-                <ol style="list-style: none;">
+                <ul>
                     <li><h4>PRICE</h4></li>
                     <li><input type="checkbox">₹0.00 - ₹999.99</li>
                     <li><input type="checkbox">₹1,000.00 - ₹1,999.99</li>
                     <li><input type="checkbox">₹2,000.00 - ₹2,999.99</li>
                     <li><input type="checkbox">₹3,000.00 - ₹3,999.99</li>
                     <li><input type="checkbox">₹4,000.00 AND ABOVE</li>
-                </ol>
+                </ul>
             </div>
         </div>
-        <div class="cattag">
+        <div class="category_tag">
                 <span><a href="">HOME </a><span>
                 <span>> BODY CARE<span>
         </div>
     </div>
-    <div id="facialproducts">
+    <div id="body_care_products">
     </div>
-    <div id="newslettercontainer">
-        <div id="newslatter">
+    <div id="newsletter_image_container">
+        <div id="newslatter_text_container">
             <h2>Newslatter</h2>
             <p>
                 Get insider access for limited edition offers, new launches, insights on Ayurvedic skincare, beauty tips and more!
@@ -206,7 +179,7 @@
             </div>
         </div>
     </div>
-    <div  id="xyz">
+    <div  id="service_charac">
         <div>
             <img src="https://images.forestessentialsindia.com/pub/media/cms_images/100-Ayurvedic.png" alt="" >
             <h2>100% Ayurvedic</h2>
@@ -272,8 +245,8 @@
             <h4>SHOP</h4>
             <p>Email:<br><a class="a" href="">service@forestessentialsindia.com</a></p>
             <p>Phone:<br><a class="a" href="">+91-8010200666</a></p>
-            <p  style="padding: 0px;"><a class="a" href="">Contact Us</a></p>
-            <h4 style="padding-top:15px;margin: 20px;">FOLLOW</h4>
+            <p><a class="a" href="">Contact Us</a></p>
+            <h4>FOLLOW</h4>
             <ul>
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>  
@@ -283,8 +256,8 @@
             </ul>
         </div>
     </div>
-     <div id="right"> 
-        <div style="border: 1px solid transparent;">
+     <div id="copy_right"> 
+        <div>
             <span>PAYMENT METHODS</span>
             <img src="https://images.forestessentialsindia.com/pub/media/payment-method-new.png" alt="" width="500px">
         </div>
@@ -296,11 +269,129 @@
 </html>
 <script>
     
-    var proarr = JSON.parse(localStorage.getItem('Products'))||[]
+    // var proarr = JSON.parse(localStorage.getItem('Products'))||[]
+    var proarr = [{
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/5/15327_travel-size-intense-perfumed-body-mist-chandani-raatein_front.png",
+            proname: "TRAVEL SIZE INTENSE PERFUMED BODY MIST CHANDANI RAATEIN",
+            proq: "10 ml",
+            price: "₹695.00"
+        },
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/0/1079_after_bath_oil_nargis_130ml_front.png",
+            proname: "AFTER BATH OIL NARGIS",
+            proq: "130 ml",
+            price: "₹1,495.00"
+        },
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/0/1075_bath_shower_oil_oudh_green_tea_130ml_front.png",
+            proname: "AFTER BATH OIL OUDH & GREEN TEA",
+            proq: "130 ml",
+            price: "₹1,495.00"
+        },
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/1/1126_body_polisher_sandalwood_turmeric_200g_front.png",
+            proname: "BODY POLISHER SANDALWOOD & TURMERIC",
+            proq: "200 g",
+            price: "₹1,850.00"
+        },
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/1/1124_body_polisher_hydrating_sea_salt_crystal_rose_200g_front.png",
+            proname: "BODY POLISHER HYDRATING SEA SALT CRYSTAL ROSE",
+            proq: "200 g",
+            price: "₹1,850.00"
+        },
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/0/1083_body_mist_rose_cardamom_50ml_front.png",
+            proname: "BODY MIST ROSE & CARDAMOM",
+            proq: "50 ml",
+            price: "₹895.00"
+        },
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/u/l/ultra_nourishing_hand_cream_50ml_copy.png",
+            proname: "ULTRA NOURISHING HAND CREAM MANDARIN & NEEM",
+            proq: "50 ml",
+            price: "₹350.00"
+        },
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/4/14855_body_polisher_sandalwood_turmeric_100g_front.png",
+            proname: "BODY POLISHER SANDALWOOD & TURMERIC",
+            proq: "100 g",
+            price: "₹995.00"
+        },
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8930_after_bath_oil_iced_pomegranate_kerala_lime_130ml_front2.png",
+            proname: "AFTER BATH OIL ICED POMEGRANATE & KERALA LIME",
+            proq: "130 ml",
+            price: "₹1,495.00"
+        },
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8939_after_bath_oil_parijat_130ml_front2.png",
+            proname: "AFTER BATH OIL PARIJAT",
+            proq: "130 ml",
+            price: "₹1,495.00"
+        },        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8929_after_bath_oil_honey_vanilla_130ml_front2.png",
+            proname: "AFTER BATH OIL MADURAI JASMINE & MOGRA",
+            proq: "130 ml",
+            price: "₹1,295.00"
+        },        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8928_after_bath_oil_madurai_jasmine_mogra_130ml_front2.png",
+            proname: "AFTER BATH OIL MASHOBRA HONEY & VANILLA",
+            proq: "130 ml",
+            price: "₹1,295.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8950_cold_pressed_virgin_oil_almond_200ml_front.png",
+            proname: "ORGANIC COLD PRESSED VIRGIN OIL ALMOND",
+            proq: "200 ml",
+            price: "₹1,775.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/8/9851_cold_pressed_virgin_oil_coconut_200ml_front_1.png",
+            proname: "ORGANIC COLD PRESSED VIRGIN OIL COCONUT",
+            proq: "200 ml",
+            price: "₹925.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9710_luxury_sugar_soap_bitter_orange_cinnamon_125g_front.png",
+            proname: "LUXURY SUGAR SOAP BITTER ORANGE & CINNAMON",
+            proq: "125 g",
+            price: "₹395.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9709_luxury_sugar_soap_sandalwood_turmeric_125g_front.png",
+            proname: "LUXURY SUGAR SOAP SANDALWOOD & TURMERIC",
+            proq: "125 g",
+            price: "₹495.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9794_silken_dusting_powder_indian_rose_absolute_100g_front.png",
+            proname: "SILKEN DUSTING POWDER INDIAN ROSE ABSOLUTE",
+            proq: "100 g",
+            price: "₹725.00"
+        },        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/8/9848_natural_deodorant_sweet_orange_and_cardamom.png",
+            proname: "SWEET ORANGE & CARDAMOM NATURAL DEODORANT",
+            proq: "50 ml",
+            price: "₹975.00"
+        },        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8960_body_spray_herb_infused_mosquito_repellent_130ml_front.png",
+            proname: "BODY SPRAY HERB INFUSED MOSQUITO REPELLENT",
+            proq: "130 ml",
+            price: "₹825.00"
+        },        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8990_shower_wash_oudh_green_tea_200ml_front7.png",
+            proname: "SILKENING SHOWER WASH OUDH & GREEN TEA",
+            proq: "200 ml",
+            price: "₹1,195.00"
+        }
+
+    ]
+    // localStorage.setItem('Products',JSON.stringify(arr))
     display(proarr)
     function display()
     {
-        document.querySelector('#facialproducts').textContent = ""
+        document.querySelector('#body_care_products').textContent = ""
         proarr.map(function(el){
             var maindiv = document.createElement('div')
             var div1 = document.createElement('span') 
@@ -333,7 +424,7 @@
             })
             maindiv.append()
             maindiv.append(div1,div2,div3,div4,button)
-            document.querySelector('#facialproducts').append(maindiv)
+            document.querySelector('#body_care_products').append(maindiv)
         })
     }
     var flag = 1
@@ -349,55 +440,6 @@
             flag = 1
         }
     }
-    // var arr = [{
-    //         img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/5/15327_travel-size-intense-perfumed-body-mist-chandani-raatein_front.png",
-    //         proname: "TRAVEL SIZE INTENSE PERFUMED BODY MIST CHANDANI RAATEIN",
-    //         proq: "10 ml",
-    //         price: "₹695.00"
-    //     },
-    //     {
-    //         img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/0/1079_after_bath_oil_nargis_130ml_front.png",
-    //         proname: "AFTER BATH OIL NARGIS",
-    //         proq: "130 ml",
-    //         price: "₹1,495.00"
-    //     },
-    //     {
-    //         img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/0/1075_bath_shower_oil_oudh_green_tea_130ml_front.png",
-    //         proname: "AFTER BATH OIL OUDH & GREEN TEA",
-    //         proq: "130 ml",
-    //         price: "₹1,495.00"
-    //     },
-    //     {
-    //         img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/1/1126_body_polisher_sandalwood_turmeric_200g_front.png",
-    //         proname: "BODY POLISHER SANDALWOOD & TURMERIC",
-    //         proq: "200 g",
-    //         price: "₹1,850.00"
-    //     },
-    //     {
-    //         img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/1/1124_body_polisher_hydrating_sea_salt_crystal_rose_200g_front.png",
-    //         proname: "BODY POLISHER HYDRATING SEA SALT CRYSTAL ROSE",
-    //         proq: "200 g",
-    //         price: "₹1,850.00"
-    //     },
-    //     {
-    //         img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/0/1083_body_mist_rose_cardamom_50ml_front.png",
-    //         proname: "BODY MIST ROSE & CARDAMOM",
-    //         proq: "50 ml",
-    //         price: "₹895.00"
-    //     },
-    //     {
-    //         img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/u/l/ultra_nourishing_hand_cream_50ml_copy.png",
-    //         proname: "ULTRA NOURISHING HAND CREAM MANDARIN & NEEM",
-    //         proq: "50 ml",
-    //         price: "₹350.00"
-    //     },
-    //     {
-    //         img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/4/14855_body_polisher_sandalwood_turmeric_100g_front.png",
-    //         proname: "BODY POLISHER SANDALWOOD & TURMERIC",
-    //         proq: "100 g",
-    //         price: "₹995.00"
-    //     }
-    // ]
-    // localStorage.setItem('Products',JSON.stringify(arr))
+  
 </script>
 

@@ -2,29 +2,165 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Our Collections</title>
 </head>
 <body>
-    <div class="catview">
-        <div class="catimage" id="collections-image-height">
-            <div class="catname">
+	<div class="header">
+		<div class="main--Navbar">
+			<!-- NOTIFY DIV -->
+			<div class="ads">
+				<div class="notify">COMPLIMENTARY SAMPLES ON EVERY PURCHASE!</div>
+				<div class="notify">WE DELIVER ACROSS INDIA &amp; INTERNATIONALLY.</div>
+				<div class="notify">RECEIVE COMPLIMENTARY <a href="/shop.html"><u>GIFT BOXES</u></a> UP TO ₹6500/-</div>
+			</div>
+
+			<!--NAVBAR MAIN -->
+			<div class="navbar">
+				<!-- IMAGE NAVBAR 1-->
+				<div class="navbar--1">
+					<div class="submenu--left">
+						<div class="submenu-mg">
+							<a href="#search" id="search"><img src=".\img\search-icon.png"></a>
+						</div>
+						<div class="margin-right mg-medium">STORES</div>
+						<div>
+							<select class="INR">
+								<option>INR</option>
+							</select>
+						</div>
+					</div>
+					<div class="submenu--center">
+						<img class="submenu--logo" src="https://images.forestessentialsindia.com/pub/media/logo/stores/2/FE-Logo_1.png">
+					</div>
+					<div class="submenu--right">
+						<div class="mg-medium">account</div>
+						<div class="mg-medium">wishlist</div>
+						<div>
+							<div class="cart">
+								<img src="./img/cart-icon.png" >
+								<span>0</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+				<!-- IMAGE NAVBAR 2 LINKS-->
+				<div class="navbar--2">
+					<ul class="navbar_nav">
+						<li class="nav-item comment-tag">
+							<img src="https://images.forestessentialsindia.com/pub/media/tech18/megamenu/images/megamenu/icon/f/e/resize/fe-new2.png" >
+							<a href="" class="nav-link">bespoker services</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">facial care</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >body care</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >hair care</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >makeup</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >wellness</a>
+						</li>
+						<li class="nav-item festivel-tag">
+							<img src="https://images.forestessentialsindia.com/pub/media/tech18/megamenu/images/megamenu/icon/g/i/resize/gifting-festive-mobile_2.png" >
+							<a href="" class="nav-link" >gifting</a>
+						</li>	
+						<li class="nav-item">
+							<a href="" class="nav-link" >rituals</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >collections</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link" >discover</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<!--ONCLIK SEARCH BAR SHOW --->
+				<div class="search" id="hide">
+					<div class="search--div">
+						<input type="text" placeholder="search the web store" class="search_input">
+						<img src=".\img\search-icon.png">
+					</div>
+					<img class="cross--icon" src="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/images/cross-icon.svg" id="show">
+				</div>
+			</div>
+		</div> 
+    </div>      
+    <div class="category_view">
+        <div class="category_image" id="collectionS_image_height">
+            <div class="category_name">
                 <h1>COLLECTIONS</h1>
             </div>
         </div>
-        <div class="catsort">
-            <select name="" id="">Filter</select>
-            <select name="" id=""></select>
+        <div class="category_sort">
+            <div>
+                <button id="filter_block_open" class="filter_button" onclick="show()">Filter</button>
+                <button id="sort_by_open" class="filter_button">SORT BY</button>
+            </div>
         </div>
-        <div class="cattag">
+        <div class="filter_block">
+            <div>
+                <ul>
+                    <li><h4>CONCERN</h4></li>
+                    <li><input type="checkbox">DRYNESS </li>
+                    <li><input type="checkbox">DULLNESS </li>
+                    <li><input type="checkbox">OILINESS </li>
+                    <li><input type="checkbox">TAN REMOVAL </li>
+                    <li><input type="checkbox">PERSPIRATION </li>
+                    <li><input type="checkbox">STRETCHMARKS </li>
+                    <li><input type="checkbox">LOSS OF ELASTICITY </li>
+                    <li><input type="checkbox">PIGMENTATION OR BLEMISHES </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4>HAIR TYPE</h4></li>
+                    <li><input type="checkbox">CURLY </li>
+                    <li><input type="checkbox">WAVY </li>
+                    <li><input type="checkbox">STRAIGHT </li>
+                    <li><input type="checkbox">OILY SCALP </li>
+                    <li><input type="checkbox">DRY SCALP </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4>SKIN TYPE</h4></li>
+                    <li><input type="checkbox">DRY</li>
+                    <li><input type="checkbox">NORMAL </li>
+                    <li><input type="checkbox">COMBINATION/OILY</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4>PRICE</h4></li>
+                    <li><input type="checkbox">₹0.00 - ₹999.99</li>
+                    <li><input type="checkbox">₹1,000.00 - ₹1,999.99</li>
+                    <li><input type="checkbox">₹2,000.00 - ₹2,999.99</li>
+                    <li><input type="checkbox">₹3,000.00 - ₹3,999.99</li>
+                    <li><input type="checkbox">₹4,000.00 AND ABOVE</li>
+                </ul>
+            </div>
+        </div>
+        <div class="category_tag">
                 <span><a href="">HOME </a><span>
-                <span>> FACIAL CARE<span>
+                <span>> COLLECTIONS<span>
         </div>
     </div>
-    <div id="facialproducts">
-        <!-- Added product will be visible here. -->
+    <div id="body_care_products">
     </div>
-    <div id="newslettercontainer">
-        <div id="newslatter">
+    <div id="newsletter_image_container">
+        <div id="newslatter_text_container">
             <h2>Newslatter</h2>
             <p>
                 Get insider access for limited edition offers, new launches, insights on Ayurvedic skincare, beauty tips and more!
@@ -42,7 +178,7 @@
             </div>
         </div>
     </div>
-    <div  id="xyz">
+    <div  id="service_charac">
         <div>
             <img src="https://images.forestessentialsindia.com/pub/media/cms_images/100-Ayurvedic.png" alt="" >
             <h2>100% Ayurvedic</h2>
@@ -108,8 +244,8 @@
             <h4>SHOP</h4>
             <p>Email:<br><a class="a" href="">service@forestessentialsindia.com</a></p>
             <p>Phone:<br><a class="a" href="">+91-8010200666</a></p>
-            <p  style="padding: 0px;"><a class="a" href="">Contact Us</a></p>
-            <h4 style="padding-top:15px;margin: 20px;">FOLLOW</h4>
+            <p><a class="a" href="">Contact Us</a></p>
+            <h4>FOLLOW</h4>
             <ul>
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>  
@@ -119,24 +255,140 @@
             </ul>
         </div>
     </div>
-     <div id="right"> 
-        <div style="border: 1px solid transparent;">
+    <div id="copy_right"> 
+        <div>
             <span>PAYMENT METHODS</span>
             <img src="https://images.forestessentialsindia.com/pub/media/payment-method-new.png" alt="" width="500px">
         </div>
-        <div  style="border: 1px solid transparent;">
+        <div>
             <span>© Forest Essentials</span>
         </div>
     </div> 
 </body>
 </html>
+
 <script>
+    var proarr = [
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/d/e/deeply_moisturizing_hand_wash_50ml_copy.png",
+            proname: "DEEPLY MOISTURISING HAND WASH MANDARIN & NEEM",
+            proq: "50 ml",
+            price: "₹295.00"
+        },
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9700_shower_wash_honey_vanilla_50ml_front1.png",
+            proname: "TRAVEL SIZE SILKENING SHOWER WASH MASHOBRA HONEY & VANILLA",
+            proq: "50 ml",
+            price: "₹295.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/0/9000_shower_wash_jasmine_mogra_50ml_front1.png",
+            proname: "TRAVEL SIZE SILKENING SHOWER WASH MADURAI JASMINE & MOGRA",
+            proq: "50 ml",
+            price: "₹295.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8999_shower_wash_indian_rose_absolute_50ml_front1.png",
+            proname: "TRAVEL SIZE SILKENING SHOWER WASH INDIAN ROSE ABSOLUTE",
+            proq: "50 ml",
+            price: "₹295.00"
+        },        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9706_shower_wash_parijat_50ml_front1.png",
+            proname: "TRAVEL SIZE SILKENING SHOWER WASH PARIJAT",
+            proq: "50 ml",
+            price: "₹325.00"
+        },        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8998_shower_wash_oudh_green_tea_50ml_front1.png",
+            proname: "TRAVEL SIZE SILKENING SHOWER WASH OUDH & GREEN TEA",
+            proq: "50 ml",
+            price: "₹325.00"
+        },        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8996_shower_wash_pomegranate_lime_50ml_front1.png",
+            proname: "TRAVEL SIZE SILKENING SHOWER WASH ICED POMEGRANATE & KERALA LIME",
+            proq: "50 ml",
+            price: "₹325.00"
+        },        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/u/l/ultra_nourishing_hand_cream_50ml_copy.png",
+            proname: "ULTRA NOURISHING HAND CREAM MANDARIN & NEEM",
+            proq: "50 ml",
+            price: "₹350.00"
+        },  
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/8/8884_delicate_facial_cleanser_mashobra_honey_lemon_rosewater_50ml_front.png",
+            proname: "TRAVEL SIZE DELICATE FACIAL CLEANSER MASHOBRA HONEY, LEMON & ROSEWATER",
+            proq: "50 ml",
+            price: "₹350.00"
+        },
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/8/8882_delicate_facial_cleanser_kashmiri_saffron_neem_50ml_front.png",
+            proname: "TRAVEL SIZE DELICATE FACIAL CLEANSER KASHMIRI SAFFRON & NEEM",
+            proq: "50 ml",
+            price: "₹350.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9745_hair_conditioner_bhringraj_shikakai_50ml_front.png",
+            proname: "TRAVEL SIZE HAIR CONDITIONER BHRINGRAJ & SHIKAKAI",
+            proq: "50 ml",
+            price: "₹395.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8982_ultra_rich_body_mashobra_honey_vanilla_50ml_front.png",
+            proname: "TRAVEL SIZE ULTRA-RICH BODY MILK MASHOBRA HONEY & VANILLA",
+            proq: "50 ml",
+            price: "₹395.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/8/8870_facial_tonic_mist_panchpushp_50ml_front.png",
+            proname: "TRAVEL SIZE FACIAL TONIC MIST PANCHPUSHP",
+            proq: "50 ml",
+            price: "₹450.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9797_silken_dusting_powder_nargis_100g_front.png",
+            proname: "SILKEN DUSTING POWDER NARGIS",
+            proq: "100 g",
+            price: "₹725.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9787_baby_body_powder_dasapushpadi_100g_front.png",
+            proname: "BABY BODY POWDER DASAPUSHPADI",
+            proq: "100 g",
+            price: "₹725.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9796_silken_dusting_powder_oudh_green_tea_100g_front.png",
+            proname: "SILKEN DUSTING POWDER OUDH & GREEN TEA",
+            proq: "100 g",
+            price: "₹725.00"
+        },      
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/6/8653-shaving-cream-sandalwood-_-orange-peel-60g-front.png",
+            proname: "SANDALWOOD & ORANGE PEEL SHAVING CREAM",
+            proq: "60 g",
+            price: "₹725.00"
+        },        
+        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/8/8898_sugared_rose_petal_4g_front.png",
+            proname: "LUSCIOUS LIP BALM SUGARED ROSE PETAL",
+            proq: "4 g",
+            price: "₹750.00"
+        },        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9738_hair_cleanser_bhringraj_shikakai_130ml_front1.png",
+            proname: "HAIR CLEANSER BHRINGRAJ & SHIKAKAI",
+            proq: "130 ml",
+            price: "₹895.00"
+        },        {
+            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/8/8890_facial_ubtan_roop_nikhar_gulab_70g_front-new.png",
+            proname: "FACIAL UBTAN ROOP NIKHAR & GULAB",
+            proq: "70 g",
+            price: "₹1,175.00"
+        }
+    ]
     
-    var proarr = JSON.parse(localStorage.getItem('Products'))||[]
     display(proarr)
     function display()
     {
-        document.querySelector('#facialproducts').textContent = ""
+        document.querySelector('#body_care_products').textContent = ""
         proarr.map(function(el){
             var maindiv = document.createElement('div')
             var div1 = document.createElement('span') 
@@ -169,8 +421,21 @@
             })
             maindiv.append()
             maindiv.append(div1,div2,div3,div4,button)
-            document.querySelector('#facialproducts').append(maindiv)
+            document.querySelector('#body_care_products').append(maindiv)
         })
     }
+    var flag = 1
+    function show(event){
+        if(flag == 1)
+        {
+            document.querySelector('.filter_block').style.display = "grid"
+            flag = 0
+        }
+        else
+        {
+            document.querySelector('.filter_block').style.display = "none"
+            flag = 1
+        }
+    }
+  
 </script>
-

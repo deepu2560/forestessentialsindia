@@ -1,4 +1,100 @@
-/* From here Category css start */
+/***********************************************---------Category-css-start--------***************************************/
+
+body{
+    margin: 0px;
+}
+.category_image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#body-care_image_height{
+    height: 335px;
+    background-image: url(https://images.forestessentialsindia.com/pub/media/catalog/category/2_Body_Care_MG_7103_final_2880x640-min-min.jpg);
+}
+#collectionS_image_height{
+    height: 400px;
+    background-image: url(https://images.forestessentialsindia.com/pub/media/catalog/category/6_Collections_2880-x-840-Domestic.jpg);
+}
+.category_name{
+    background-color: rgba(0,0,0,0.5);
+    width: 280px;
+    letter-spacing: 7px;
+    font-family: sans-serif;
+}
+.category_tag{
+    padding: 30px 10px ;
+}
+.category_tag span{
+    margin-left: 4px;
+    font-size: 13px;
+    font-family: calibri;
+    letter-spacing: 2.8px;
+
+}
+.category_tag a{
+    text-decoration: none;
+}
+
+/* filtering section css */
+
+.filter_button{
+    width: 280px;
+    border: 1px solid rgb(73, 69, 69);
+    background-color:white ;
+    font-family: Calibri;
+    font-size: 13px;
+    margin: auto;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+.category_filter:hover{
+    cursor: pointer;
+}
+.category_sort{
+    padding: 30px 0px;
+    background-color: #fbf9f9;
+    display: flex;
+    justify-content: center;
+}
+.filter_block{
+    margin: auto;
+    display:none;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    font-size: 11px;
+    font-family: calibri;
+    letter-spacing: 2px;
+    background-color: #fbf9f9;
+}
+.filter_block ul{
+    list-style: none;
+}
+/* __________________________________________________________category-css-end__________________________________________________________ */
+
+
+/***************************************************----------product-css-start----------**********************************************/
+
+#body_care_products {
+    display: grid;
+    width: 1260px;
+    margin: auto;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+#body_care_products>div{
+    background-color: #fbf9f9;
+    font-size: 13px;
+    font-family: calibri;
+    letter-spacing: 2.8px;
+    width: 315px;
+    font-weight: bold;
+}
 .wishlist{
     width: 12px;
     height: 15px;
@@ -13,67 +109,13 @@
     display: inline-block;
     padding-bottom: 0px;
 }
-body{
-    margin: 0px;
-}
-.catimage{
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-#facial-image-height{
-    height: 281px;
-    background-image: url(https://images.forestessentialsindia.com/pub/media/catalog/category/1_Facial_Care_MG_7073_final_2880x640-min-min_1.jpg);
-}
-#collections-image-height{
-    height: 400px;
-    background-image: url(https://images.forestessentialsindia.com/pub/media/catalog/category/6_Collections_2880-x-840-Domestic.jpg);
-}
-.catname{
-    background-color: rgba(0,0,0,0.5);
-    width: 280px;
-    letter-spacing: 7px;
-    font-family: sans-serif;
-}
-.cattag{
-    padding: 30px 10px ;
-}
-.cattag span{
-    margin-left: 4px;
-    font-size: 13px;
-    font-family: calibri;
-    letter-spacing: 2.8px;
-
-}
-.cattag a{
-    text-decoration: none;
-}
-#facialproducts {
-    display: grid;
-    width: 1260px;
-    margin: auto;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
-}
-#facialproducts>div{
-    background-color: #fbf9f9;
-    font-size: 14px;
-    font-family: calibri;
-    letter-spacing: 2.8px;
-    width: 315px;
-}
-#facialproducts>div p{
+#body_care_products>div p{
     padding: 0px 20px ;
 }
-#facialproducts .price{
+#body_care_products .price{
     padding: 20px;
 }
-button{
+#body_care_products button{
     padding: 15px 30px;
     width: 100%;
     margin-bottom: 20px; 
@@ -83,26 +125,29 @@ button{
     font-family: calibri;
     letter-spacing: 2.8px;
 }
-#facialproducts div>p{
+#body_care_products div>p{
     height: 60px;
 }
+/*  ________________________________________________________facial-products-css-end_______________________________________________________________*/
 
-/* css for newlatter starts from here */
-#newslettercontainer{
+
+/*_*******************************************************-------------newlatter-----------*************************************************** */
+
+#newsletter_image_container{
     background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/newsletter-bg.jpg);
     text-align: center;
     height: 250px;
     background-size: cover;
     padding: 98px 0px;
-    margin: 100px;
+    margin-top: 60px;
 }
-#newslatter{
+#newslatter_text_container{
     width: 700px;
     height: 300px;
     color: white;
     margin: auto;
 } 
-p{
+#newslatter_text_container p{
     border: 1px solid transparent;
     line-height: 35px;
     font-size: 19px;
@@ -118,7 +163,7 @@ p{
     width: 210px;
     letter-spacing: 3px;
 }
-#newslettercontainer button{
+#newsletter_image_container button{
     background-color: #d2ab67;
     border: 1px solid #d2ab67;
     color: white;
@@ -128,19 +173,19 @@ p{
     height: 48.5px;
     letter-spacing: 3px;
 }
-#newslettercontainer button:hover{
+#newsletter_image_container button:hover{
     background-color: black;
     border-color: white;
 }
-#newslatter a{
+#newslatter_text_container a{
     color: white;
     text-decoration: none;
 }
-/* #checkbox{
-    border: 1px solid black;
-   background-color: black;
-} */
-#footer,#xyz{
+/* _____________________________________________________newslatter-css-end_________________________________________________________________ */
+
+
+/* ******************************************--------services-characteristics-css-start---------******************************************* */
+#footer,#service_charac{
     display: flex;
     width: 80%;
     margin: auto;
@@ -149,27 +194,34 @@ p{
     color: rgb(85, 80, 80);
     margin-top: 100px;
 }
-#footer>div,#xyz div{
+#footer>div,#service_charac div{
     height: 300px;
     width: 23%;
 }
-#xyz img{
+#service_charac div{
+    height: 230px;
+    letter-spacing: 1px;
+}
+#service_charac img{
     height:100px ;
     width:100px;
 }
-#xyz h2{
+#service_charac h2{
     margin-top: 40px;
     font-weight: normal;
     letter-spacing: 2px;
 }
-#xyz p{
-    font-size: 15px;
+#service_charac p{
+    font-size: 14px;
     line-height: 27px;
     width: 100%;
 }
-#footer{
-    margin: 30px auto;
-}
+/* _____________________________________________________services-characteristics-css-end_________________________________________________________________ */
+
+
+/*****************************************************--------- footer css-start--------*****************************************************/
+    /* margin: 30px auto; */
+/* } */
 #footer ul{
     list-style: none;
 }
@@ -200,11 +252,15 @@ p{
     padding: 0px;
     margin: 0px;
 }
-.fa{
+#footer .fa{
     width: 25px;
     height: 25px;
 }
-#right{
+/*__________________________________________________________footer-css-end______________________________________________________________________*/
+
+
+/* **************************************************----------copyright-css-start------------***************************************************/
+#copy_right{
     display: flex;
     width: 80%;
     height: 150px;
@@ -212,15 +268,17 @@ p{
     margin: auto;
     margin-top: 250px;
 }
-#right>div{
+#copy_right>div{
     padding: 0px 10px;
     width: 48%;
+    border: 1px solid transparent;
 }
-#right span{
+#copy_right span{
     letter-spacing: 2.8px;
     display: block;
     padding-bottom: 40px;
     padding-top: 25px;
-    font-size: 13px;
+    font-size: 11px;
     border-top: 1px solid #e8e8e8;
 }
+/* _______________________________________________________________copyright-css-end_________________________________________________________ */
