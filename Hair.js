@@ -283,8 +283,8 @@ if(window.scrollY > 80){
 
 // ADDING TO PRODUCT DETAILS PAGE
 var details =  []
-function showProductDetails(ele , data){
-	details.push(ele)	
+function showProductDetails(elem , data){
+	details.push(elem)	
 	localStorage.setItem("productDetails" , JSON.stringify(details))
 	localStorage.setItem("related_products" , JSON.stringify(data))
 	
