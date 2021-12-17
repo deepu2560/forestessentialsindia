@@ -131,8 +131,8 @@
         </div>
 
         <!-- APOINTMENT FORM -->
-        <div style="padding-top: 10px; padding-bottom: 10px; width: 40%; margin: auto; margin-top: 5%; background-color: rgba(255, 255, 255, 0.5);">
-            <h1 style="text-align: center; font-weight: lighter;">Please fill out your Details</h1>
+        <div id="besopke_application_form_div">
+            <h1 id="appointment_form_heading">Please fill out your Details</h1>
             <hr style="margin-left: 5%; margin-right: 5%;" >
 
             <!-- FORM FOR APPOINTMENT -->
@@ -142,8 +142,8 @@
                             <th class="appointment_text_label">Title*</th>
                         </tr>
                         <tr>
-                            <th style="width: 500px; height: 30px;"><input type="radio" value="mr"><label class="appointment_text_label">Mr.</label></th>
-                            <th style="width: 500px; height: 30px;"><input type="radio" value="mr"><label class="appointment_text_label">Mrs.</label></th>
+                            <th class="appointment_input_width_heigth"><input type="radio" value="mr"><label class="appointment_text_label">Mr.</label></th>
+                            <th class="appointment_input_width_heigth"><input type="radio" value="mr"><label class="appointment_text_label">Mrs.</label></th>
                         </tr>
                     </tbody>
                 </table>
@@ -153,19 +153,19 @@
                             <th class="appointment_text_label">Name*</th>
                         </tr>
                         <tr>
-                            <th><input type="text" style="width: 500px; height: 30px; border: 1px solid black; background-color: rgba(255, 255, 255, 0.5);"></th>
+                            <th><input type="text" class="appointment_input_width_heigth appointment_input_other"></th>
                         </tr>
                         <tr>
                             <th class="appointment_text_label">Email-id*</th>
                         </tr>
                         <tr>
-                            <th><input type="email" style="width: 500px; height: 30px; border: 1px solid black; background-color: rgba(255, 255, 255, 0.5);"></th>
+                            <th><input type="email" class="appointment_input_width_heigth appointment_input_other"></th>
                         </tr>
                         <tr>
                             <th class="appointment_text_label">Phone Number*</th>
                         </tr>
                         <tr>
-                            <th><input type="number" style="width: 500px; height: 30px; border: 1px solid black; background-color: rgba(255, 255, 255, 0.5);"></th>
+                            <th><input type="number" class="appointment_input_width_heigth appointment_input_other"></th>
                         </tr>
                     </tbody>
                 </table>
@@ -175,10 +175,10 @@
                             <th class="appointment_text_label">Age Group*</th>
                         </tr>
                         <tr>
-                            <th style="width: 500px; height: 30px;"><input type="radio" value="mr"><label class="appointment_text_label">12-21</label></th>
-                            <th style="width: 500px; height: 30px;"><input type="radio" value="mr"><label class="appointment_text_label">21-35</label></th>
-                            <th style="width: 500px; height: 30px;"><input type="radio" value="mr"><label class="appointment_text_label">35-50</label></th>
-                            <th style="width: 500px; height: 30px;"><input type="radio" value="mr"><label class="appointment_text_label">50+</label></th>
+                            <th class="appointment_input_width_heigth"><input type="radio" value="mr"><label class="appointment_text_label">12-21</label></th>
+                            <th class="appointment_input_width_heigth"><input type="radio" value="mr"><label class="appointment_text_label">21-35</label></th>
+                            <th class="appointment_input_width_heigth"><input type="radio" value="mr"><label class="appointment_text_label">35-50</label></th>
+                            <th class="appointment_input_width_heigth"><input type="radio" value="mr"><label class="appointment_text_label">50+</label></th>
                         </tr>
                     </tbody>
                 </table>
@@ -187,8 +187,8 @@
                         <th class="appointment_text_label">Your Primary Concern*</th>
                     </tr>
                     <tr>
-                        <th style="width: 500px; height: 30px;"><input type="radio"><label class="appointment_text_label">Skin Care</label></th>
-                        <th style="width: 500px; height: 30px;"><input type="radio"><label class="appointment_text_label">Hair Care</label></th>
+                        <th class="appointment_input_width_heigth"><input type="radio"><label class="appointment_text_label">Skin Care</label></th>
+                        <th class="appointment_input_width_heigth"><input type="radio"><label class="appointment_text_label">Hair Care</label></th>
                     </tr>
                 </table>
                 <table class="appointment_myForm">
@@ -197,19 +197,19 @@
                             <th class="appointment_text_label">Please Elaborate:</th>
                         </tr>
                         <tr>
-                            <th><textarea placeholder="Acne-Prone skin, Sensitive & dry skin, Frizzy Hair, Hair-fall, etc." id="" cols="65" rows="5" style="border: 1px solid black; background-color: rgba(255, 255, 255, 0.5); color: black; "></textarea></th>
+                            <th><textarea placeholder="Acne-Prone skin, Sensitive & dry skin, Frizzy Hair, Hair-fall, etc." id="appointment_textarea" cols="65" rows="5" style="border: 1px solid black; background-color: rgba(255, 255, 255, 0.5); color: black; "></textarea></th>
                         </tr>
                         <tr>
                             <th class="appointment_text_label">Date of Appointment*</th>
                         </tr>
                         <tr>
-                            <th><input type="date" style="border: 1px solid black; background-color: transparent; width: 500px; height: 30px;"></th>
+                            <th><input type="date" class="appointment_input_width_heigth appointment_input_other"></th>
                         </tr>
                         <tr>
                             <th class="appointment_text_label">Time (Indian Standard Time)*</th>
                         </tr>
                         <tr>
-                            <th><input type="time" placeholder="" style="border: 1px solid black; background-color: transparent; width: 500px; height: 30px; "></th>
+                            <th><input type="time" placeholder="" class="appointment_input_width_heigth appointment_input_other"></th>
                         </tr>
                     </tbody>
                 </table>
@@ -219,9 +219,9 @@
         </div>
 
         <!-- BELOW FORM CONTENT  -->
-
-        <!-- 3 STEP SECTION  -->
         <div style="background-color: white;">
+
+            <!-- 3 STEP SECTION  -->
             <div id="besopke_step_involved">
                 <h2 style="text-align: center; font-weight: lighter;">What are the steps involved?</h2>
                 <div id="below_form_step">
@@ -334,25 +334,25 @@
                     <div id="bespoke_customer_content">
                         <div>
                             <img src="https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png">
-                            <div style="width: 95%; margin: auto; overflow-x: hidden; height: 150px;">"This is an excellent new feature!!! I spoke to the Forest Essentials Senior Ayurveda Doctor. First, she spent time understanding my hair concern (pre-mature greying) properly and patiently, she asked about my current hair care regime, the products I use and even my food and lifestyle habits. Post which she made informed and customized recommendations for me, these were a mix of product suggestions and a few lifestyle changes that can help me with my greying. Extremely satisfied and excited to try the new products."</div>
+                            <div class="customer_review_on_bespoke_service">"This is an excellent new feature!!! I spoke to the Forest Essentials Senior Ayurveda Doctor. First, she spent time understanding my hair concern (pre-mature greying) properly and patiently, she asked about my current hair care regime, the products I use and even my food and lifestyle habits. Post which she made informed and customized recommendations for me, these were a mix of product suggestions and a few lifestyle changes that can help me with my greying. Extremely satisfied and excited to try the new products."</div>
                             <h5 class="customer_name_title">CHETAN, AGRA</h5>
                             <p class="customer_year">2021</p>
                         </div>
                         <div>
                             <img src="https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png">
-                            <div style="width: 95%; margin: auto; overflow-x: hidden; height: 150px;">"I was looking for anti-acne products on the Forest Essentials website when I stumbled upon their new Ayurvedic Doctor Consultation feature. I instantly booked my appointment for the next day. It was a 15-minute call with their senior Ayurveda doctor, she understood all my concerns properly and patiently, and decoded the plausible cause of my acne basis my lifestyle habits, family history etc. She then gave me a list of recommendations, these were not only products suggestions, they had a more holistic approach and I was also given recommendations on healthy lifestyle changes and food tips that would help alleviate my acne. " </div>
+                            <div class="customer_review_on_bespoke_service">"I was looking for anti-acne products on the Forest Essentials website when I stumbled upon their new Ayurvedic Doctor Consultation feature. I instantly booked my appointment for the next day. It was a 15-minute call with their senior Ayurveda doctor, she understood all my concerns properly and patiently, and decoded the plausible cause of my acne basis my lifestyle habits, family history etc. She then gave me a list of recommendations, these were not only products suggestions, they had a more holistic approach and I was also given recommendations on healthy lifestyle changes and food tips that would help alleviate my acne. " </div>
                             <h5 class="customer_name_title">TANYA, MUMBAI</h5>
                             <P class="customer_year">2021</P>
                         </div>
                         <div>
                             <img src="https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png">
-                            <div style="width: 95%; margin: auto; overflow-x: hidden; height: 150px;">"I absolutely love the new Doctor Consultation feature, it’s an excellent service and all in the comfort of your home. My interaction with the doctor was super smooth, she correctly understood all my concerns and was extremely patient with all the questions I had. I had called in for ‘Dull Skin’, and she helped me create a daily facial care regime and made two product recommendations out of which one I bought- Sanjeevani Beauty Elixir, it has been working wonders on my skin. I also love how they give you a complimentary 500 rupees voucher which you can avail while purchasing your product. If you are going the natural way and looking for a quick derma consult with personalized recommendations, go for this! "</div>
+                            <div class="customer_review_on_bespoke_service">"I absolutely love the new Doctor Consultation feature, it’s an excellent service and all in the comfort of your home. My interaction with the doctor was super smooth, she correctly understood all my concerns and was extremely patient with all the questions I had. I had called in for ‘Dull Skin’, and she helped me create a daily facial care regime and made two product recommendations out of which one I bought- Sanjeevani Beauty Elixir, it has been working wonders on my skin. I also love how they give you a complimentary 500 rupees voucher which you can avail while purchasing your product. If you are going the natural way and looking for a quick derma consult with personalized recommendations, go for this! "</div>
                             <h5 class="customer_name_title">VEDIKA, GHAZIABAD</h5>
                             <P class="customer_year">2021</P>
                         </div>
                         <div>
                             <img src="https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png">
-                            <div style="width: 95%; margin: auto; overflow-x: hidden; height: 150px;">"I booked myself this Ayurvedic Doctor Consultation to get an effective treatment for post Covid hair loss- a concern I had been trying to treat for a long time. I interacted with their senior doctor, she heard me patiently, tried to understand my concern in depth and based on the information I shared with her on my lifestyle, daily routine etc., she recommended a weekly hair care regime to me which incorporated some new products from FE and some products that I was already using (I loved how they weren’t just pushing me to purchase more products). I have been following the recommended ritual for 2 weeks now and I have seen remarkable results. "</div>
+                            <div class="customer_review_on_bespoke_service">"I booked myself this Ayurvedic Doctor Consultation to get an effective treatment for post Covid hair loss- a concern I had been trying to treat for a long time. I interacted with their senior doctor, she heard me patiently, tried to understand my concern in depth and based on the information I shared with her on my lifestyle, daily routine etc., she recommended a weekly hair care regime to me which incorporated some new products from FE and some products that I was already using (I loved how they weren’t just pushing me to purchase more products). I have been following the recommended ritual for 2 weeks now and I have seen remarkable results. "</div>
                             <h5 class="customer_name_title">HARNOOR, NEW DELHI</h5>
                             <P class="customer_year">2021</P>
                         </div>
