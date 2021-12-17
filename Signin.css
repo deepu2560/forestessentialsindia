@@ -322,7 +322,14 @@
     }
     
     /* SIGN IN FORM */
-    #sign_form_tabel{
+
+    /* SIGN IN FORM DIV */
+    #signin_form_table_div{
+        display: flex;
+    }
+
+    /* SIGN IN FORM IN TABLE */
+    .sign_form_table{
         margin: auto;
         margin-top: 5%;
     }
@@ -341,6 +348,14 @@
         width: 350px;
         height: 40px;
     }
+
+    /* REMEMBER ME CHECKBOX */
+    #below_signin_remember_me{
+        margin-left: 1%;
+        margin-top: 2%;
+    }
+    
+    /* SIGN IN BUTTON */
     #signin_form_button{
         padding: 10px 100px;
         font-size: larger;
@@ -359,6 +374,15 @@
         background-color: black;
         color: white;
     }
+
+    /* CREATE AN ACCOUNT DIV  */
+    #create_an_account_para{
+        font-weight: lighter;
+        font-size: small;
+        color: rgb(87, 86, 86);
+    }
+
+    /* SIGN UP BUTTON */
     #signup_form_button{
         padding: 10px 100px;
         font-size: larger;
@@ -377,3 +401,140 @@
         background-color: black;
         color: white;
     }
+
+@media only screen and (min-width: 0px) and (max-width: 375px){
+    /* MAIN SIGN IN CONTENT */
+    /* SIGN IN DIV */
+    #sign_in_div{
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 10px 10px;
+    }
+    #sign_in_div>h2{
+        font-size: x-large;
+    }
+    #sign_in_div>div{
+        width: 100%;
+        height: 300px;
+        padding: 10px 5px;
+        padding-right: 5px;
+    }
+    
+    /* SIGN IN FORM */
+
+    /* SIGN IN FORM DIV */
+    #signin_form_table_div{
+        display: block;
+    }
+
+    /* SIGN IN FORM IN TABLE */
+    .sign_form_table{
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        margin-left: 8%;
+    }
+    .sign_form_label{
+        width: 200px;
+        padding-bottom: 5px;
+    }
+    #sign_form_input_email{
+        width: 250px;
+        height: 30px;
+    }
+    #sign_form_input_password{
+        width: 250px;
+        height: 30px;
+    }
+
+    /* REMEMBER ME CHECKBOX */
+    #below_signin_remember_me{
+        margin-left: 10%;
+        margin-top: 1%;
+    }
+
+    /* SIGN IN BUTTON */
+    #signin_form_button{
+        padding: 10px 70px;
+        margin-left: 10%;
+    }
+
+    /* CREATE AN ACCOUNT DIV  */
+    #create_an_account_para{
+        width: 90%;
+    }
+
+    /* SIGN UP BUTTON */
+    #signup_form_button{
+        padding: 10px 50px;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px){
+    /* MAIN SIGN IN CONTENT */
+    /* SIGN IN DIV */
+    #sign_in_div{
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 10px 10px;
+    }
+    #sign_in_div>h2{
+        font-size: x-large;
+    }
+    #sign_in_div>div{
+        width: 100%;
+        height: 350px;
+        padding: 10px 0;
+        padding-right: 5px;
+    }
+    
+    /* SIGN IN FORM */
+
+    /* SIGN IN FORM DIV */
+    #signin_form_table_div{
+        display: flex;
+    }
+
+    /* SIGN IN FORM IN TABLE */
+    .sign_form_table{
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    .sign_form_label{
+        width: 200px;
+        padding-bottom: 5px;
+    }
+    #sign_form_input_email{
+        width: 310px;
+        height: 40px;
+    }
+    #sign_form_input_password{
+        width: 300px;
+        height: 40px;
+    }
+
+    /* REMEMBER ME CHECKBOX */
+    #below_signin_remember_me{
+        margin-left: 5%;
+        margin-top: 0;
+    }
+
+    /* SIGN IN BUTTON */
+    #signin_form_button{
+        padding: 10px 70px;
+        margin-left: 5%;
+    }
+
+    /* CREATE AN ACCOUNT DIV  */
+    #create_an_account_para{
+        width: 50%;
+    }
+
+    /* SIGN UP BUTTON */
+    #signup_form_button{
+        padding: 10px 50px;
+        margin-left: 5%;
+    }
+}
