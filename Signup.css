@@ -321,6 +321,11 @@
         height: 650px;
 }
 
+/* SIGN UP FORM TABLE DIV */
+.signup_form_table_div{
+    display: flex;
+}
+
 /* SIGN UP FORM IN TABLE FORM  */
     .signup_form_label{
         text-align: left;
@@ -380,3 +385,125 @@
         background-color: black;
         color: white;
     }
+
+@media only screen and (min-width: 0px) and (max-width: 375px){
+    /* MAIN SIGN UP CONTENT  */
+
+    /* SIGN UP CONTENT START  */
+    #main_signup_div{
+        width: 98%;
+        margin: auto;
+        padding: 10px;
+    }
+    #main_signup_div>h2{
+            font-size: x-large;
+        }
+    #main_signup_div>div{
+        width: 90%;
+        border: 1px solid transparent;
+        margin: auto;
+        height: 650px;
+    }
+
+    /* SIGN UP FORM TABLE DIV */
+    .signup_form_table_div{
+    display: block;
+    }
+
+    /* SIGN UP FORM IN TABLE FORM  */
+    .signup_form_label{
+        width: 300px;
+    }
+    #signup_pleaseselect{
+        width: 300px;
+        height: 30px;
+        color: rgb(87, 86, 86);
+    }
+    #firstname{
+        width: 300px;
+        height: 30px;
+    }
+    #lastname{
+        width: 300px;
+        height: 30px;
+    }
+    #customeremail{
+        width: 300px;
+        height: 30px;
+    }
+    #customerphnnum{
+        width: 300px;
+        height: 30px;
+    }
+
+    /* PASSWORD SECTION  */
+    #password{
+        width: 300px;
+        height: 30px;
+    }
+    #confirmpassword{
+        width: 300px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px){
+    /* MAIN SIGN UP CONTENT  */
+
+    /* SIGN UP CONTENT START  */
+    #main_signup_div{
+        width: 98%;
+        margin: auto;
+        padding: 10px;
+    }
+    #main_signup_div>h2{
+            font-size: x-large;
+        }
+    #main_signup_div>div{
+        width: 90%;
+        border: 1px solid transparent;
+        margin: auto;
+        height: 650px;
+    }
+
+    /* SIGN UP FORM TABLE DIV */
+    .signup_form_table_div{
+    display: flex;
+    }
+
+    /* SIGN UP FORM IN TABLE FORM  */
+    .signup_form_label{
+        width: 300px;
+    }
+    #signup_pleaseselect{
+        width: 300px;
+        height: 30px;
+        color: rgb(87, 86, 86);
+    }
+    #firstname{
+        width: 300px;
+        height: 30px;
+    }
+    #lastname{
+        width: 300px;
+        height: 30px;
+    }
+    #customeremail{
+        width: 300px;
+        height: 30px;
+    }
+    #customerphnnum{
+        width: 300px;
+        height: 30px;
+    }
+
+    /* PASSWORD SECTION  */
+    #password{
+        width: 300px;
+        height: 30px;
+    }
+    #confirmpassword{
+        width: 300px;
+        height: 30px;
+    }
+}

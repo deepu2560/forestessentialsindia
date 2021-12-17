@@ -10,7 +10,8 @@
     <title>Create An Account</title>
 </head>
 <body style="margin: 0;">
-    <!--THE HEADER PART -->
+
+	<!--THE HEADER PART -->
 	<div class="header">
 		<div class="main--Navbar">
 			<!-- NOTIFY DIV -->
@@ -114,7 +115,6 @@
                 <tbody>
                     <tr>
                         <td class="signup_form_label">TITLE*</td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>
@@ -125,41 +125,82 @@
                                 <option value="mrs">Mrs.</option>
                             </select>
                         </td>
-                        <td></td>
                     </tr>
-                    <tr>
-                        <td class="signup_form_label">FIRST NAME*</td>
-                        <td class="signup_form_label">LAST NAME*</td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" id="firstname"></td>
-                        <td><input type="text" id="lastname"></td>
-                    </tr>
-                    <tr>
-                        <td class="signup_form_label">EMAIL ADDRESS*</td>
-                        <td class="signup_form_label">PHONE NUMBER *</td>
-                    </tr>
-                    <tr>
-                        <td><input type="email" id="customeremail"></td>
-                        <td><input type="number" id="customerphnnum"></td>
-                    </tr>
-                </tbody>
-            </table>
+				</tbody>
+			</table>
+			<div class="signup_form_table_div">
+				<table>
+					<tbody>
+						<tr>
+							<td class="signup_form_label">FIRST NAME*</td>
+						</tr>
+						<tr>
+							<td><input type="text" id="firstname"></td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="signup_form_label">LAST NAME*</td>
+						</tr>
+						<tr>
+							<td><input type="text" id="lastname"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+            <div class="signup_form_table_div">
+				<table>
+					<tbody>
+						<tr>
+							<td class="signup_form_label">EMAIL ADDRESS*</td>
+						</tr>
+						<tr>
+							<td><input type="email" id="customeremail"></td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="signup_form_label">PHONE NUMBER *</td>
+						</tr>
+						<tr>
+							<td><input type="number" id="customerphnnum"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+
             <!-- PASSWORD SECTION  -->
             <h5>SECURITY</h5>
             <hr>
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="signup_form_label">CREATE PASSWORD*</td>
-                        <td class="signup_form_label">CONFIRM PASSWORD*</td>
-                    </tr>
-                    <tr>
-                        <td><input type="password" id="password"></td>
-                        <td><input type="text" id="confirmpassword"></td>
-                    </tr>
-                </tbody>
-            </table>
+			<div class="signup_form_table_div">
+				<table>
+					<tbody>
+						<tr>
+							<td class="signup_form_label">CREATE PASSWORD*</td>
+						</tr>
+						<tr>
+							<td><input type="password" id="password"></td>
+						</tr>
+					</tbody>
+				</table>
+			
+				<table>
+					<tbody>
+						<tr>
+							<td class="signup_form_label">CONFIRM PASSWORD*</td>
+						</tr>
+						<tr>
+							<td><input type="text" id="confirmpassword"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
             <!-- BELOW SIGN UP FORM  -->
             <input type="checkbox"><label class="signup_form_label">SIGN UP TO OUR NEWSLETTER</label>
             <br>
