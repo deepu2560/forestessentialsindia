@@ -1,6 +1,8 @@
-/*_*******************************************************-------------newlatter-----------*************************************************** */
+/*_*******************************************************-------------newlatter-----------*************************************************** */ 
 body{
     margin: 0px;
+    color:black;
+    background-color: white;
 }
 #newsletter_image_container{
     background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/newsletter-bg.jpg);
@@ -151,3 +153,113 @@ body{
     border-top: 1px solid #e8e8e8;
 }
 /* _______________________________________________________________copyright-css-end_________________________________________________________ */
+
+
+
+/* @media queries for mid-screen(i-pad) */
+
+@media screen and (min-width: 376px) and (max-width:768px) {
+    #newslatter_text_container{
+        width: 100%;
+    }
+    #service_charac{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+    }
+    #service_charac div{
+
+        width: 48%;
+        height: 320px;
+    }
+    #service_charac>div:nth-child(3),#service_charac>div:nth-child(4){
+        height: 200px;
+    }
+    #footer{
+        border: 1px solid transparent;
+        display: grid;
+        margin: auto;
+        width: 80%;
+        grid-template-rows: 480px 480px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #copy_right{
+        border: 1px solid transparent;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 80%;
+        margin: 310px auto 10px ;
+        margin-left: 28%;
+    }
+    #copy_right>div{
+        margin-top:20px ;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #copy_right span{
+        border: none;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:375px) {
+    #newsletter_image_container{
+        height: 450px;
+    }
+    #newslatter_text_container{
+        width: 100%;
+    }
+    #input_fleld_div input{
+        margin-bottom: 20px;
+    }
+    #service_charac{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+    }
+    #service_charac div{
+        width: 100%;
+        height: 400px;
+        text-align: center;
+    }
+    #service_charac>div:last-child{
+        height: 100px;
+    }
+    #footer{
+        display: grid;
+        width: 90%;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,400px);
+        grid-gap: 20px;
+    }
+    #footer div{
+        width: 374px;
+    }
+    #footer>div:last-child{
+        height: 100px;
+    }
+    #copy_right{
+        border: 1px solid transparent;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    #copy_right>div{
+        margin-top:20px ;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #copy_right span{
+        border: none;
+        margin: auto;
+    }
+    #copy_right img{
+        width: 350px;
+    }
+}
