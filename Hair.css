@@ -1,0 +1,406 @@
+@font-face{
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    margin-top: 10px;
+    cursor: pointer;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+/********************HEADER*****************************/
+
+.main--Navbar{
+    font-size:10px;
+}
+.main--Navbar *{
+    box-sizing: border-box;
+}
+
+/************** Notification *********************/
+.ads{
+    background:#333;
+    color:#fff;
+    height:5vh;
+    font-size:1em;
+    text-align: center;
+    letter-spacing:1.8px;
+    line-height:14px;
+    padding: 10px 10px 8px 10px;
+    overflow:hidden;
+}
+
+.notify{
+    display: none;
+    animation: left-side .1s ;
+}
+
+
+@keyframes left-side{
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+
+
+/*******************Navbar ***************/
+.navbar{
+    background: #fbf9f9;
+    
+}
+
+/* nav-1 */
+.navbar--1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:95%;
+    margin:auto ;
+    padding:1.5em;
+    text-transform: uppercase;
+    font-size:1em;
+    letter-spacing:3px;
+    line-height: 15.7143px;
+    border-bottom:1px solid #ebebeb;
+    font-weight: 400;
+    color:#888;
+}
+.INR{
+    letter-spacing:3px;
+    border: none;
+    font-size:1em;
+    background: #fbf9f9;
+}
+.submenu--left , .submenu--right{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.margin-right{
+    margin-right:1em;
+}
+
+.submenu-mg{
+    margin-right:4em;
+
+}
+
+.mg-medium{
+    margin-right:2em;
+}
+
+.submenu--logo{
+    width:16em;
+    height:10.7em;
+}
+
+/* nav-2 */
+.navbar--2{
+    background:#fbf9f9;
+}
+
+.navbar_nav{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    text-transform:uppercase;
+    font-size: larger;
+    letter-spacing:3px;
+    padding:1em;
+    color:rgb(0, 0, 0);
+    margin:0;
+    line-height: normal;
+    font-stretch: expanded;
+    font-weight:100;
+
+
+    
+}
+
+.nav-item{
+    margin-right:3em;
+}
+
+.nav-link , .nav-link:link , .nav-link:active{
+    text-decoration: none;
+    color:#888;
+}
+
+
+.comment-tag{
+    display:flex;
+    align-items:center;
+}
+.comment-tag img{
+    margin-top:-7px;
+    margin-right:.5em;
+    width:32px;
+    height:32px;
+}
+
+.festivel-tag{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+.festivel-tag img{
+    width:40px;
+    height:40px;
+    margin-top:-4em;
+    
+
+}
+
+/******************ON SCROLL EDIT NAV *********************/
+.nav_scroll{
+    box-shadow: 0 2px 3px rgb(57 63 72 / 20%);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background: #fbf9f9;
+}
+.nav_scroll .submenu--logo{
+    width:8.5em;
+    height:5em;
+}
+.nav_scroll .navbar--1{
+    padding:1em;
+}
+
+
+/*****************cart ********************/
+
+.cart{
+
+    position:relative;
+}
+
+.cart > span{
+    position: absolute;
+    display:inline-block;
+    z-index: 1; 
+    width:25px;
+    height:25px;
+    border: 1px solid black;
+    left:10px;
+    top: 10px;
+    border-radius: 50px;
+    text-align:center;
+    padding-top:5px;
+    padding-left:2px;
+    color:#fff;
+    background:black;
+
+} 
+
+/******************************SEARCH*******************************************/
+
+
+.search{
+    height:20vh;
+    color:#757575;
+    width:95%;
+    margin:auto;
+    text-align: center;
+    position:relative;
+    z-index:1;
+    margin-top:1%;
+    
+}
+#hide{
+    display:none;
+}
+
+.search--div{
+
+    padding-right:1em;
+    background:#fff;
+    border: 2px solid #eee;
+    margin: auto;
+    display:inline-block;
+    width:50%;
+    margin-top:4em;
+    
+}
+
+
+.search_input{
+    width:55em;
+    height: 50px;
+    padding: 0 15px;
+    margin: 0;
+    font-family: inherit;
+    font-size: 1em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.search_input:focus{
+    outline:none;
+}
+
+.cross--icon{
+    position:absolute;
+    width:2em;
+    height:2em;
+    right:1em;
+    top:50px;
+    cursor: pointer;
+    
+
+
+}
+
+#search{
+    outline:none;
+}
+
+
+
+/* HAIR CARE MAIN CONTENT */
+
+/* TOP BACKGROUND IMAGE AND FILTER / SORT OPTION */
+
+/* BACKGROUND IMAGE ( HAIR CARE TEXT ) */
+#top_backgrd_hear_care{
+    border: 1px solid transparent;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    margin-bottom: 30px;
+    background-image: url(https://images.forestessentialsindia.com/pub/media/catalog/category/3_Hair_Care_MG_7191_final_2880x640-min-min.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* FILTER AND SORT FEATURE */
+#filter_price{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+/* FILTER AS PER CATEGORY / SORT AS  PER PRICE  */
+#filter, #sorted{
+    font-weight: lighter;
+    padding: 15px 100px;
+    text-align: center;
+    border: 1px solid rgb(180, 178, 178);
+    color: rgb(180, 178, 178);
+}
+option{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* SHORTCUT FOR HOME PAGE  */
+#h3_home_link{
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+}
+#h3_home_link:hover{
+    text-decoration: underline;
+}
+
+/* HAIR PRODUCT IN GIRD */
+#hair_container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+#hair_container>div{
+    background-color: #f9f9f9;
+    height: 500px;
+}
+
+/* PRODUCT IMAGE  */
+#prodimg{
+    width: 100%;
+    height: 275px;
+    cursor: pointer;
+}
+
+/* PRICE AND WISHLIST GROUP */
+.priceWishSmallDiv{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+#hair_container>div:nth-child(2)>.priceWishSmallDiv{
+    margin-top: 11%;
+}
+#hair_container>div:nth-child(8)>.priceWishSmallDiv{
+    margin-top: 5%;
+}
+#hair_container>div:nth-child(15)>.priceWishSmallDiv{
+    margin-top: 10%;
+}
+#hair_container>div:nth-child(16)>.addCartButton{
+    margin-top: 8%;
+}
+#hair_container>div:nth-child(17)>.priceWishSmallDiv{
+    margin-top: 0%;
+}
+#hair_container>div:nth-child(17)>.addCartButton{
+    margin-top: 5%;
+}
+
+/* ADD CART BUTTON  */
+.addCartButton{
+    border: 2px solid black;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 80px;
+    font-size: large;
+    margin-top: 10%;
+    cursor: pointer;
+    margin-left: 5%;
+}
