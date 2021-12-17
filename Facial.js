@@ -105,6 +105,9 @@ data.map(function(elem){
     maindiv.setAttribute("class","productdiv")
     var img = document.createElement("img");
     img.setAttribute("src",elem.imgurl);
+    div1.addEventListener("click",function(){
+        showProductDetails(elem,data);
+    })
     div1.append(img);
    
    

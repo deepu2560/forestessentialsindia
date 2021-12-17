@@ -49,8 +49,9 @@
     letter-spacing: 2px;
 }
 .giftingproducts{
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
+
     width: 100%;
     margin-left: 25px;
   

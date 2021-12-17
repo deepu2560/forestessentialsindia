@@ -102,6 +102,10 @@ data.map(function(elem){
     div1.setAttribute("class","icon-wishlist");
     var img = document.createElement("img");
     img.setAttribute("src",elem.imgurl);
+   
+    div1.addEventListener("click", function(){
+        showProductDetails(elem,data);
+    })
     div1.append(img);
     var name = document.createElement("p");
     name.textContent = elem.prodhead;
