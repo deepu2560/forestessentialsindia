@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/header.css">
 	<title></title>
 </head>
@@ -24,6 +25,9 @@
 	            <!-- IMAGE NAVBAR 1-->
 	            <div class="navbar--1">
 	                <div class="submenu--left">
+	                	<div class="Nav-bar" onclick="Navbar()">
+	                		<i class="fa fa-bars"></i>
+	                	</div>
 	                    <div class="submenu-mg">
 	                        <a href="#search" id="search"><img src=".\img\search-icon.png"></a>
 	                    </div>
@@ -35,11 +39,24 @@
 	                    </div>
 	                </div>
 	                <div class="submenu--center">
-	                    <a href="header.html"><img class="submenu--logo" src=".\img\FE-Logo_1.webp"></a>
+	                    <a href="header.html">
+	                    	<picture>
+	                    		<source srcset="./img/mobile-logo.png" media="(max-width:540px)">
+
+	                    		<img class="submenu--logo" src="./img/FE-Logo_1.webp">	
+	                    	</picture>
+	                    	
+	                    </a>
 	                </div>
 	                <div class="submenu--right">
-	                    <div class="mg-medium">account</div>
-	                    <div class="mg-medium">wishlist</div>
+	                    <div class="nav-icon mg-medium">
+	                    	<span>account</span>
+	                    	<i class="fa fa-user-circle-o"></i>
+	                    </div>
+	                    <div class="nav-icon mg-medium">
+	                    	<span>wishlist</span>
+	                    	<i class='fa fa-heart-o'></i>
+	                    </div>
 	                    <div>
 	                        <div class="cart">
 	                            <img src="./img/cart-icon.png" >
@@ -53,39 +70,55 @@
 	            <!-- IMAGE NAVBAR 2 LINKS-->
 	            <div class="navbar--2">
 	                <ul class="navbar_nav">
-	                    <li class="nav-item comment-tag">
+	                	<li class="nav-item">
+	                		<!--DISPLAY ONLY MOBILE PHONE RESPONSIVE --->
+	                		<div class="responsive_div">
+		                		<div class="responsive_link">
+		                			<img src="https://images.forestessentialsindia.com/pub/media/new-fe.png" width="15%">
+		                			<a href="#" >LOGIN/REGISTER</a>
+		                		</div>
+
+		                		<div class="responsive--serach">
+		                    		<input type="text" placeholder="search the web store" class="search_input search_resp">
+		                    		<img src=".\img\search-icon.png">
+		                    	</div>
+		                    </div>	
+	                	</li>
+	                    <li class="nav-item comment-tag res-icon-1">
 	                        <img src="./img/new.jpg" >
 	                        <a href="" class="nav-link">bespoker services</a>
 	                    </li>
-	                    <li class="nav-item">
+	                    <li class="nav-item res-icon-2">
 	                        <a href="" class="nav-link">facial care</a>
 	                    </li>
-	                    <li class="nav-item">
+	                    <li class="nav-item res-icon-3">
 	                        <a href="" class="nav-link" >body care</a>
 	                    </li>
-	                    <li class="nav-item">
+	                    <li class="nav-item res-icon-4">
 	                        <a href="" class="nav-link" >hair care</a>
 	                    </li>
-	                    <li class="nav-item">
+	                    <li class="nav-item res-icon-5">
 	                        <a href="./pages/makeup.html" class="nav-link" >makeup</a>
 	                    </li>
-	                    <li class="nav-item">
+	                    <li class="nav-item res-icon-6">
 	                        <a href="" class="nav-link" >wellness</a>
 	                    </li>
-	                    <li class="nav-item festivel-tag">
+	                    <li class="nav-item festivel-tag res-icon-7">
 	                        <img src="./img/festival.jpg" >
 	                        <a href="" class="nav-link" >gifting</a>
 	                    </li>   
-	                    <li class="nav-item">
+	                    <li class="nav-item res-icon-8">
 	                        <a href="./pages/rituals.html" class="nav-link" >rituals</a>
 	                    </li>
-	                    <li class="nav-item">
+	                    <li class="nav-item res-icon-8">
 	                        <a href="" class="nav-link" >collections</a>
 	                    </li>
-	                    <li class="nav-item">
+	                    <li class="nav-item res-icon-9">
 	                        <a href="" class="nav-link" >discover</a>
 	                    </li>
 	                </ul>
+	                <!--ONLY SHOWS IN MOBILE PHONE -->
+	            	<img class="cross--icon__res--hide" src="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/images/cross-icon.svg" onclick="resCrossIcon()">
 
 	            </div>
 
@@ -93,7 +126,7 @@
 	            <div class="search" id="hide">
 	                <div class="search--div">
 	                    <input type="text" placeholder="search the web store" class="search_input">
-	                    <img src="..\img\search-icon.png">
+	                    <img src=".\img\search-icon.png">
 	                </div>
 	                <img class="cross--icon" src="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/images/cross-icon.svg" id="show">
 	            </div>
@@ -103,16 +136,29 @@
 		<!-- IMAGE SLIDER -->
 		<div class="slider_container">
 			<div class="img_slider">
-				<img  src="./img/slide1.jpg" width="100%" height="100%" id="img1"> 
+				<picture>
+	                <source srcset="./img/img1_mobile.jpg" media="(max-width:540px)">
+	                <img  src="./img/slide1.jpg" width="100%" height="100%" >	
+	            </picture>
+				 
 			</div>
 			<div class="img_slider">
-				<img src="./img/slide2.jpg" width="100%" height="100%" id="img2">
+				<picture>
+	                <source srcset="./img/slide2_mobile.jpg" media="(max-width:540px)">
+	                <img  src="./img/slide2.jpg" width="100%" height="100%" >	
+	            </picture>
 			</div>
 			<div class="img_slider">
-				<img src="./img/slide3.jpg" width="100%" height="100%" id="img3">
+				<picture>
+	                <source srcset="./img/slide3_mobile.jpg" media="(max-width:540px)">
+	                <img  src="./img/slide3.jpg" width="100%" height="100%" >	
+	            </picture>
 			</div>
 			<div class="img_slider">
-				<img src="./img/slide4.jpg" width="100%" height="100%" id="img4">
+				<picture>
+	                <source srcset="./img/slide4_mobile.jpg" media="(max-width:540px)">
+	                <img  src="./img/slide4.jpg" width="100%" height="100%" >	
+	            </picture>
 			</div>
 
 			<a class="prev" onclick="plus(-1)">&#10094;</a>
@@ -127,7 +173,6 @@
 
 <script>
 	
-
 
 	//ONCLICK IMAGE SLIDER
 	var index = 1 

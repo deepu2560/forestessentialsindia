@@ -50,3 +50,16 @@ window.onscroll = function (e) {
 
     }
 };
+
+
+//RESPONSIVE NAVBAR
+function Navbar(){
+	var nav = document.querySelector(".navbar")
+	nav.classList.add("resp--nav")
+}
+
+	
+function resCrossIcon(){
+	var nav = document.querySelector(".navbar")
+	nav.classList.remove("resp--nav")
+}

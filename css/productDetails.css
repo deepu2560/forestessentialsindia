@@ -1,4 +1,11 @@
+@font-face {
+  font-family:calibre;
+  src: url("../font/CalibreLight.otf");
+}
 
+.wrapped__product__detailsPage{
+	font-family: calibre;
+}
 .details{
 	background:#fbf9f9;
 	padding-bottom: 50px;
@@ -19,6 +26,10 @@
 	flex-basis: 45%;
 	text-align:center;
 
+}
+
+.product__Details--img img{
+		width: 100%;
 }
 .product__Details--img div{
 	text-align: right;
@@ -182,4 +193,44 @@
 }
 .related_products span{
 	font-size: 11px;
+}
+
+
+@media screen and (max-width:780px){
+	#product_name{
+		font-size:25px;
+		margin-bottom:30px;
+	}
+
+	.qty{
+		flex-basis: 60%;
+	}
+
+	.Add_Bag{
+		width:50%;
+		margin-left:3%;
+	}
+
+
+	.product__Details{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width:480px){
+	
+
+	.product__Details{
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.Add_Bag{
+		width:40%;
+		margin-left:3%;
+	}
+
+	.product__Details--info {
+    padding: 3%;
+	}
 }

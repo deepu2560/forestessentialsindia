@@ -1,5 +1,11 @@
 /*********************************PRODUCT MAKEUP PAGE******************************************************/
-
+@font-face {
+  font-family:calibre;
+  src: url("./font/CalibreLight.otf");
+}
+.makeup-page{
+	font-family: calibre;
+}
 .makeup--IMG{
 	height:60vh;
 	background-image: url(https://images.forestessentialsindia.com/pub/media/makeup/Makeup_collection_category_desktop.jpg);
@@ -158,4 +164,62 @@
 	font-size:12px;
 	line-height:25px;
 	margin-top: 25px;
+}
+
+@media screen and (max-width:789px){
+	.video-wrap video{
+		display: none;
+	}
+
+	iframe{
+		width:100%;
+		height:300px;
+	}
+
+	.Makeup_product--1{
+		height: auto;
+		flex-direction: column;
+	}
+
+	.discovermore{
+		flex-direction: column;
+	}
+
+	.discover-desciption{
+  	font-size:19px;
+  }
+  .product-img{
+  	margin-bottom:10px;
+  }
+  .discover--ml {
+    margin-left: 0px;
+  }
+
+}
+
+@media screen and (max-width:450px){
+	.video-wrap video{
+		display: none;
+	}
+
+	.Makeup_product--1{
+		height: auto;
+		flex-direction: column;
+	}
+
+	.discovermore{
+		flex-direction: column;
+	}
+	iframe{
+		width:100%;
+		height:200px;
+	}
+
+
+	
+
+  
+  .discover-desciption{
+  	font-size:15px;
+  }
 }
