@@ -2,6 +2,8 @@
 
 body{
     margin: 0px;
+    background-color: white;
+    color: black;
 }
 .category_image{
     background-size: cover;
@@ -93,7 +95,6 @@ body{
     font-family: calibri;
     letter-spacing: 2.8px;
     width: 315px;
-    font-weight: bold;
 }
 .wishlist{
     width: 12px;

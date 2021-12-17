@@ -101,11 +101,11 @@
 			</div>
 		</div> 
     </div>   
-    <div class="page_title_wrapper">
+    <div class="basket_and_summary_wrapper">
         <div class="basket">
             <h1>Basket</h1>
-            <div class="procon">
-                <div >
+            <div class="product_container">
+                <!-- <div>
                     <div>
                         <img src="https://images.forestessentialsindia.com/pub/media/catalog/product/cache/3a98496dd7cb0c8b28c4c254a98f915a/1/0/1075_bath_shower_oil_oudh_green_tea_130ml_front.png" alt="" width="165px" height="165px">
                     </div>
@@ -123,8 +123,9 @@
                         <span>1344.00rs</span>
                     </div>
                     <div><span class="remove_from_cart">X</span></div>
-                </div>
-                <div >
+                </div> -->
+
+                <!-- <div >
                     <div>
                         <img src="https://images.forestessentialsindia.com/pub/media/catalog/product/cache/3a98496dd7cb0c8b28c4c254a98f915a/1/0/1075_bath_shower_oil_oudh_green_tea_130ml_front.png" alt="" width="165px" height="165px">
                     </div>
@@ -144,10 +145,10 @@
                     <div>
                         <span class="remove_from_cart">X</span>
                     </div>
-                </div>
+                </div> -->
             </div>    
         </div>
-        <divc class="order_summary">
+        <div class="order_summary">
             <h1>Order Summary</h1>
             <div>
                 <label for="">Promo Code</label><br><br>
@@ -169,7 +170,7 @@
                 <p>Note: For deliveries outside India, Customs and other charges may apply (click to see details)</p>
                 <button class="checkout_button">PROCEED TO CHECKOUT</button>
             </div>
-        </divc>
+        </div>
     </div>
     <div id="newsletter_image_container">
         <div id="newslatter_text_container">
@@ -279,54 +280,36 @@
 </body>
 </html>
 <script>
-    // var arr = JSON.parse(localStorage.getItem('cart'))||[]
-    var arr = 
-    [
-    {
-        imgUrl:"https://images.forestessentialsindia.com/pub/media/catalog/product/cache/3a98496dd7cb0c8b28c4c254a98f915a/1/5/15327_travel-size-intense-perfumed-body-mist-chandani-raatein_front.png",
-        prohead:"TRAVEL SIZE INTENSE PERFUMED BODY MIST CHANDANI RAATEIN",
-        prodprice:"₹500.55",
-        count:1
-    },
-    {
-        imgUrl:"https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9709_luxury_sugar_soap_sandalwood_turmeric_125g_front.png",
-        prohead:"INTENSE PERFUMED BODY MIST CHANDANI RAATEIN",
-        prodprice:"2000.00",
-        count:1
-    },
-    {
-        imgUrl:"https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/8/9848_natural_deodorant_sweet_orange_and_cardamom.png",
-        prohead:"PERFUMED BODY MIST CHANDANI RAATEIN",
-        prodprice:"₹1000.00",
-        count:1
-    },
-    // {
-    //     imgUrl:"https://images.forestessentialsindia.com/pub/media/catalog/product/cache/3a98496dd7cb0c8b28c4c254a98f915a/1/5/15327_travel-size-intense-perfumed-body-mist-chandani-raatein_front.png",
-    //     prohead:"TRAVEL SIZE INTENSE PERFUMED BODY MIST CHANDANI RAATEIN",
-    //     prodprice:"₹695.00",
-    //     count:1
-    // },
-    // {
-    //     imgUrl:"https://images.forestessentialsindia.com/pub/media/catalog/product/cache/3a98496dd7cb0c8b28c4c254a98f915a/1/5/15327_travel-size-intense-perfumed-body-mist-chandani-raatein_front.png",
-    //     prohead:"TRAVEL SIZE INTENSE PERFUMED BODY MIST CHANDANI RAATEIN",
-    //     prodprice:"₹695.00",
-    //     count:1
-    // },
-    // {
-    //     imgUrl:"https://images.forestessentialsindia.com/pub/media/catalog/product/cache/3a98496dd7cb0c8b28c4c254a98f915a/1/5/15327_travel-size-intense-perfumed-body-mist-chandani-raatein_front.png",
-    //     prohead:"TRAVEL SIZE INTENSE PERFUMED BODY MIST CHANDANI RAATEIN",
-    //     prodprice:"₹695.00",
-    //     count:1
-    // }
-    ]
+    var cart =JSON.parse(localStorage.getItem('cart'))||[]
+    // var counter = [];
+    // cart.map(function(el){ counter.push(1) })
+    // var counter = JSON.parse(localStorage.getItem('counter'))||[]
+    // if(cart.length == 0)
+    //     {
+    //         console.log("hi")
+    //         cart.map(function(el){ counter.push(1) })
+    //     }
+    // localStorage.setItem('counter',JSON.stringify(counter))
+    var arr = []
+    cart.map(function(el,index){
+        var obj = {
+            imgUrl:el.imgUrl,
+            prodhead:el.prodhead,
+            prodprice:el.prodprice,
+            count:1
+        }
+        arr.push(obj)
+    })
+
+    console.log(arr)
     display(arr)
     updateCheckoutSection(arr)
     function display(arr)
     {
-        document.querySelector('.procon').textContent = ""
+        document.querySelector('.product_container').textContent = ""
         if(arr.length == 0)
             {
-                document.querySelector('.procon').innerHTML= "<p> You have no items in your shopping.<br>Click here to continue shopping.</p>"
+                document.querySelector('.product_container').innerHTML= "<p> You have no items in your shopping.<br>Click here to continue shopping.</p>"
                 document.querySelector('.order_summary').textContent = ""
             }
         else{
@@ -352,7 +335,7 @@
                     
                     div1_img.setAttribute('src',el.imgUrl)
                     div1.append(div1_img)
-                    div2_p.textContent = el.prohead
+                    div2_p.textContent = el.prodhead
                     div2.append(div2_p)
                     div4_span.textContent = el.prodprice
                     div4.append(div4_span)
@@ -375,7 +358,7 @@
                     div3.append(div3_div)
 
                     div.append(div1,div2,div3,div4,div5)
-                    document.querySelector('.procon').append(div)
+                    document.querySelector('.product_container').append(div)
             })
         }    
     }
@@ -386,11 +369,12 @@
                 if(price[0] == "₹")
                    price = price.slice(1)
                 else
-                    price = el.prodprice   
-            return ac + Number(price)
+                    price = el.prodprice 
+                count = el.count   
+            return ac + Number(price)*Number(count)
         },0)
         var delivery_charges = 0
-        var total_price_of_cart_items_with_delivery_charges = total_price_without_delivery + delivery_charges
+        var total_price_of_cart_items_with_delivery_charges = ( total_price_without_delivery + delivery_charges )
         document.querySelector("#total_number_of_cart_items").textContent = ""
         document.querySelector("#total_number_of_cart_items").textContent = arr.length+" x items"
 
@@ -405,6 +389,8 @@
     }
     function increment(index){
                         arr[index].count++
+                        // counter[index]++
+                        // localStorage.setItem('counter',JSON.stringify(counter))
                         display(arr)
                         updateCheckoutSection(arr)
                 }
@@ -412,6 +398,8 @@
                     if(arr[index].count>1)
                     {
                         arr[index].count--
+                        // counter[index]--
+                        // localStorage.setItem('counter',JSON.stringify(counter))
                         display(arr)
                         updateCheckoutSection(arr)
                     }
@@ -420,6 +408,11 @@
     {
         arr.splice(index,1)
         display(arr)
+        cart.splice(index,1)
+        localStorage.setItem('cart',JSON.stringify(cart))
+        // counter.splice(index,1)
+        // localStorage.setItem('counter',JSON.stringify(counter))
+        
         updateCheckoutSection(arr)
     }
 </script>
