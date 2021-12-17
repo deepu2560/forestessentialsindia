@@ -260,14 +260,34 @@ if(window.scrollY > 80){
             var icon = document.createElement("span");
                 icon.setAttribute("class", "material-icons")
                 icon.textContent = "favorite_border";
+                icon.addEventListener("click", function(){
+                    addtowishlist(elem);
+                })
             
             var addcart = document.createElement("button");
                 addcart.textContent = "ADD TO BAG";
-                addcart.setAttribute("class", "addCartButton")
+                addcart.setAttribute("class", "addCartButton");
+                addcart.addEventListener("click", function(){
+                    addtocart(elem);    
+                });
 
 
             smalldiv.append(p2, icon);
             div.append(image, h4, p, smalldiv, addcart);
             body.append(div);
         });
+    };
+
+// ADDING ITEM TO CART
+    var cart=JSON.parse(localStorage.getItem("cart")) || [];
+    function addtocart(elem){
+        cart.push(elem);
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }
+
+// ADDING ITEM TO WHISHLIST
+    var wishlist=JSON.parse(localStorage.getItem("wishlist")) || [];
+    function addtowishlist(elem){
+        wishlist.push(elem);
+        localStorage.setItem("wishlist", JSON.stringify(wishlist));
     }

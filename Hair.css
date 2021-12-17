@@ -404,3 +404,208 @@ option{
     cursor: pointer;
     margin-left: 5%;
 }
+
+/* ENDING LINES BELOW HAIR PRODUCTS */
+#hair_ending_lines_below_product{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 375px){
+    /* HAIR CARE MAIN CONTENT */
+
+/* TOP BACKGROUND IMAGE AND FILTER / SORT OPTION */
+
+/* BACKGROUND IMAGE ( HAIR CARE TEXT ) */
+    #top_backgrd_hear_care{
+        border: 1px solid black;
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        margin-bottom: 30px;
+        background-image: url(https://media.istockphoto.com/photos/jars-of-spices-picture-id1298434383?b=1&k=20&m=1298434383&s=170667a&w=0&h=RqHTBppU1TdnXJRu4v-Q4KW6ktI5kEMpCVb0eyoGZo0=);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding-top: 15%;
+        padding-bottom: 5%;
+    }
+    /* FILTER AND SORT FEATURE */
+    #filter_price{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* FILTER AS PER CATEGORY / SORT AS  PER PRICE  */
+    #filter, #sorted{
+        padding: 5px 10px;
+    }
+
+    /* HAIR PRODUCT IN GIRD */
+    #hair_container{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4px;
+    }
+    #hair_container>div{
+        height: 400px;
+    }
+
+    /* PRODUCT IMAGE  */
+    #prodimg{
+        height: 175px;
+    }
+
+    /* PRICE AND WISHLIST GROUP */
+    .priceWishSmallDiv{
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+    #hair_container>div:nth-child(2)>.priceWishSmallDiv{
+        margin-top: 20%;
+    }
+    #hair_container>div:nth-child(2)>.addCartButton{
+        margin-top: 15%;
+    }
+    #hair_container>div:nth-child(3)>.priceWishSmallDiv{
+        margin-top: 20%;
+    }
+    #hair_container>div:nth-child(8)>.priceWishSmallDiv{
+        margin-top: 5%;
+    }
+    #hair_container>div:nth-child(11)>.priceWishSmallDiv{
+        margin-top: 20%;
+    }
+    #hair_container>div:nth-child(13)>.priceWishSmallDiv{
+        margin-top: 20%;
+    }
+    #hair_container>div:nth-child(15)>.priceWishSmallDiv{
+        margin-top: 23%;
+    }
+    #hair_container>div:nth-child(16)>.addCartButton{
+        margin-top: 8%;
+    }
+    #hair_container>div:nth-child(17)>.priceWishSmallDiv{
+        margin-top: -10px;
+    }
+    #hair_container>div:nth-child(17)>.addCartButton{
+        margin-top: 0;
+    }
+
+    /* ADD CART BUTTON  */
+    .addCartButton{
+        padding: 5px 10px;
+        margin-top: 5%;
+        font-size: medium;
+    }
+
+    /* ENDING LINES BELOW HAIR PRODUCTS */
+    #hair_ending_lines_below_product{
+        width: 90%;
+        margin: auto;
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px){
+    /* HAIR CARE MAIN CONTENT */
+
+/* TOP BACKGROUND IMAGE AND FILTER / SORT OPTION */
+
+/* BACKGROUND IMAGE ( HAIR CARE TEXT ) */
+    #top_backgrd_hear_care{
+        border: 1px solid black;
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        margin-bottom: 30px;
+        background-image: url(https://media.istockphoto.com/photos/adaptogen-health-food-collection-for-stress-relief-picture-id1298149766?b=1&k=20&m=1298149766&s=170667a&w=0&h=nmjxFUAZAZG5DzE8XV_Y74W-CFs5RmdZWeqsZ67dgHc=);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding-top: 15%;
+        padding-bottom: 5%;
+    }
+    /* FILTER AND SORT FEATURE */
+    #filter_price{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* FILTER AS PER CATEGORY / SORT AS  PER PRICE  */
+    #filter, #sorted{
+        padding: 10px 20px;
+    }
+
+    /* HAIR PRODUCT IN GIRD */
+    #hair_container{
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 4px;
+    }
+    #hair_container>div{
+        height: 425px;
+    }
+
+    /* PRODUCT IMAGE  */
+    #prodimg{
+        height: 200px;
+    }
+
+    /* PRICE AND WISHLIST GROUP */
+    .priceWishSmallDiv{
+        padding-left: 15px;
+        padding-right: 30px;
+        margin-top: 5%;
+    }
+    #hair_container>div:nth-child(2)>.priceWishSmallDiv{
+        margin-top: -2%;
+    }
+    #hair_container>div:nth-child(2)>.addCartButton{
+        margin-top: 15%;
+    }
+    #hair_container>div:nth-child(3)>.priceWishSmallDiv{
+        margin-top: 15%;
+    }
+    #hair_container>div:nth-child(8)>.priceWishSmallDiv{
+        margin-top: 5%;
+    }
+    #hair_container>div:nth-child(11)>.priceWishSmallDiv{
+        margin-top: 5%;
+    }
+    #hair_container>div:nth-child(12)>.priceWishSmallDiv{
+        margin-top: -10%;
+    }
+    #hair_container>div:nth-child(13)>.priceWishSmallDiv{
+        margin-top: 15%;
+    }
+    #hair_container>div:nth-child(15)>.priceWishSmallDiv{
+        margin-top: 15%;
+    }
+    #hair_container>div:nth-child(16)>.addCartButton{
+        margin-top: 8%;
+    }
+    #hair_container>div:nth-child(18)>.priceWishSmallDiv{
+        margin-top: -8px;
+    }
+    #hair_container>div:nth-child(19)>.priceWishSmallDiv{
+        margin-top: 15%;
+    }
+
+    /* ADD CART BUTTON  */
+    .addCartButton{
+        padding: 5px 10px;
+        margin-top: 5%;
+        font-size: medium;
+    }
+
+    /* ENDING LINES BELOW HAIR PRODUCTS */
+    #hair_ending_lines_below_product{
+        width: 90%;
+        margin: auto;
+        padding-top: 0;
+    }
+}
