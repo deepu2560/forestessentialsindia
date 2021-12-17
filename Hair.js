@@ -240,6 +240,9 @@ if(window.scrollY > 80){
             var image = document.createElement("img");
                 image.setAttribute("src", elem.imgUrl);
                 image.setAttribute("id", "prodimg");
+                image.addEventListener("click", function(){
+                    showProductDetails(elem, data);
+                })
 
             var h4 = document.createElement("h4");
                 h4.textContent = elem.prodhead;
@@ -277,6 +280,18 @@ if(window.scrollY > 80){
             body.append(div);
         });
     };
+
+// ADDING TO PRODUCT DETAILS PAGE
+var details =  []
+function showProductDetails(ele , data){
+	details.push(ele)	
+	localStorage.setItem("productDetails" , JSON.stringify(details))
+	localStorage.setItem("related_products" , JSON.stringify(data))
+	
+	window.location.href = "../pages/productDetails.html";
+
+}
+
 
 // ADDING ITEM TO CART
     var cart=JSON.parse(localStorage.getItem("cart")) || [];
