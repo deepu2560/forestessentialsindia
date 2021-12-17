@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="category.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="category.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Our Collections</title>
 </head>
@@ -99,14 +99,20 @@
     </div>      
     <div class="category_view">
         <div class="category_image" id="collectionS_image_height">
-            <div class="category_name">
+            <div class="category_name  collection_category">
                 <h1>COLLECTIONS</h1>
             </div>
         </div>
         <div class="category_sort">
             <div>
                 <button id="filter_block_open" class="filter_button" onclick="show()">Filter</button>
-                <button id="sort_by_open" class="filter_button">SORT BY</button>
+                <button id="sort_by_open" class="filter_button" onclick="sort_by_price()">
+                    <select name="" id="select_option_to_sort">
+                        <option value="noeffect">sort By</option>
+                        <option value="low">PRICE (LOWEST FIRST)</option>
+                        <option value="high">PRICE (HIGHEST FIRST)</option>
+                    </select>
+                </button>
             </div>
         </div>
         <div class="filter_block">
@@ -255,187 +261,16 @@
             </ul>
         </div>
     </div>
-    <div id="copy_right"> 
+     <div id="copy_right"> 
         <div>
             <span>PAYMENT METHODS</span>
             <img src="https://images.forestessentialsindia.com/pub/media/payment-method-new.png" alt="" width="500px">
         </div>
-        <div>
+        <div  style="border: 1px solid transparent;">
             <span>© Forest Essentials</span>
         </div>
     </div> 
 </body>
 </html>
+<script src="collection.js"></script>
 
-<script>
-    var proarr = [
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/d/e/deeply_moisturizing_hand_wash_50ml_copy.png",
-            proname: "DEEPLY MOISTURISING HAND WASH MANDARIN & NEEM",
-            proq: "50 ml",
-            price: "₹295.00"
-        },
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9700_shower_wash_honey_vanilla_50ml_front1.png",
-            proname: "TRAVEL SIZE SILKENING SHOWER WASH MASHOBRA HONEY & VANILLA",
-            proq: "50 ml",
-            price: "₹295.00"
-        },        
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/0/9000_shower_wash_jasmine_mogra_50ml_front1.png",
-            proname: "TRAVEL SIZE SILKENING SHOWER WASH MADURAI JASMINE & MOGRA",
-            proq: "50 ml",
-            price: "₹295.00"
-        },        
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8999_shower_wash_indian_rose_absolute_50ml_front1.png",
-            proname: "TRAVEL SIZE SILKENING SHOWER WASH INDIAN ROSE ABSOLUTE",
-            proq: "50 ml",
-            price: "₹295.00"
-        },        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9706_shower_wash_parijat_50ml_front1.png",
-            proname: "TRAVEL SIZE SILKENING SHOWER WASH PARIJAT",
-            proq: "50 ml",
-            price: "₹325.00"
-        },        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8998_shower_wash_oudh_green_tea_50ml_front1.png",
-            proname: "TRAVEL SIZE SILKENING SHOWER WASH OUDH & GREEN TEA",
-            proq: "50 ml",
-            price: "₹325.00"
-        },        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8996_shower_wash_pomegranate_lime_50ml_front1.png",
-            proname: "TRAVEL SIZE SILKENING SHOWER WASH ICED POMEGRANATE & KERALA LIME",
-            proq: "50 ml",
-            price: "₹325.00"
-        },        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/u/l/ultra_nourishing_hand_cream_50ml_copy.png",
-            proname: "ULTRA NOURISHING HAND CREAM MANDARIN & NEEM",
-            proq: "50 ml",
-            price: "₹350.00"
-        },  
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/8/8884_delicate_facial_cleanser_mashobra_honey_lemon_rosewater_50ml_front.png",
-            proname: "TRAVEL SIZE DELICATE FACIAL CLEANSER MASHOBRA HONEY, LEMON & ROSEWATER",
-            proq: "50 ml",
-            price: "₹350.00"
-        },
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/8/8882_delicate_facial_cleanser_kashmiri_saffron_neem_50ml_front.png",
-            proname: "TRAVEL SIZE DELICATE FACIAL CLEANSER KASHMIRI SAFFRON & NEEM",
-            proq: "50 ml",
-            price: "₹350.00"
-        },        
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9745_hair_conditioner_bhringraj_shikakai_50ml_front.png",
-            proname: "TRAVEL SIZE HAIR CONDITIONER BHRINGRAJ & SHIKAKAI",
-            proq: "50 ml",
-            price: "₹395.00"
-        },        
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/9/8982_ultra_rich_body_mashobra_honey_vanilla_50ml_front.png",
-            proname: "TRAVEL SIZE ULTRA-RICH BODY MILK MASHOBRA HONEY & VANILLA",
-            proq: "50 ml",
-            price: "₹395.00"
-        },        
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/8/8870_facial_tonic_mist_panchpushp_50ml_front.png",
-            proname: "TRAVEL SIZE FACIAL TONIC MIST PANCHPUSHP",
-            proq: "50 ml",
-            price: "₹450.00"
-        },        
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9797_silken_dusting_powder_nargis_100g_front.png",
-            proname: "SILKEN DUSTING POWDER NARGIS",
-            proq: "100 g",
-            price: "₹725.00"
-        },        
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9787_baby_body_powder_dasapushpadi_100g_front.png",
-            proname: "BABY BODY POWDER DASAPUSHPADI",
-            proq: "100 g",
-            price: "₹725.00"
-        },        
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9796_silken_dusting_powder_oudh_green_tea_100g_front.png",
-            proname: "SILKEN DUSTING POWDER OUDH & GREEN TEA",
-            proq: "100 g",
-            price: "₹725.00"
-        },      
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/6/8653-shaving-cream-sandalwood-_-orange-peel-60g-front.png",
-            proname: "SANDALWOOD & ORANGE PEEL SHAVING CREAM",
-            proq: "60 g",
-            price: "₹725.00"
-        },        
-        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/8/8898_sugared_rose_petal_4g_front.png",
-            proname: "LUSCIOUS LIP BALM SUGARED ROSE PETAL",
-            proq: "4 g",
-            price: "₹750.00"
-        },        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/9/7/9738_hair_cleanser_bhringraj_shikakai_130ml_front1.png",
-            proname: "HAIR CLEANSER BHRINGRAJ & SHIKAKAI",
-            proq: "130 ml",
-            price: "₹895.00"
-        },        {
-            img: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/8/8/8890_facial_ubtan_roop_nikhar_gulab_70g_front-new.png",
-            proname: "FACIAL UBTAN ROOP NIKHAR & GULAB",
-            proq: "70 g",
-            price: "₹1,175.00"
-        }
-    ]
-    
-    display(proarr)
-    function display()
-    {
-        document.querySelector('#body_care_products').textContent = ""
-        proarr.map(function(el){
-            var maindiv = document.createElement('div')
-            var div1 = document.createElement('span') 
-            var img0 = document.createElement('img')
-            img0.setAttribute('src',"https://cdn-icons.flaticon.com/png/512/3870/premium/3870922.png?token=exp=1639563142~hmac=c211f716b578985c0a5f05b4429e170e")
-            img0.setAttribute('class',"wishlist")
-            div1.append(img0)
-            div1.setAttribute('class',"icon-wishlist")
-            var img = document.createElement('img') 
-            img.setAttribute('src',el.img)
-            div1.append(img)
-            var div2 = document.createElement('div') 
-            var p = document.createElement('p') 
-            p.textContent = el.proname
-            div2.appendChild(p)
-            var div3 = document.createElement('div') 
-            div3.setAttribute('class','price')
-            var span1 = document.createElement('span')
-            span1.textContent = el.proq
-            div3.appendChild(span1)
-            var div4 = document.createElement('div') 
-            div4.setAttribute('class','price')
-            var span2 = document.createElement('span') 
-            span2.textContent = el.price
-            div4.appendChild(span2)
-            var button = document.createElement('button') 
-            button.textContent = "ADD TO BAG"
-            button.addEventListener('click',function(el){
-                console.log('Hi')
-            })
-            maindiv.append()
-            maindiv.append(div1,div2,div3,div4,button)
-            document.querySelector('#body_care_products').append(maindiv)
-        })
-    }
-    var flag = 1
-    function show(event){
-        if(flag == 1)
-        {
-            document.querySelector('.filter_block').style.display = "grid"
-            flag = 0
-        }
-        else
-        {
-            document.querySelector('.filter_block').style.display = "none"
-            flag = 1
-        }
-    }
-  
-</script>

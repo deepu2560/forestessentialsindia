@@ -28,6 +28,10 @@ body{
     letter-spacing: 7px;
     font-family: sans-serif;
 }
+.collection_category{
+    background-color: rgba(0,0,0,0.5);
+    width: 300px;
+}
 .category_tag{
     padding: 30px 10px ;
 }
