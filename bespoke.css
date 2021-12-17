@@ -485,7 +485,7 @@
 
 /* THE FOOTER PART */
 /*_*******************************************************-------------newlatter-----------*************************************************** */ 
-#footer_body_hair_care{
+#footer_body_bespoke_care{
     margin: 0px;
     color:black;
     background-color: white;
@@ -642,56 +642,6 @@
 
 
 
-/* @media queries for mid-screen(i-pad) */
-
-@media screen and (min-width: 376px) and (max-width:768px) {
-    #newslatter_text_container{
-        width: 100%;
-    }
-    #service_charac{
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 90%;
-    }
-    #service_charac div{
-
-        width: 48%;
-        height: 320px;
-    }
-    #service_charac>div:nth-child(3),#service_charac>div:nth-child(4){
-        height: 200px;
-    }
-    #footer{
-        border: 1px solid transparent;
-        display: grid;
-        margin: auto;
-        width: 80%;
-        grid-template-rows: 480px 480px;
-        grid-template-columns: repeat(2,1fr);
-    }
-    #copy_right{
-        border: 1px solid transparent;
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-        width: 80%;
-        margin: 310px auto 10px ;
-        margin-left: 28%;
-    }
-    #copy_right>div{
-        margin-top:20px ;
-        width: 50%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    #copy_right span{
-        border: none;
-    }
-}
-
-
 /* MEDIA QUERY SECTION */
 
 /* PHONE SCREEN SCREEN */
@@ -836,6 +786,7 @@
         margin-left: 5%;
     }
 
+    /* THE FOOTER PART */
     #newsletter_image_container{
         height: 450px;
     }
@@ -996,6 +947,8 @@
         margin: auto;
     }
 
+
+    /* THE FOOTER PART  */
     #bespoke_customer_content_div{
         width: 100%;
         background-image: none;
@@ -1040,6 +993,7 @@
         margin-left: 5%;
     }
 
+    /* THE FOOTER PART */
     #newslatter_text_container{
         width: 100%;
     }

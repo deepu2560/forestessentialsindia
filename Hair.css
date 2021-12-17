@@ -572,54 +572,6 @@ option{
 
 
 
-/* @media queries for mid-screen(i-pad) */
-
-@media screen and (min-width: 376px) and (max-width:768px) {
-    #newslatter_text_container{
-        width: 100%;
-    }
-    #service_charac{
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 90%;
-    }
-    #service_charac div{
-
-        width: 48%;
-        height: 320px;
-    }
-    #service_charac>div:nth-child(3),#service_charac>div:nth-child(4){
-        height: 200px;
-    }
-    #footer{
-        border: 1px solid transparent;
-        display: grid;
-        margin: auto;
-        width: 80%;
-        grid-template-rows: 480px 480px;
-        grid-template-columns: repeat(2,1fr);
-    }
-    #copy_right{
-        border: 1px solid transparent;
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-        width: 80%;
-        margin: 310px auto 10px ;
-        margin-left: 28%;
-    }
-    #copy_right>div{
-        margin-top:20px ;
-        width: 50%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    #copy_right span{
-        border: none;
-    }
-}
 
 
 @media only screen and (min-width: 0px) and (max-width: 375px){
