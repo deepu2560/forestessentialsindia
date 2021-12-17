@@ -282,6 +282,8 @@ if(window.scrollY > 80){
     };
 
 // ADDING TO PRODUCT DETAILS PAGE
+    var productDetail = JSON.parse(localStorage.getItem("productDetails"));
+    var relatedProduct = JSON.parse(localStorage.getItem("related_products"));
 var details =  []
 function showProductDetails(elem , data){
 	details.push(elem)	
