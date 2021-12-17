@@ -1,0 +1,455 @@
+@font-face{
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    margin-top: 10px;
+    cursor: pointer;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/********************HEADER*****************************/
+
+.main--Navbar{
+    font-size:10px;
+}
+.main--Navbar *{
+    box-sizing: border-box;
+}
+
+/************** Notification *********************/
+.ads{
+    background:#333;
+    color:#fff;
+    height:5vh;
+    font-size:1em;
+    text-align: center;
+    letter-spacing:1.8px;
+    line-height:14px;
+    padding: 10px 10px 8px 10px;
+    overflow:hidden;
+}
+
+.notify{
+    display: none;
+    animation: left-side .1s ;
+}
+
+
+@keyframes left-side{
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+
+
+/*******************Navbar ***************/
+.navbar{
+    background: #fbf9f9;
+    
+}
+
+/* nav-1 */
+.navbar--1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:95%;
+    margin:auto ;
+    padding:1.5em;
+    text-transform: uppercase;
+    font-size:1em;
+    letter-spacing:3px;
+    line-height: 15.7143px;
+    border-bottom:1px solid #ebebeb;
+    font-weight: 400;
+    color:#888;
+}
+.INR{
+    letter-spacing:3px;
+    border: none;
+    font-size:1em;
+    background: #fbf9f9;
+}
+.submenu--left , .submenu--right{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.margin-right{
+    margin-right:1em;
+}
+
+.submenu-mg{
+    margin-right:4em;
+
+}
+
+.mg-medium{
+    margin-right:2em;
+}
+
+.submenu--logo{
+    width:16em;
+    height:10.7em;
+}
+
+/* nav-2 */
+.navbar--2{
+    background:#fbf9f9;
+}
+
+.navbar_nav{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    text-transform:uppercase;
+    font-size: larger;
+    letter-spacing:3px;
+    padding:1em;
+    color:rgb(0, 0, 0);
+    margin:0;
+    line-height: normal;
+    font-stretch: expanded;
+    font-weight:100;
+
+
+    
+}
+
+.nav-item{
+    margin-right:3em;
+}
+
+.nav-link , .nav-link:link , .nav-link:active{
+    text-decoration: none;
+    color:#888;
+}
+
+
+.comment-tag{
+    display:flex;
+    align-items:center;
+}
+.comment-tag img{
+    margin-top:-7px;
+    margin-right:.5em;
+    width:32px;
+    height:32px;
+}
+
+.festivel-tag{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+.festivel-tag img{
+    width:40px;
+    height:40px;
+    margin-top:-4em;
+    
+
+}
+
+/******************ON SCROLL EDIT NAV *********************/
+.nav_scroll{
+    box-shadow: 0 2px 3px rgb(57 63 72 / 20%);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background: #fbf9f9;
+}
+.nav_scroll .submenu--logo{
+    width:8.5em;
+    height:5em;
+}
+.nav_scroll .navbar--1{
+    padding:1em;
+}
+
+
+/*****************cart ********************/
+
+.cart{
+
+    position:relative;
+}
+
+.cart > span{
+    position: absolute;
+    display:inline-block;
+    z-index: 1; 
+    width:25px;
+    height:25px;
+    border: 1px solid black;
+    left:10px;
+    top: 10px;
+    border-radius: 50px;
+    text-align:center;
+    padding-top:5px;
+    padding-left:2px;
+    color:#fff;
+    background:black;
+
+} 
+
+/******************************SEARCH*******************************************/
+
+
+.search{
+    height:20vh;
+    color:#757575;
+    width:95%;
+    margin:auto;
+    text-align: center;
+    position:relative;
+    z-index:1;
+    margin-top:1%;
+    
+}
+#hide{
+    display:none;
+}
+
+.search--div{
+
+    padding-right:1em;
+    background:#fff;
+    border: 2px solid #eee;
+    margin: auto;
+    display:inline-block;
+    width:50%;
+    margin-top:4em;
+    
+}
+
+
+.search_input{
+    width:55em;
+    height: 50px;
+    padding: 0 15px;
+    margin: 0;
+    font-family: inherit;
+    font-size: 1em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.search_input:focus{
+    outline:none;
+}
+
+.cross--icon{
+    position:absolute;
+    width:2em;
+    height:2em;
+    right:1em;
+    top:50px;
+    cursor: pointer;
+    
+
+
+}
+
+#search{
+    outline:none;
+}
+
+
+/* MAIN CONTENT  */
+
+/* MAIN CONTENT DIV (GROUP) */
+#main_content_bespoke{
+    background-image: url(https://images.unsplash.com/photo-1517590856371-fc9711754f82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+/* IMAGE BELOW NAV BAR  */
+#bckgrd_img_below_nav{
+    border: 1px solid transparent;
+    width: 100%;
+    height: 400px;
+    background-image: url(https://images.forestessentialsindia.com/pub/media/mageplaza/bannerslider/banner/image/c/o/consultation-banner-3.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+/* SHORT INTRODUCTION OF BESPOKE SERVICES */
+#besoke_short_intro_div{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+/* BESPOKE SHORT INTRODUCTION MAIN CONTENT  */
+#bespke_short_intro_main{
+    display: flex;
+    padding-bottom: 70px;
+}
+#bespke_short_intro_main>div:nth-child(1){
+    width: 250%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* APPOINTMENT FORM  */
+.appointment_myForm{
+    text-align: left;
+    padding-left: 5%;
+    font-size: larger;
+    font-weight: lighter;
+}
+
+/* APPOINTMENT FORM LABEL */
+.appointment_text_label{
+    font-size: large;
+    color: rgb(46, 46, 46);
+}
+
+/* PAY AND SCHEDULE BUTTON */
+#pay_and_schedule_button{
+    font-size: larger;
+    width: 80%;
+    padding: 10px;
+    margin: 5%;
+    margin-left: 6%;
+    font-weight: lighter;
+    background-color: transparent;
+    border: 1px solid black;
+}
+#pay_and_schedule_button:hover{
+    background-color: black;
+    color: white;
+}
+#pay_and_schedule_button:active{
+    background-color: black;
+    color: white;
+}
+
+
+/* BELOW FORM CONTENT */
+#besopke_step_involved{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    margin-top: 5%;
+}
+
+
+/* 3 BOX OF STEPS  */
+#below_form_step{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 5%;
+}
+#below_form_step>div{
+    width: 35%;
+    height: 400px;
+    text-align: center;
+}
+#below_form_step>div:nth-child(1){
+    background-color: #f9f9f9;
+}
+#below_form_step>div:nth-child(3){
+    background-color: #f9f9f9;
+}
+
+/* FAQ SECTION */
+#bespoke_faq{
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    margin-top: 5%;
+    color: rgb(109, 109, 109);
+}
+
+/* CUSTOMER REVIEWS SECTION */
+#bespoke_customer_review{
+    width: 80%;
+    margin: auto;
+}
+
+/* CUSTOMER CONTENT */
+#bespoke_customer_content_div{
+    width: 100%;
+    border: 1px solid transparent;
+    height: 500px;
+    margin-bottom: 100px;
+    background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80);
+    background-position: center;
+    background-size: cover;
+    margin-top: 25px;
+}
+#bespoke_customer_content{
+    border: 1px solid transparent;
+    width: 80%;
+    height: 350px;
+    display: flex;
+    margin: auto;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+#bespoke_customer_content>div{
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 24%;
+}
+#bespoke_customer_content>div>img{
+    opacity: 0.5;
+    width: 120px;
+    height: 100px;
+    margin-left: 25%;
+}
+/* CUSTOMER NAME AND YEAR */
+.customer_name_title{
+    margin-bottom: 0;
+    margin-left: 5%;
+}
+.customer_year{
+    margin-top: 0;
+    margin-left: 5%;
+}
