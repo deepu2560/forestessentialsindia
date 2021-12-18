@@ -139,6 +139,14 @@ data.map(function(elem){
     document.querySelector(".facialproducts").append(maindiv);
 });
 }
+var details =  []
+function showProductDetails(elem , data){
+	details.push(elem)	
+	localStorage.setItem("productDetails" , JSON.stringify(details))
+	localStorage.setItem("related_products" , JSON.stringify(data))
+	
+	window.location.href = "../pages/productDetails.html"
+}
 
 function addtocart(ele){
     cart.push(ele);
