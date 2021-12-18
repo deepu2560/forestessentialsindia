@@ -11,7 +11,7 @@ function login(event) {
         for(var i=0; i<registeruser.length; i++){
             if(registeruser[i].useremail==emailphn){
                 if(registeruser[i].userpassword==password){
-                    window.location.href = "index.html";
+                    window.location.href = "../index.html";
                     return;
                 }
                 else{
