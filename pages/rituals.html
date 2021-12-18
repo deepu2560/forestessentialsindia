@@ -166,6 +166,22 @@
 <!--SHOW PRODUCT DETAILS JS FILE -->
 <script src="../js/showProductDetails.js"></script>
 <script>
+
+    // ADDING ITEM TO CART
+    var cart=JSON.parse(localStorage.getItem("cart")) || [];
+    function addtocart(elem){
+        cart.push(elem);
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }
+
+    // ADDING ITEM TO WHISHLIST
+        var wishlist=JSON.parse(localStorage.getItem("wishlist")) || [];
+        function addtowishlist(elem){
+            wishlist.push(elem);
+            localStorage.setItem("wishlist", JSON.stringify(wishlist));
+        }
+
+
         displayData(data)
         function displayData(arr){
 
@@ -178,7 +194,9 @@
                 //HEART ICON
                 var icon = document.createElement("div")
                 icon.innerHTML = "<i class='fa fa-heart-o'></i>"
-
+                icon.addEventListener("click" , function(){
+                    addtowishlist(ele)
+                })
                
 
                 //IMG DIV
@@ -212,7 +230,11 @@
                 var bag = document.createElement("div")
                 bag.innerHTML = "<p>ADD TO BAG</p>"
 
+
                 bag.setAttribute("class" , "cart_bag")
+                bag.addEventListener("click", function(){
+                    addtocart(ele);    
+                });
                 div.append(icon , div1 , div2 , bag)
                 document.querySelector(".ritual__product").append(div)
                 
