@@ -1,9 +1,11 @@
+body{
+    overflow-x: hidden;
+}
 #facialcare{
     border:#fbf9f9 solid 1px;
      width: 100%;
     height: 290px;
     background-image: url("https://images.forestessentialsindia.com/pub/media/catalog/category/1_Facial_Care_MG_7073_final_2880x640-min-min_1.jpg");
-
     background-size: contain;
 
 }
@@ -54,20 +56,22 @@
     letter-spacing: 2px;
 }
 .facialproducts{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    width: 95%;
+    margin: auto;
   
 }
 .productbutton{
     border: black solid 1px;
     background-color:#fbf9f9 ;
-    margin-left: 10px;
     margin-bottom: 10px;
     width:290px;
     height: 50px;
     cursor: pointer;
+    display: block;
+    margin: auto;
     letter-spacing: 1px;
 }
 .productdiv{
@@ -102,8 +106,31 @@
      cursor: pointer;
  }
  .icon-wishlist{
-    width: 20px;
     height: 20px;
-    display: inline-block;
+    padding: 10px;
+    display: block;
     padding-bottom: 0px;
- }
+ 
+
+}
+
+
+@media screen and (max-width:765px){
+    .facialproducts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:450px){
+    .facialproducts{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #facialcare{
+        background-size: cover;
+    }
+
+    .sortbutton{
+        display: block;
+        margin: auto;
+    }
+}

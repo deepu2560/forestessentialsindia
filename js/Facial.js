@@ -67,6 +67,7 @@ var data = [
     },
  ]
  var cart = JSON.parse(localStorage.getItem("cart"))|| [];
+
  var wishlist = JSON.parse(localStorage.getItem("wishlist"))|| [];
  displayItem(data);
  function pricesort(){
@@ -103,13 +104,31 @@ data.map(function(elem){
     div1.innerHTML = "<i class='fa fa-heart-o'></i>";
     div1.setAttribute("class","icon-wishlist");
     maindiv.setAttribute("class","productdiv")
+
+    //WHEN THE CURSOR GOES TO ELEMENT
+    div1.addEventListener("mouseover" , function(){
+        div1.innerHTML = "<i class='fa fa-heart'></i>"
+    })
+
+    //WHEN THE CURSER OUT TO ELEMENT
+    div1.addEventListener("mouseout" , function(){
+        div1.innerHTML = "<i class='fa fa-heart-o'></i>"
+    })
+
+    div1.style.cursor = "pointer"
+
+
+
+
     var img = document.createElement("img");
     img.setAttribute("src",elem.imgUrl);
-    div1.addEventListener("click",function(){
-        showProductDetails(elem,data);
+    img.style.cursor = "pointer"
+    //PRODUCT DETAILS
+    img.addEventListener("click",function(){
+        showProductDetails(elem, data);
     })
-    div1.append(img);
-   
+    
+     
    
     var name = document.createElement("p");
     name.textContent = elem.prodhead;
@@ -126,16 +145,17 @@ data.map(function(elem){
     var productbutton = document.createElement("button");
     productbutton.textContent="ADD TO CART";
     productbutton.setAttribute("class","productbutton")
+
+    //ADD TO CART
     productbutton.addEventListener("click",addfunc);
-   
-    function addfunc(){
-    addtocart(elem);
-}
+        function addfunc(){
+            addtocart(elem);
+        }
    
     var smalldiv = document.createElement("div");
     smalldiv.setAttribute("class","smalldiv");
     smalldiv.append(name,qty,price,productbutton);
-    maindiv.append(div1,smalldiv);
+    maindiv.append(div1,img , smalldiv);
     document.querySelector(".facialproducts").append(maindiv);
 });
 }
@@ -143,9 +163,11 @@ data.map(function(elem){
 function addtocart(ele){
     cart.push(ele);
     localStorage.setItem("cart",JSON.stringify(cart));
+    document.querySelector("#cart__Count").textContent = cart.length
 }
 
 function addtowishlist(elem){
     wishlist.push(elem);
     localStorage.setItem("wishlist",JSON.stringify(wishlist));
 }
+

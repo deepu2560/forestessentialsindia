@@ -96,7 +96,7 @@ margin-left: 40px;
     background-color:#fbf9f9 ;
     border:black solid transparent;
     width:23%;
-    height: 540px;
+    height: 580px;
     line-height: 20px;
 }
 #selleritems>div>p{
@@ -105,6 +105,10 @@ margin-left: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     margin-left: 15px;
+}
+
+#selleritems>div:nth-child(2) button{
+    margin-top: 20px;
 }
 .bagbutton{
     margin-left: 15px;
@@ -122,4 +126,107 @@ margin-left: 40px;
 .bagbutton:hover{
     background-color: rgb(199, 173, 107);
     color: honeydew;
+}
+
+@media screen and (max-width:780px){
+    #container{
+        flex-direction:column-reverse;
+        padding:0px 20px;
+        width: 100%;
+        height:auto;
+    }
+
+    .video>iframe{
+        width:100%;
+        height:300px;
+        margin: 0;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .video{
+         margin-top:40px;
+        width: 100%;
+    }
+
+    .bestsellertext {
+        grid-gap:5px;
+        padding:15px;
+    }
+
+    #selleritems > div:first-child , #selleritems > div:last-child{
+            display: none;
+    }
+
+    #selleritems > div{
+        width:95%;
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width:450px){
+     #container{
+        width: auto;
+        height:auto;
+    }
+
+    
+    .text > p{
+        margin-left:0;
+    }
+
+    .text>p:nth-child(1){
+        font-size:30px;
+        margin-bottom:10px;
+        margin-left: 0px;
+        word-spacing:0px;
+    }
+
+    .text>p:nth-child(2){
+        margin-left: 0px;
+    }
+
+    .images{
+        margin-left:0px;
+        height:auto;
+        margin-bottom: 10px;
+    }
+
+    .bestsellerbutton{
+        font-size:15px;
+        margin-left:0px;
+    }
+    .video{
+        margin-top:25px;
+        width:100%;
+        height:auto;
+    }
+
+    .video>iframe{
+        height:200px;
+    }
+
+    /*Product */
+    #selleritems{
+        flex-direction: column;
+        height: auto;
+        padding:10px;
+    }
+    
+    .bagbutton{
+        margin-left: 33px;
+    }
+
+    .bestsellertext {
+        grid-gap:5px;
+        padding:15px;
+    }
+    .bestsellertext>p{
+        font-size: 25px;
+    }
+
+     #selleritems > div{
+        margin-left: 0px;
+    }
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/category.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -64,7 +65,7 @@
                             
                                 <div class="cart">
                                     <img src="../img/cart-icon.png" >
-                                    <span>0</span>
+                                    <span id="cart__count">0</span>
                                 </div>
                             </a>
                         </div>
@@ -314,8 +315,9 @@
 </html>
 
 <script src="../js/header.js"></script>
+<script src="../js/showProductDetails.js"></script>
 <script>
-    var proarr = [{
+    var data = [{
             imgUrl: "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/5/15327_travel-size-intense-perfumed-body-mist-chandani-raatein_front.png",
             prodhead: "TRAVEL SIZE INTENSE PERFUMED BODY MIST CHANDANI RAATEIN",
             prodweight: "10 ml",
@@ -432,7 +434,7 @@
         }
     ]
     var cartarr = JSON.parse(localStorage.getItem('cart'))||[]
-    display(proarr)
+    display(data)
     function display(proarr)
     {
         document.querySelector('#body_care_products').textContent = ""
@@ -450,8 +452,17 @@
 
 
             div1.setAttribute('class',"icon-wishlist")
+
+            div1.addEventListener("click" , function(){
+                    addtowishlist(el)
+            })
             var img = document.createElement('img') 
             img.setAttribute('src',el.imgUrl)
+            img.style.cursor = "pointer"
+            img.addEventListener("click" , function(){
+                showProductDetails(el , data)
+            })
+
             div1.append(img)
             var div2 = document.createElement('div') 
             var p = document.createElement('p') 
@@ -472,6 +483,7 @@
             button.addEventListener('click',function(){
                 cartarr.push(el)
                 localStorage.setItem('cart',JSON.stringify(cartarr))
+                document.querySelector("#cart__Count").textContent = cartarr.length
             })
             maindiv.append()
             maindiv.append(div1,div2,div3,div4,button)
@@ -505,7 +517,7 @@
             return Number(b.prodprice.slice(1)) - Number(a.prodprice.slice(1))
         })
         }
-        display(proarr)
+        display(data)
     }
 </script>
 

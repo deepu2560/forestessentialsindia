@@ -4,6 +4,7 @@ body{
     margin: 0px;
     background-color: white;
     color: black;
+    overflow-x: hidden;
 }
 .category_image{
     background-size: cover;
@@ -107,7 +108,7 @@ body{
     height: 15px;
     padding: 10px 0px 0px 10px;
 }
-.wishlist:hover{
+.icon-wishlist:hover{
     cursor: pointer;
 }
 .icon-wishlist{
@@ -115,6 +116,7 @@ body{
     height: 20px;
     display: inline-block;
     padding-bottom: 0px;
+    padding: 10px;
 }
 #body_care_products>div p{
     padding: 0px 20px ;
@@ -296,13 +298,13 @@ body{
 /* _______________________________________________________________copyright-css-end_________________________________________________________ */
 @media screen and (min-width:376px) and (max-width:768px) {
     #body_care_products{
-        display: gid;
+        display: grid;
         display: flex;
         width: 90%;
         margin: auto;
         flex-wrap: wrap;
-        /* grid-template-columns: repeat(2,1fr); */
-        /* grid-gap: 20px; */
+        grid-template-columns: repeat(2,1fr); 
+        grid-gap: 20px; 
     }
     #body_care_products>div{
         width: 48%;

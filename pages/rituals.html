@@ -67,7 +67,7 @@
                             
                                 <div class="cart">
                                     <img src="../img/cart-icon.png" >
-                                    <span>0</span>
+                                    <span id="cart__Count">0</span>
                                 </div>
                             </a>
                         </div>
@@ -180,6 +180,7 @@
         function addtocart(elem){
             cart.push(elem);
             localStorage.setItem("cart", JSON.stringify(cart));
+            document.querySelector("#cart__Count").textContent = cart.length
         }
 
         // ADDING ITEM TO WHISHLIST
@@ -200,10 +201,23 @@
                 //HEART ICON
                 var icon = document.createElement("div")
                 icon.innerHTML = "<i class='fa fa-heart-o'></i>"
+                //ADD PRODUCT TO WISHLIST
                 icon.addEventListener("click" , function(){
                     addtowishlist(ele)
+                    icon.innerHTML = "<i class='fa fa-heart'></i>"
                 })
 
+                //WHEN THE CURSOR GOES TO ELEMENT
+                icon.addEventListener("mouseover" , function(){
+                    icon.innerHTML = "<i class='fa fa-heart'></i>"
+                })
+
+                //WHEN THE CURSER OUT TO ELEMENT
+                icon.addEventListener("mouseout" , function(){
+                    icon.innerHTML = "<i class='fa fa-heart-o'></i>"
+                })
+
+                icon.style.cursor = "pointer"
                
 
                 //IMG DIV
@@ -236,7 +250,7 @@
 
                 var bag = document.createElement("div")
                 bag.innerHTML = "<p>ADD TO BAG</p>"
-
+                bag.style.cursor = "pointer"
                 bag.setAttribute("class" , "cart_bag")
                 bag.addEventListener("click", function(){
                     addtocart(ele);    

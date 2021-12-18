@@ -102,8 +102,8 @@ data.map(function(elem){
     div1.setAttribute("class","icon-wishlist");
     var img = document.createElement("img");
     img.setAttribute("src",elem.imgUrl);
-   
-    div1.addEventListener("click", function(){
+    img.style.cursor = "pointer"
+    img.addEventListener("click", function(){
         showProductDetails(elem,data);
     })
     div1.append(img);
@@ -114,6 +114,7 @@ data.map(function(elem){
     price.textContent = elem.prodprice;
     var productbutton = document.createElement("button");
     productbutton.textContent="ADD TO CART";
+    productbutton.style.cursor = "pointer"
     productbutton.setAttribute("class","productbutton")
     productbutton.addEventListener("click",addfunc);
     function addfunc(){
@@ -129,6 +130,7 @@ data.map(function(elem){
 function addtocart(ele){
     cart.push(ele);
     localStorage.setItem("cart",JSON.stringify(cart));
+    document.querySelector("#cart__Count").textContent = cart.length
 }
 function addtowishlist(elem){
     wishlist.push(elem);
