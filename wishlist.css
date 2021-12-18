@@ -45,12 +45,12 @@
             letter-spacing: 2px;
         }
         .wishlistproducts{
-            border: lime solid transparent;
+            border:1px solid transparent;
             width: 100%;
         
         }
         .maindiv{
-            border: black solid transparent;
+            border:1px solid transparent;
             width: 100%;
             height: 200px;
             display: flex;
@@ -58,5 +58,38 @@
         .maindiv>div{
             width: 250px;
             height: 300px;
-            border: mediumblue solid transparent;
+            border: 1px solid transparent;
         }
+     /* @media screen and (max-width:768px){ 
+            .maindiv{
+                display:flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                 height: 300px; 
+            }
+            .maindiv>div{
+                width: 100%; 
+                 height: 300px; 
+                border: 1px solid transparent;
+            }
+            .maindiv>div:nth-child(1){
+                
+                width: 30%;
+            }
+            .maindiv>div:nth-child(2){
+                /height:40px; 
+                width:15%;
+            }
+            .maindiv>div:nth-child(3){
+                 height:20px; 
+                width:5%;
+            }
+            .maindiv>div:nth-child(4){
+                width:35%;
+                margin-left: 0px;
+            }
+            .maindiv>div:nth-child(5){
+                height: 20px;
+                width:5%;
+            }
+        }*/
