@@ -134,3 +134,6 @@
         
         updateCheckoutSection(arr)
     }
+    function checkout_button(){
+        window.loction.href = "payment_gateway.html"
+    }
