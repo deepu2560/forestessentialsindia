@@ -84,46 +84,60 @@ if(selected=="low"){
 }
 displayItem(data);
  }
- 
+
  function displayItem(data){
-    document.querySelector(".giftingproducts").textContent="";
+    document.querySelector(".facialproducts").textContent="";
 data.map(function(elem){
     var maindiv = document.createElement("div");
-    maindiv.setAttribute("class","productdiv")
-   var div1 = document.createElement("span");
+    var div1 = document.createElement("span");
     var img0 = document.createElement("img");
+   
+   
     img0.setAttribute("src","https://cdn-icons.flaticon.com/png/512/3870/premium/3870922.png?token=exp=1639563142~hmac=c211f716b578985c0a5f05b4429e170e");
     img0.setAttribute("class","wishlistimg");
     img0.addEventListener("click",addwishlist);
     function addwishlist(){
         addtowishlist(elem);
     }
+   
+   
     div1.append(img0);
     div1.setAttribute("class","icon-wishlist");
+    maindiv.setAttribute("class","productdiv")
     var img = document.createElement("img");
     img.setAttribute("src",elem.imgurl);
-   
-    div1.addEventListener("click", function(){
+    div1.addEventListener("click",function(){
         showProductDetails(elem,data);
     })
     div1.append(img);
+   
+   
     var name = document.createElement("p");
     name.textContent = elem.prodhead;
-    
+   
+   
+    var qty = document.createElement("P");
+    qty.textContent = elem.prodweight;
+   
+   
     var price =document.createElement("P");
     price.textContent = elem.prodprice;
+   
+   
     var productbutton = document.createElement("button");
     productbutton.textContent="ADD TO CART";
     productbutton.setAttribute("class","productbutton")
     productbutton.addEventListener("click",addfunc);
+   
     function addfunc(){
     addtocart(elem);
-    }
+}
+   
     var smalldiv = document.createElement("div");
     smalldiv.setAttribute("class","smalldiv");
-    smalldiv.append(name,price,productbutton);
+    smalldiv.append(name,qty,price,productbutton);
     maindiv.append(div1,smalldiv);
-    document.querySelector(".giftingproducts").append(maindiv);
+    document.querySelector(".facialproducts").append(maindiv);
 });
 }
 var details =  []
@@ -134,11 +148,88 @@ function showProductDetails(elem , data){
 	
 	window.location.href = "../pages/productDetails.html"
 }
+
 function addtocart(ele){
     cart.push(ele);
     localStorage.setItem("cart",JSON.stringify(cart));
 }
+
 function addtowishlist(elem){
     wishlist.push(elem);
     localStorage.setItem("wishlist",JSON.stringify(wishlist));
 }
+//  var cart = JSON.parse(localStorage.getItem("cart"))|| [];
+//  var wishlist = JSON.parse(localStorage.getItem("wishlist"))|| [];
+//  displayItem(data);
+//  function pricesort(){
+//     var selected= document.querySelector(".sortbutton").value;
+// if(selected=="high"){
+//     data.sort(function(a,b){
+//         return Number(b.prodprice) - Number(a.prodprice);
+//     })
+// }
+// if(selected=="low"){
+//     data.sort(function(a,b){
+//         return Number(a.prodprice) - Number(b.prodprice);
+//     })
+// }
+// displayItem(data);
+//  }
+ 
+//  function displayItem(data){
+//     document.querySelector(".giftingproducts").textContent="";
+// data.map(function(elem){
+//     var maindiv = document.createElement("div");
+//     maindiv.setAttribute("class","productdiv")
+//    var div1 = document.createElement("span");
+//     var img0 = document.createElement("img");
+//     img0.setAttribute("src","https://cdn-icons.flaticon.com/png/512/3870/premium/3870922.png?token=exp=1639563142~hmac=c211f716b578985c0a5f05b4429e170e");
+//     img0.setAttribute("class","wishlistimg");
+//     img0.addEventListener("click",addwishlist);
+//     function addwishlist(){
+//         addtowishlist(elem);
+//     }
+//     div1.append(img0);
+//     div1.setAttribute("class","icon-wishlist");
+//     var img = document.createElement("img");
+//     img.setAttribute("src",elem.imgurl);
+   
+//     div1.addEventListener("click", function(){
+//         showProductDetails(elem,data);
+//     })
+//     div1.append(img);
+//     var name = document.createElement("p");
+//     name.textContent = elem.prodhead;
+    
+//     var price =document.createElement("P");
+//     price.textContent = elem.prodprice;
+//     var productbutton = document.createElement("button");
+//     productbutton.textContent="ADD TO CART";
+//     productbutton.setAttribute("class","productbutton")
+//     productbutton.addEventListener("click",addfunc);
+//     function addfunc(){
+//     addtocart(elem);
+//     }
+//     var smalldiv = document.createElement("div");
+//     smalldiv.setAttribute("class","smalldiv");
+//     smalldiv.append(name,price,productbutton);
+//     maindiv.append(div1,smalldiv);
+//     document.querySelector(".giftingproducts").append(maindiv);
+// });
+// }
+// var details =  []
+// function showProductDetails(elem , data){
+// 	details.push(elem)	
+// 	localStorage.setItem("productDetails" , JSON.stringify(details))
+// 	localStorage.setItem("related_products" , JSON.stringify(data))
+	
+// 	window.location.href = "../pages/productDetails.html"
+// }
+// function addtocart(ele){
+//     cart.push(ele);
+//     localStorage.setItem("cart",JSON.stringify(cart));
+// }
+// function addtowishlist(elem){
+//     wishlist.push(elem);
+//     localStorage.setItem("wishlist",JSON.stringify(wishlist));
+// }

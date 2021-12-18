@@ -11,7 +11,25 @@ body{
     justify-content: center;
     align-items: center;
 }
+#gifting_vishnu{
+    border:#fbf9f9 solid 1px;
+     width: 100%;
+    height: 290px;
+    background-image: url("https://images.forestessentialsindia.com/pub/media/catalog/category/Gifting-Collection-Banner.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gifting_vishnu>p{
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 50px;
+    color: white;
+    font-family: calibri;
+    letter-spacing: 2.8px;
+}
 #facialcare>p{
+    background-color: rgba(0, 0, 0, 0.6);
     font-size: 50px;
     color: white;
     font-family: calibri;
