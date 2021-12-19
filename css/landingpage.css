@@ -7,7 +7,7 @@ body{
 #newsletter_image_container{
     background-image: url(https://images.forestessentialsindia.com/pub/media/cms_images/newsletter-bg.jpg);
     text-align: center;
-    height: 250px;
+    height: 320px;
     background-size: cover;
     padding: 98px 0px;
     margin-top: 60px;
@@ -17,6 +17,9 @@ body{
     height: 300px;
     color: white;
     margin: auto;
+} 
+#newslatter_text_container_heading{
+    font-size: 50px;
 } 
 #newslatter_text_container p{
     border: 1px solid transparent;

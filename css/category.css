@@ -382,6 +382,9 @@ body{
     #newslatter_text_container{
         width: 100%;
     }
+    #newslatter_text_container h2{
+        font-size: 50px;
+    }    
     #input_fleld_div input{
        margin-bottom: 20px;
     }
