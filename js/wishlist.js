@@ -1,5 +1,5 @@
 var data = JSON.parse(localStorage.getItem("wishlist"));
-cart = JSON.parse(localStorage.getItem("wishlist")) || [];
+cart = JSON.parse(localStorage.getItem("cart")) || [];
 displayItem(data);
 function displayItem(data){
     document.querySelector(".wishlistproducts").innerHTML="";
@@ -66,15 +66,15 @@ document.querySelector(".wishlistproducts").append(maindiv,hrdiv);
 })
 }
 
-function deletetask(index){
-   data.splice(index,1);
-   localStorage.setItem("wishlist",JSON.stringify(data));
-    displayItem(data);
+function deletetask(data){
+   data.map(function(elem, index){
+       data.splice(index, 1);
+       localStorage.setItem("wishlist", JSON.stringify(data));
+       displayItem(data);
+   });
 }
-function addtocart(elem,index){
+function addtocart(elem){
 cart.push(elem);
 localStorage.setItem("cart",JSON.stringify(cart));
-data.splice(index,1);
-localStorage.setItem("wishlist",JSON.stringify(data));
-displayItem(data);
+deletetask(data);
 }
