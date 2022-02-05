@@ -6,3 +6,4 @@ Clone of forest essentials india ecommerce website
 -Github
 -Media query
 -DOM
+Deploy link :- https://forestessentialindiaclone.netlify.app
