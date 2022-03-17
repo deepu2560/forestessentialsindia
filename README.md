@@ -5,7 +5,7 @@ It is an e-commerce website where users can purchase ayurvedic products.
 <li>Sign-in/Sign-up</li>
 <li>Bespoke services</li>
 <li>Products page</li>
-  <li>Wishlist page></li>
+  <li>Wishlist page</li>
   <li>Cart page</li>
   <li>Payment page</li>
 </ul>
@@ -17,3 +17,11 @@ HTML | CSS | Javascript |
 <li>Developed the products and Tariff page. </li>
 <li>Integrated the wishlist and cart page. </li>
 <li>Developed the Homepage.</li>
+  <h3>Contributors</h3>
+  <ul>
+    <li>Deepanshu gulia</li>
+    <li>Vijendra saini</li>
+    <li>Shilpa</li>
+    <li>Mallikarjuna anigeri</li>
+  </ul>
+  <h3>Screenshots</h3>
