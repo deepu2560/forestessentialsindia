@@ -17,11 +17,11 @@ HTML | CSS | Javascript |
 <li>Developed the products and Tariff page. </li>
 <li>Integrated the wishlist and cart page. </li>
 <li>Developed the Homepage.</li>
-  <h3>Contributors</h3>
+ <h3>Contributors:</h3>
   <ul>
     <li>Deepanshu gulia</li>
     <li>Vijendra saini</li>
     <li>Shilpa</li>
     <li>Mallikarjuna anigeri</li>
   </ul>
-  <h3>Screenshots</h3>
+ <h3>Screenshots</h3>
