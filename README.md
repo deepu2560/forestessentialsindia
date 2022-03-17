@@ -25,3 +25,7 @@ HTML | CSS | Javascript |
     <li>Mallikarjuna anigeri</li>
   </ul>
  <h3>Screenshots</h3>
+![Screenshot (168)](https://user-images.githubusercontent.com/95843451/158729913-5fd065c6-dfc2-496f-93ed-b48b568fe764.png)
+![Screenshot (169)](https://user-images.githubusercontent.com/95843451/158729955-9ce31eaa-a4dc-4b59-8668-5dfdd707b2e9.png)
+![Screenshot (170)](https://user-images.githubusercontent.com/95843451/158730011-71d69427-4fe3-4494-9113-c11cd0ffb14c.png)
+![Screenshot (171)](https://user-images.githubusercontent.com/95843451/158730046-e78fdc37-fd9d-4de4-bf2b-17f0a4a2960d.png)
